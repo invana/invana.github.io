@@ -1,0 +1,52 @@
+.navbar-transparent .navbar-brand {
+    color : white;
+    font-weight: bold;
+ }
+
+ .navbar-transparent .navbar-nav>li>a {
+     color:white;
+ }
+
+ .navbar-transparent .navbar-nav>.active>a,
+ .navbar-transparent .navbar-nav>.active>a:focus,
+ .navbar-transparent .navbar-nav>.active>a:hover,
+ .navbar-transparent .nav>li>a:focus,
+ .navbar-transparent .nav>li>a:hover {
+    background: transparent;
+    color: white;
+ }
+
+ .container{
+    max-width:970px;
+ }
+
+ .homepage h1{
+    font-weight: 300;
+    font-size:3.3rem;
+    line-height: 4rem;
+    margin-top:25rem;
+    color: white;
+ }
+ .homepage p{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 5rem;
+
+ }
+ .homepage-section{
+    background: #5996e2;
+ }
+
+ul li, p {
+    color: #999;
+    line-height:2.3rem;
+ }
+
+.fw-300{
+    font-weight:300;
+}
+
+.services h2{
+    margin-top:5rem;
+}
