@@ -48,5 +48,16 @@ ul li, p {
 }
 
 .services h2{
-    margin-top:5rem;
+    margin-top:3rem;
+}
+.services h3{
+    color: #666;
+}
+
+h2 {
+    color: #5996e2;
+}
+.contact {
+
+margin-top:5rem;
 }
