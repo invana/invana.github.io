@@ -36,7 +36,11 @@
  }
  .homepage-section{
     background: #5996e2;
- }
+    background-image: url(/assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-position-x: 60rem;
+
+}
 
 ul li, p {
     color: #999;
