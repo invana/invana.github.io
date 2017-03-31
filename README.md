@@ -1,2 +1,6 @@
 # invanatech.github.io
-Company Website
+
+Company website
+
+
+`python -m SimpleHTTPServer 8000`
