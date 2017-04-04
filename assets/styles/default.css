@@ -41,10 +41,10 @@
 
  }
  .homepage-section{
-    background: #5996e2;
-    background-image: url(/assets/images/bg.png);
+    background: #179c8f;
+    background-image: url(/assets/images/bg-dark.svg);
     background-repeat: no-repeat;
-    background-position-x: 60rem;
+    background-position: bottom;
 
 }
 body, p, li, h1, h2, h3, h4{
@@ -63,11 +63,11 @@ ul li, p {
     margin-top:3rem;
 }
 .services h3{
-    color: #666;
+    color: #333;
 }
 
 h2 {
-    color: #5996e2;
+    color: #179c8f;
 }
 .contact {
 
