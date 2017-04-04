@@ -24,19 +24,19 @@
    font-weight: 300;
        font-size: 5.0rem;
        line-height: 4rem;
-       margin-top: 20rem;
+       margin-top: 22rem;
        color: white;
        text-transform: uppercase;
 
  }
  .homepage p{
-   color: white;
+       color: white;
        font-size: 2.4rem;
        font-weight: 300;
        margin-bottom: 5rem;
        margin-top: 2.6rem;
        text-transform: uppercase;
-       margin-bottom: 20rem;
+       margin-bottom: 27rem;
 
 
  }
@@ -91,4 +91,15 @@ margin-top:5rem;
 }
 .ourservices{
   padding: 30px;
+}
+
+ul.nav.navbar-nav.navbar-right li {
+    display: inline-block;
+}
+
+
+
+.navbar.affix {
+    background-color: #179c8f;
+    border-color: rgba(34,34,34,.1);
 }
