@@ -1,3 +1,19 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .homepage-section, .homepage {
+    min-height: 100%;
+  }
+}
+
+.homepage-section{
+  background-size: cover;
+
+}
 .navbar-transparent .navbar-brand {
     color : white;
     font-weight: bold;
@@ -16,12 +32,16 @@
     color: white;
  }
 
+.scroll-down{
+  height:35px;
+  width: 35px;
+}
  .container{
     max-width:970px;
  }
 
  .homepage h1{
-   font-weight: 300;
+   font-weight: bold;
        font-size: 5.0rem;
        line-height: 4rem;
        margin-top: 22rem;
@@ -70,8 +90,9 @@ h2 {
     color: #179c8f;
 }
 .contact {
-
-margin-top:5rem;
+ padding-bottom: 5rem;
+ padding-top: 3rem;
+  
 }
 
 .box{
@@ -82,7 +103,7 @@ margin-top:5rem;
   border: 1px solid #e6e6e6;
 }
 #services{
-  background: #f1f1f4;
+
   padding-top:30px;
   padding-bottom: 100px;
 }
@@ -91,8 +112,14 @@ margin-top:5rem;
 }
 .ourservices{
   padding: 30px;
+  padding-bottom: 0;
 }
 
+.service-icons{
+  padding: 50px 0px;
+  margin: 0 auto;
+
+}
 ul.nav.navbar-nav.navbar-right li {
     display: inline-block;
 }
@@ -102,4 +129,32 @@ ul.nav.navbar-nav.navbar-right li {
 .navbar.affix {
     background-color: #179c8f;
     border-color: rgba(34,34,34,.1);
+}
+
+.primary-bg {
+    background: #179c8f;
+    color: white;
+}
+.primary-bg p, .primary-bg h2{
+  color: white;
+}
+#about-us{
+  padding-top:60px;
+  padding-bottom: 60px;
+}
+#about-us h2{
+  margin-bottom: 1rem;
+
+}
+#about-us p{
+  font-size: 16px;
+}
+.primary-bg-dark{
+  background: #0a5c53;
+}
+footer{
+  padding: 15px;
+}
+footer ul li{
+  color: white;
 }
