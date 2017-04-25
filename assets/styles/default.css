@@ -92,7 +92,10 @@ h2 {
 .contact {
  padding-bottom: 5rem;
  padding-top: 3rem;
-  
+}
+.contact ul li a{
+
+    color: #fff;
 }
 
 .box{
@@ -157,4 +160,16 @@ footer{
 }
 footer ul li{
   color: white;
+}
+
+
+.about-us{
+    background: #efefef;
+    padding: 80px 0;
+}
+.about-us p {
+    font-size: 16px;
+}
+.about-us h2{
+    color: #333;
 }
