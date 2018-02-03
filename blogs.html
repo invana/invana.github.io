@@ -1,0 +1,31 @@
+---
+layout: default
+title: Invana Technology Solutions Blog
+---
+<div class="container pt-3">
+  <div class="row">
+    <div class="col col-12">
+      <h1>Blogs</h1>
+      <hr>
+    </div>
+          <div class="col col-8">
+            {% for item in site.blogs %}
+            <article class="">
+
+            <img src="{{item.logo}}" class="img-fluid" alt="">
+              <h4 class="mb-0"><a href="/blogs/{{ item.slug }}">   {{ item.title }}</a></h4>
+              <p> <i class="far fa-clock"></i> {{item.date  | date: "%-d %B, %Y" }}
+
+                {% for tech in item.categories %} <span class="ml-2 "> <a href="#"> <i class="fas fa-tags text-muted"></i> {{tech}}</a></span> {%endfor %}
+              </p>
+
+            </article>
+
+            {% endfor %}
+          </div>
+          <div class="col col-4">
+
+          </div>
+
+  </div>
+</div>

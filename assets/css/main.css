@@ -1,0 +1,37 @@
+html, body, h1, h2, h3, h4, h5, h6, p, li {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.8em;
+}
+html, body{
+  font-size: 14px;
+}
+.classroom-content h2, .classroom-content h3, .classroom-content h4, .classroom-content h5{
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-weight: bold;
+}
+.navbar-light .navbar-brand{
+    font-weight: bold;
+}
+.banner{
+  padding: 4rem 2rem 4rem;
+/* border-bottom: 2px solid #eee; */
+margin-bottom: 2rem;
+}
+.homepage h2{
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+a{
+  color: #4d32af;
+}
+a:hover{
+  color: #594c88;
+}
+.banner blockquote{
+  margin-top: 2rem;
+}

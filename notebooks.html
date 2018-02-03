@@ -1,0 +1,33 @@
+---
+layout: default
+title: Invaana NoteBooks
+---
+<div class="container pt-5">
+     <div class="card-columns">
+          {% assign posts_by_tag = site.notebooks | group_by:"tag" | sort:"title" %}
+          {% for item in posts_by_tag %}
+          <div class="card">
+            <div class="card-body">
+
+              <h4 class="mb-0 font-weight-bold">{{item.name}}</h3>
+                <hr class="mt-1">
+                <ul class="list-unstyled">
+                {% for notebook in item.items %}
+                  <li>
+                    <h6 class="mb-0"><a href="{{site.baseurl}}/notebooks/{{notebook.slug}}">
+                      <strong> <i class="fa fa-book"></i>  {{notebook.software}}:</strong>
+                     {{notebook.title}}
+
+                   </a></h6>
+                   <p><span>Curated by:</span> {% for user in notebook.curated_by%}
+                     <a href="https://github.com/{{user}}" target="_blank">{{user}}</a> &nbsp;&nbsp; {%endfor%}</p>
+
+                 </li>
+                {% endfor %}
+                </ul>
+              </div>
+          </div>
+
+          {% endfor %}
+    </div>
+ </div>
