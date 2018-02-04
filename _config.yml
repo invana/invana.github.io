@@ -61,3 +61,6 @@ collections:
   codes       :
     output    : true
     permalink : /:collection/:title/
+  positions       :
+    output    : true
+    permalink : /:collection/:title/

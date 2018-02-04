@@ -1,0 +1,26 @@
+---
+layout: default
+title: Jobs @ Invanatech
+---
+<div class="container pt-5">
+  <div class="row">
+    <div class="col col-12">
+      <h1>List of Internship Positions available at Invanatech</h1>
+
+        {% for item in site.positions %}
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5><strong><a href="{{site.baseurl}}/positions/{{item.slug}}">
+                    {{ item.title }}</a></strong>: {{item.project_title}}</h5>
+                  <!-- <p class="mb-0"></p> -->
+                  <p>{% for tech in item.technologies %} <span class="badge badge-info">{{tech}}</span> {%endfor %} </p>
+                    {{item.content}}
+
+                    </div>
+              </div>
+        {% endfor %}
+</div>
+
+
+  </div>
+</div>

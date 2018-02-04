@@ -7,9 +7,14 @@
   {% include nav.html %}
   {% include header.html %}
   <div class="container pt-3">
-    <h1><i class="fab fa-github"></i> {{page.title}}</h1>
+    <h1 class="bold"><i class="fab fa-github"></i> {{page.title}}</h1>
     <p> <a href="http://{{page.website}}" target="_blank">{{page.website}}</a> </p>
+    <p>{% for tech in page.technologies %} <span class="badge badge-info">{{tech}}</span> {%endfor %} </p>
     <hr>
+    <h3>{{page.project_title}}</h3>
+    <div class="">
+        {{page.project_abstract}}
+    </div>
     {{ content }}
     {% include footer.html %}
   </div>
