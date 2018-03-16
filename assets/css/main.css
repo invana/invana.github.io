@@ -14,13 +14,13 @@ a:hover{
   color: #6590e4 !important;
 }
 .classroom-content h2, .classroom-content h3, .classroom-content h4, .classroom-content h5{
-  font-weight: bold;
+  font-weight: 400;
 }
 .navbar-light .navbar-nav .nav-link{
-    font-weight: bold;
+    font-weight: 400;
 }
 .navbar-light .navbar-brand{
-    font-weight: bold;
+    font-weight: 400;
 }
 .banner{
   padding: 4rem 2rem 4rem;
@@ -29,7 +29,7 @@ margin-bottom: 2rem;
 }
 .homepage h2{
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   color: #666;
 }
 

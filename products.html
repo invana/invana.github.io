@@ -9,8 +9,9 @@ title: Invanatech Products
         {% for item in site.products %}
               <div class="card mb-3">
                 <div class="card-body">
-                  <h4><strong><a href="{{site.baseurl}}/products/{{item.slug}}">
-                    {{ item.title }}</a></strong> <small>(<a href="http://{{item.website}}" target="_blank"  class="text-muted">
+                  <h4><a href="{{site.baseurl}}/products/{{item.slug}}">
+                    {{ item.title }}</a>
+                     <small>(<a href="http://{{item.website}}" target="_blank"  class="text-muted">
                        {{ item.website }}</a>)</small> </h4>
 
                        <img src="{{item.image_url}}" class="img-fluid" alt="">
@@ -22,28 +23,28 @@ title: Invanatech Products
                     </div>
               </div>
         {% endfor %}
-</div>
-<div class="col col-5">
-        <div class="card mb-3">
-          <div class="card-body">
-            {% for item in site.codes %}
+      </div>
+      <div class="col col-5">
+          <div class="card mb-3">
+            <div class="card-body">
+              {% for item in site.codes %}
 
-            <h4 class="mb-1"><strong><a href="{{site.baseurl}}/products/{{item.slug}}">
-              <i class="fab fa-github"></i> {{ item.github_url }}</a></strong>
-              </h4>
-              <p><a href="{{item.website}}" target="_blank"  class="text-muted">
-                 {{ item.website }}</a></p>
-            <!-- <p class="mb-0"></p> -->
-            <!-- <p>{% for tech in item.technologies %} <span class="badge badge-info">{{tech}}</span> {%endfor %} </p> -->
-              {{item.content}}
-<div class="mb-4">
+              <h4 class="mb-1"><a href="{{site.baseurl}}/products/{{item.slug}}">
+                <i class="fab fa-github"></i> {{ item.github_url }}</a>
+                </h4>
+                <p><a href="{{item.website}}" target="_blank"  class="text-muted">
+                   {{ item.website }}</a></p>
+              <!-- <p class="mb-0"></p> -->
+              <!-- <p>{% for tech in item.technologies %} <span class="badge badge-info">{{tech}}</span> {%endfor %} </p> -->
+                {{item.content}}
+                <div class="mb-4">
 
-</div>
-              {% endfor %}
+                </div>
+                {% endfor %}
 
-              </div>
+                </div>
+          </div>
         </div>
-</div>
 
   </div>
 </div>
