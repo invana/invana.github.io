@@ -14,20 +14,32 @@ title: Positions @ Invanatech
 <div class="container pt-5">
   <div class="row">
     <div class="col col-12">
-      <h2>Full-time Positions</h2>
+
+      <div class="card">
+
+          <div class="card-body">
+            <h4>Full-time Positions</h4>
+            <hr>
       {% for item in site.positions %}
         {% if item.position_type == "full_time" %}
-        <h5><a href="{{site.baseurl}}/positions/{{item.slug}}">
-          {{ item.title }}</a></h5>
+        <h4><a href="{{site.baseurl}}/positions/{{item.slug}}">
+          {{ item.title }}</a></h4>
         <!-- <p class="mb-0"></p> -->
         <p>{% for tech in item.technologies %} <span class="badge badge-info">{{tech}}</span> {%endfor %} </p>
         {% endif %}
       {% endfor %}
     </div>
+</div>
 
-    <div class="col col-12">
-      <hr>
-      <h2>Internship Positions</h2>
+    </div>
+
+    <div class="col col-12 mt-4">
+
+      <div class="card">
+
+          <div class="card-body">
+            <h4>Internship Positions</h4>
+            <hr>
 
       {% for item in site.positions %}
       {% if item.position_type == "intern" %}
@@ -38,6 +50,8 @@ title: Positions @ Invanatech
         <p>{% for tech in item.technologies %} <span class="badge badge-info">{{tech}}</span> {%endfor %} </p>
         {% endif %}
       {% endfor %}
+    </div>
+</div>
     </div>
   </div>
 </div>

@@ -17,8 +17,8 @@ title: Our Products
 
       {% for item in site.products %}
 
-        <h2><a target="_blank" href="http://{{item.website}}">
-          {{ item.title }}</a> </h2>
+        <h4><a target="_blank" href="http://{{item.website}}">
+          {{ item.title }}</a> </h4>
           {% if item.image_url %}
            <img src="{{item.image_url}}" class="img-fluid" alt="">
            {% endif %}
