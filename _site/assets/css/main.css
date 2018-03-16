@@ -7,7 +7,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, li {
 html, body{
   font-size: 14px;
 }
-a, .a{
+a, .a, .header h1{
   color: #3c67bb !important;
 }
 a:hover{
