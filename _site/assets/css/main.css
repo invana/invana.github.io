@@ -40,5 +40,9 @@ margin-bottom: 2rem;
 }
 .jumbotron-heading{
 margin-top: 10rem;
-
+}
+section.header {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
 }
