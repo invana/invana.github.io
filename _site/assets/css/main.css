@@ -7,6 +7,12 @@ html, body, h1, h2, h3, h4, h5, h6, p, li {
 html, body{
   font-size: 14px;
 }
+a, .a{
+  color: #3c67bb !important;
+}
+a:hover{
+  color: #6590e4 !important;
+}
 .classroom-content h2, .classroom-content h3, .classroom-content h4, .classroom-content h5{
   font-weight: bold;
 }
@@ -26,12 +32,13 @@ margin-bottom: 2rem;
   font-weight: bold;
   color: #666;
 }
-a{
-  color: #4d32af;
-}
-a:hover{
-  color: #594c88;
-}
+
+
+
 .banner blockquote{
   margin-top: 2rem;
+}
+.jumbotron-heading{
+margin-top: 10rem;
+
 }

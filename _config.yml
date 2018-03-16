@@ -55,9 +55,6 @@ collections:
   products       :
     output    : true
     permalink : /:collection/:title/
-  blogs       :
-    output    : true
-    permalink : /:collection/:title/
   codes       :
     output    : true
     permalink : /:collection/:title/

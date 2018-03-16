@@ -4,6 +4,8 @@ title: Datatroph.io
 website: "dev.datatroph.io"
 category: project
 technologies: [python, lxml]
+image: "/assets/images/invaana.png"
+
 ---
 
 
