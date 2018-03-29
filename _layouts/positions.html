@@ -6,18 +6,21 @@
 <body>
   {% include nav.html %}
   {% include header.html %}
+
+
+  
   <div class="container pt-3">
     <h1 class="bold">{{page.title}}
 
-<small>
-  {% if page.position_type == "intern" %}
+  <small>
+    {% if page.position_type == "intern" %}
 
-  <span class="badge badge-info">Internship Position</span>
-  {% else if page.position_type == "full_time" %}
+    <span class="badge badge-info">Internship Position</span>
+    {% else if page.position_type == "full_time" %}
 
-  <span class="badge badge-info">Full-time Position</span>
-  {% endif %}
-</small>
+    <span class="badge badge-info">Full-time Position</span>
+    {% endif %}
+  </small>
     </h1>
 
     <p> <a href="http://{{page.website}}" target="_blank">{{page.website}}</a> </p>
