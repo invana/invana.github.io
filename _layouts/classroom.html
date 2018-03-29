@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 {% include head.html %}
 
 <body>
-  {% include nav.html %}
-  {% include header.html %}
+  {% include nav.html %} {% include header.html %}
   <div class="container pt-3">
     <div class="row">
       <div class="col-12">
@@ -31,7 +29,7 @@
         </ul>
       </div>
       <div class="col-12">
-          <hr>
+        <hr>
       </div>
 
       <div class="col-8 classroom-content">
@@ -40,8 +38,7 @@
       </div>
       <div class="col-4">
 
-        <div class="clearfix" style="    background: #efefef;
-    padding: 20px 10px;">
+        <div class="clearfix" style="    background: #efefef;  padding: 20px 10px;">
           {{ content | toc_only }}
 
         </div>
@@ -52,7 +49,7 @@
 
     {% include footer.html %}
   </div>
-	{% include js-includes.html %}
+  {% include js-includes.html %}
 </body>
 
 </html>
