@@ -8,23 +8,40 @@
   {% include header.html %}
 
 
-  
+<style media="screen">
+
+
+</style>
+<section class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="bold">{{page.title}} |
+
+      <small>
+        {% if page.position_type == "intern" %}
+
+        <span class="">Internship Position</span>
+        {% else if page.position_type == "full_time" %}
+
+        <span class="">Full-time Position</span>
+        {% endif %}
+      </small>
+        </h1>
+
+        <p>{% for tech in page.technologies %} <span class="white pr-2 mr-2">{{tech}}</span> {%endfor %} </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
   <div class="container pt-3">
-    <h1 class="bold">{{page.title}}
 
-  <small>
-    {% if page.position_type == "intern" %}
-
-    <span class="badge badge-info">Internship Position</span>
-    {% else if page.position_type == "full_time" %}
-
-    <span class="badge badge-info">Full-time Position</span>
-    {% endif %}
-  </small>
-    </h1>
 
     <p> <a href="http://{{page.website}}" target="_blank">{{page.website}}</a> </p>
-    <p>{% for tech in page.technologies %} <span class="badge badge-info">{{tech}}</span> {%endfor %} </p>
   {% if page.position_type == "intern" %}
     <h3>{{page.project_title}}</h3>
 

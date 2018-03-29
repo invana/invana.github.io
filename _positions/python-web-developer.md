@@ -1,6 +1,6 @@
 ---
 layout: positions
-title: Python Web Engineer
+title: Jr. Python Web Engineer
 category: Web
 technologies: [ Python, Django, Flask]
 position_type: full_time
