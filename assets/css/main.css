@@ -10,6 +10,7 @@ html, body {
   background: #efefef;
 }
 
+
 a, .a {
   color: #4A4090 !important;
 }
@@ -85,8 +86,9 @@ a.navbar-brand:hover {
   color: white !important;
 }
 
-.navbar .navbar-nav .nav-link, .navbar-brand {
+.navbar .navbar-nav .nav-link, .navbar-brand, .navbar a {
   color: white !important;
+  text-decoration: none;
 }
 
 .white {
