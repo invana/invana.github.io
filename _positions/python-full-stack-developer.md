@@ -1,6 +1,6 @@
 ---
 layout: positions
-title: Python Full Stack Engineer
+title: Python Full Stack Engineer (Mid-Level)
 category: Web
 technologies: [ Python, Django, React, Docker, CI/CD, Flask]
 position_type: full_time
