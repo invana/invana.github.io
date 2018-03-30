@@ -1,10 +1,10 @@
 ---
 layout: positions
-title: UI/UX Designer
+title: UI/UX Designer (Consultant)
 category: Web
-technologies: [ Python, Scrapy, APIs, Flask]
+technologies: [ Illustrator or Similar, Scrapy, APIs, Flask]
 position_type: full_time
-project_title: UI/UX Designer
+project_title: UI/UX Designer (Consultant)
 ---
 
 UI/UX Designer

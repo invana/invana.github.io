@@ -14,6 +14,7 @@ project_title: Python Web Engineer
 - Experience working on Google Cloud Platform(GCP) or Amazon Web Services(AWS)
 - Better understanding and experience preffered on Deployment and CI/CD Life cycle.   
 - Previous experience in working in the analytics and big data domains are helpful.
+- Working experience with Django and Django Rest Framework.
 
 
 **Requirements**

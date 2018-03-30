@@ -40,7 +40,7 @@ title: Available Positions
             {% if item.position_type == "intern" %}
 
               <h6 class="bold mb-0"><a href="{{site.baseurl}}/positions/{{item.slug}}">
-                {{ item.title }}</a>: {{item.project_title}}</h5>
+                {{ item.title }}: {{item.project_title}}</a></h5>
               <!-- <p class="mb-0"></p> -->
               <p>{% for tech in item.technologies %} <span class="small">{{tech}}</span>, {%endfor %} </p>
               {% endif %}
