@@ -15,7 +15,8 @@ project_title: Python Web Engineer
 - Better understanding and experience preffered on Deployment and CI/CD Life cycle.   
 - Previous experience in working in the analytics and big data domains are helpful.
 - Working experience with Django and Django Rest Framework.
-
+- Should be able to write unit-test cases.
+- Should be good with documenting the code.
 
 **Requirements**
 - Must have prior experience working in the above mentioned stack.
