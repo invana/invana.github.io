@@ -2,29 +2,42 @@
 layout: default
 title: Opensource @ Invana
 ---
-<section class="header banner">
+<!-- <section class="header banner">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h1>{{page.title}}</h1>
+      <div class="col-12 mt-5">
       </div>
     </div>
   </div>
-</section>
-<div class="container pt-5">
+</section> -->
+
+<style media="screen">
+.banner{
+  box-shadow: -220px 1px #3c65bd;
+  height: 100vh !important;
+  padding-top: 10rem;
+}
+
+</style>
+<div class="container ">
   <div class="row">
-    <div class="col col-8">
+    <div class="col col-6 banner">
+      <h1 class="mb-0">Opensource</h1>
+      <p>@ Invana Technology Solutions</p>
+
+    </div>
+    <div class="col col-6 pt-5">
 
       {% for item in site.codes %}
 
-        <h4><a target="_blank" href="{{item.website}}">
+        <h6 class="bold"><a target="_blank" href="{{item.website}}">
           {{ item.title }}</a> </h4>
           {% if item.image_url %}
            <img src="{{item.image_url}}" class="img-fluid" alt="">
            {% endif %}
           {{item.content}}
-        <p>  Click <a href="{{item.website}}" target="_blank"  class="a">
-            here</a> to know more. </p>
+        <!-- <p>Click <a href="{{item.website}}" target="_blank"  class="a">
+            here</a> to know more. </p> -->
         <hr>
       {% endfor %}
     </div>
