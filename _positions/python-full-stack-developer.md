@@ -2,7 +2,7 @@
 layout: positions
 title: Python Full Stack Engineer
 category: Web
-technologies: [ Python, Django, Scrapy, Docker, CI/CD, Flask]
+technologies: [ Python, Django, React, Docker, CI/CD, Flask]
 position_type: full_time
 project_title: Python Web Engineer
 ---

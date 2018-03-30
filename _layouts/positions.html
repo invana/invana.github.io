@@ -18,15 +18,15 @@
       <div class="col">
         <h1 class="bold">{{page.title}} |
 
-      <small>
-        {% if page.position_type == "intern" %}
+        <small>
+          {% if page.position_type == "intern" %}
 
-        <span class="">Internship Position</span>
-        {% else if page.position_type == "full_time" %}
+          <span class="">Internship Position</span>
+          {% else if page.position_type == "full_time" %}
 
-        <span class="">Full-time Position</span>
-        {% endif %}
-      </small>
+          <span class="">Full-time Position</span>
+          {% endif %}
+        </small>
         </h1>
 
         <p>{% for tech in page.technologies %} <span class="white pr-2 mr-2">{{tech}}</span> {%endfor %} </p>
@@ -38,20 +38,33 @@
   </div>
 
 </section>
-  <div class="container pt-3">
+  <div class="container pt-1">
 
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="bold">Job Description</h6>
+            {% if page.website %}
+            <p> <a href="http://{{page.website}}" target="_blank">{{page.website}}</a> </p>
+            {% endif %}
+            {% if page.position_type == "intern" %}
+              <h3>{{page.project_title}}</h3>
+            {% endif %}
+            <div class="">
+                {{page.project_abstract}}
+            </div>
+              {{ content }}
+          </div>
+        </div>
 
-    <p> <a href="http://{{page.website}}" target="_blank">{{page.website}}</a> </p>
-  {% if page.position_type == "intern" %}
-    <h3>{{page.project_title}}</h3>
-
-  {% endif %}
-    <div class="">
-        {{page.project_abstract}}
+      </div>
     </div>
-    {{ content }}
-    {% include footer.html %}
+
+
   </div>
+  {% include footer.html %}
+
 	{% include js-includes.html %}
 </body>
 
