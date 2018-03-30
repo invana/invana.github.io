@@ -45,6 +45,10 @@ a:hover {
   font-weight: 400;
   color: #666;
 }
+.jumbotron-heading{
+  font-size: 1.8rem;
+font-weight: bold;
+}
 
 .banner h1, .banner p, .banner h2 {
   color: white;

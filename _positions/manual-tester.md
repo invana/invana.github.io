@@ -2,7 +2,7 @@
 layout: positions
 title: Manual Tester
 category: Web
-technologies: [ Responsive Design testing, Cross-Browser and Cross-Device testing.]
+technologies: [ Responsive Design testing, Cross-Browser and Cross-Device testing]
 position_type: full_time
 project_title: Manual Tester
 ---
