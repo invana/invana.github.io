@@ -2,9 +2,9 @@
 layout: positions
 title: Graph Computing Intern
 category: Graph Computing
-technologies: [OrientDB, Python, TinkerPop]
+technologies: [GraphDB, Python, TinkerPop]
 position_type: intern
-project_title: Importing Cell pathway data into OrientDB
+project_title: Importing Cell pathway data into GraphDB
 ---
 
 "Graph Data and Graph Computing has been an interesting way to understand and record
