@@ -7,4 +7,5 @@ category: project
 technologies: [python, scrapy, lxml, MongoDB, Solr, Elasticsearch]
 ---
 
-A micro-framework to crawl the web pages with crawlers configs. It can use MongoDB, Elasticsearch and Solr databases to cache and save the extracted data.
+
+A micro-framework built on scrapy to crawl the sites. It can use MongoDB, Elasticsearch and Solr databases to cache the requests and also extract the data using parser configs and save them.

@@ -14,6 +14,7 @@
 <link href="/assets/css/syntax.css" rel="stylesheet">
 
 <link rel="alternate" type="application/rss+xml" title="Invana Technology Solutions" href="/feed.xml">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
 
 
 <body>
@@ -125,14 +126,16 @@
 
       </div>
     </div>
-    <div class="col col-xs-12  pt-5">
+    <div class="col col-xs-12  pt-5" id="repositories">
+
+
 
       
 
         <h6 class="bold"><a target="_blank" href="https://github.com/invanatech/web-crawler-plus">
-          Web Crawler Plus</a> </h4>
+          Web Crawler Plus</a> </h6>
           
-          <p>A micro-framework to crawl the web pages with crawlers configs. It can use MongoDB, Elasticsearch and Solr databases to cache and save the extracted data.</p>
+          <p>A micro-framework built on scrapy to crawl the sites. It can use MongoDB, Elasticsearch and Solr databases to cache the requests and also extract the data using parser configs and save them.</p>
 
         <!-- <p>Click <a href="https://github.com/invanatech/web-crawler-plus" target="_blank"  class="a">
             here</a> to know more. </p> -->
@@ -141,6 +144,45 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+
+
+
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+url = 'https://api.github.com/orgs/invanatech/repos';
+var to_ignore_repos = [
+  'invanatech.github.io',
+  'Flask-APIs-seed'
+]
+
+// $.ajax({
+//   type: 'GET',
+//   url: url,
+//   dataType: 'json',
+//   success: function(data) {
+//     console.log(data)
+//     $repositories_el = $("#repositories");
+//
+//     $.each(data, function( index, repo ) {
+//       console.log( index + ": " + repo );
+//       if(!repo.fork && to_ignore_repos.indexOf(repo.name) < 0){
+//       $el = $("<div id=\""+repo.id+ "\"></div>");
+//       $el.append('<h6 class="bold"><a target="_blank" href="'+repo.html_url+'">'+repo.name+'</a> </h6>');
+//       $el.append('<p>'+repo.open_issues_count+' <a target="_blank" href="'+repo.html_url+'">open issues</a> </p>');
+//
+//       $repositories_el.append($el);
+//       }
+//     });
+//
+//   }
+// });
+
+});
+</script>
 
   </main>
   <footer class="container">
@@ -156,8 +198,7 @@
 </footer>
 
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
 </body>

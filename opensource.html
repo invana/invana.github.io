@@ -43,12 +43,14 @@ title: Opensource @ Invana
 
       </div>
     </div>
-    <div class="col col-xs-12  pt-5">
+    <div class="col col-xs-12  pt-5" id="repositories">
+
+
 
       {% for item in site.codes %}
 
         <h6 class="bold"><a target="_blank" href="{{item.website}}">
-          {{ item.title }}</a> </h4>
+          {{ item.title }}</a> </h6>
           {% if item.image_url %}
            <img src="{{item.image_url}}" class="img-fluid" alt="">
            {% endif %}
@@ -60,3 +62,42 @@ title: Opensource @ Invana
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+
+
+
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+url = 'https://api.github.com/orgs/invanatech/repos';
+var to_ignore_repos = [
+  'invanatech.github.io',
+  'Flask-APIs-seed'
+]
+
+// $.ajax({
+//   type: 'GET',
+//   url: url,
+//   dataType: 'json',
+//   success: function(data) {
+//     console.log(data)
+//     $repositories_el = $("#repositories");
+//
+//     $.each(data, function( index, repo ) {
+//       console.log( index + ": " + repo );
+//       if(!repo.fork && to_ignore_repos.indexOf(repo.name) < 0){
+//       $el = $("<div id=\""+repo.id+ "\"></div>");
+//       $el.append('<h6 class="bold"><a target="_blank" href="'+repo.html_url+'">'+repo.name+'</a> </h6>');
+//       $el.append('<p>'+repo.open_issues_count+' <a target="_blank" href="'+repo.html_url+'">open issues</a> </p>');
+//
+//       $repositories_el.append($el);
+//       }
+//     });
+//
+//   }
+// });
+
+});
+</script>
