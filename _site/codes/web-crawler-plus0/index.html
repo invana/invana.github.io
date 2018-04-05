@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Opensource @ Invana</title>
+<title>Apache Beam io Ptransforms</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
 <!-- <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
@@ -85,117 +85,13 @@
   </div>
 </nav>
 
-  <main>
-    <!-- <section class="header banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 mt-5">
-      </div>
-    </div>
+  <div class="container pt-3">
+    <h1><i class="fab fa-github"></i> Apache Beam io Ptransforms</h1>
+    <p> <a href="http://https://github.com/invanatech/apache-beam-io-extras" target="_blank">https://github.com/invanatech/apache-beam-io-extras</a> </p>
+    <hr>
+    <p>The missing I/O PTransforms of Apache Beam in python; which already exist in Java SDK based but not yet supported in the official apache-beam module.</p>
+
   </div>
-</section> -->
-
-<style media="screen">
-
-/* // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  height: auto !important;
-} */
-
-.banner{
-  box-shadow: -220px 0px #333;
-  background: #333;
-  height: 100vh !important;
-  padding-top: 10rem;
-  /* margin-top: -1px; */
-}
-.banner h1{
-  font-size: 4rem;
-  font-weight: bold;
-}
-
-</style>
-<div class="container ">
-  <div class="row">
-    <div class="col col-xs-12 banner">
-      <h1 class="mb-0">Opensource</h1>
-      <p>At Invana, we strongly believe that Innovation needs openness and
-        Collaborations from different directions. So we always try to develop
-      as much tech as possible in opensource!</p>
-      <p><span class="ml-0">- Ravi Raja Merugu - Head of Technology, Invana </span></p>
-      <div class="clearfix">
-
-      </div>
-    </div>
-    <div class="col col-xs-12  pt-5" id="repositories">
-
-
-
-      
-
-        <h6 class="bold"><a target="_blank" href="https://github.com/invanatech/web-crawler-plus">
-          Web Crawler Plus</a> </h6>
-          
-          <p>A micro-framework built on scrapy to crawl the sites. It can use MongoDB, Elasticsearch and Solr databases to cache the requests and also extract the data using parser configs and save them.</p>
-
-        <!-- <p>Click <a href="https://github.com/invanatech/web-crawler-plus" target="_blank"  class="a">
-            here</a> to know more. </p> -->
-        <hr>
-      
-
-        <h6 class="bold"><a target="_blank" href="https://github.com/invanatech/apache-beam-io-extras">
-          Apache Beam io Ptransforms</a> </h6>
-          
-          <p>The missing I/O PTransforms of Apache Beam in python; which already exist in Java SDK based but not yet supported in the official apache-beam module.</p>
-
-        <!-- <p>Click <a href="https://github.com/invanatech/apache-beam-io-extras" target="_blank"  class="a">
-            here</a> to know more. </p> -->
-        <hr>
-      
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-
-
-
-
-$( document ).ready(function() {
-    console.log( "ready!" );
-
-url = 'https://api.github.com/orgs/invanatech/repos';
-var to_ignore_repos = [
-  'invanatech.github.io',
-  'Flask-APIs-seed'
-]
-
-// $.ajax({
-//   type: 'GET',
-//   url: url,
-//   dataType: 'json',
-//   success: function(data) {
-//     console.log(data)
-//     $repositories_el = $("#repositories");
-//
-//     $.each(data, function( index, repo ) {
-//       console.log( index + ": " + repo );
-//       if(!repo.fork && to_ignore_repos.indexOf(repo.name) < 0){
-//       $el = $("<div id=\""+repo.id+ "\"></div>");
-//       $el.append('<h6 class="bold"><a target="_blank" href="'+repo.html_url+'">'+repo.name+'</a> </h6>');
-//       $el.append('<p>'+repo.open_issues_count+' <a target="_blank" href="'+repo.html_url+'">open issues</a> </p>');
-//
-//       $repositories_el.append($el);
-//       }
-//     });
-//
-//   }
-// });
-
-});
-</script>
-
-  </main>
   <footer class="container">
   <div class="row">
     <div class="col">
