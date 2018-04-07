@@ -12,7 +12,7 @@ html, body {
 
 
 a, .a {
-  color: #4A4090 !important;
+  color: #3b67cc !important;
 }
 
 a:hover {
@@ -35,14 +35,13 @@ a:hover {
   padding: 4rem 2rem 4rem;
   /* border-bottom: 2px solid #eee; */
   margin-bottom: 2rem;
-  background: #4A4090;
-  /* background:  url(../images/bg-pattern.png),linear-gradient(to left,#4A4090,#4A4090); */
+  background: #3b67cc;
+  /* background:  url(../images/bg-pattern.png),linear-gradient(to left,#3b67cc,#3b67cc); */
   box-shadow: 0px 6px #e8e8e8;
 }
 
 .homepage h3 {
   font-size: 24px;
-  font-weight: 400;
   color: #666;
 }
 .jumbotron-heading{
@@ -81,13 +80,13 @@ footer {
 }
 
 .navbar {
-  border-bottom: 1px solid #4A4090;
-  background-color: #4A4090 ;
+  border-bottom: 1px solid #3b67cc;
+  background-color: #3b67cc ;
 
 }
 
 .navbar-top {
-  border-bottom-color: #4A4090 !important;
+  border-bottom-color: #3b67cc !important;
 }
 
 a.navbar-brand:hover {
