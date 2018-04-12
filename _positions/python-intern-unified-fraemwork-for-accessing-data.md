@@ -2,7 +2,7 @@
 layout: positions
 title: Python Intern
 category: Web
-technologies: [ Opensource, Python, API Integrations, Google Search API, Bing Search API]
+technologies: [ Opensource, Python, API Integrations, Search APIs, Wikipedia, GeoLocation, Maps ]
 position_type: intern
 project_title: Creating a unified framework for accesing different data service formats and providers
 ---
@@ -13,10 +13,11 @@ The project aims at creating a unified framework that can provide access to diff
 - video search ([youtube](https://developers.google.com/youtube/v3/quickstart/python))
 - Wikipedia ([Wikipedia-API/](https://github.com/martin-majlis/Wikipedia-API/) or [Wikipedia](https://github.com/goldsmith/Wikipedia))
 - Thesaurus (https://github.com/Manwholikespie/thesaurus-api)
+- GeoLocation
 - and more..
 
 This framework make the developers communicate and map the data between different sources.
-
+- The framework should gather data and map the data 
 ##### Requirements
 
 - Solid understanding and coding experience with Python 3x (we don't teach you python)
