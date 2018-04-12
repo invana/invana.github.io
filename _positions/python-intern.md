@@ -4,7 +4,7 @@ title: Python Intern
 category: Web
 technologies: [ Python, Scrapy, Twitter Feeds, NLP, GCP, NoSQL, Data Analytics]
 position_type: intern
-project_title: Crawling 0.1 million RSS feeds and Analysing the Big Data
+project_title: Crawling RSS feeds - Applying NLP, Classification and Analysing the Big Data
 ---
 
 The project is about crawling 0.1 million RSS Feeds on regular basis
