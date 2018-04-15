@@ -3,148 +3,199 @@ layout: default
 ---
 
 <style media="screen">
-.banner{
-  /* background:  url(/assets/images/bg-pattern.png),linear-gradient(to left,##3b67cc,#4A4090) !important; */
-  background: white;
-  padding: 30% 0 3rem;
-  box-shadow: none !important;
-  background: linear-gradient(to left,#3b67cc,#4A4090) !important;
-}
-.banner h1{
-  color: white !important;
-  margin-top:3rem;
-}
-.banner p{
-  color: #efefef !important;
-}
- body{
-   background: white;
- }
-.navbar{
-  /* background:  url(/assets/images/bg-pattern.png),linear-gradient(to left,#4A4090,#4A4090) !important; */
-  background: linear-gradient(to left,#3b67cc,#4A4090) !important;
-  border-bottom: none;
+    .banner {
+        /* background:  url(/assets/images/bg-pattern.png),linear-gradient(to left,##3b67cc,#4A4090) !important; */
+        background: white;
+        padding: 30% 0 3rem;
+        box-shadow: none !important;
+        background: linear-gradient(to left, #3b67cc, #4A4090) !important;
+    }
 
-}
+    .banner h1 {
+        color: white !important;
+        margin-top: 3rem;
+    }
 
+    .banner p {
+        color: #efefef !important;
+    }
+
+    body {
+        background: white;
+    }
+
+    .navbar {
+        /* background:  url(/assets/images/bg-pattern.png),linear-gradient(to left,#4A4090,#4A4090) !important; */
+        background: linear-gradient(to left, #3b67cc, #4A4090) !important;
+        border-bottom: none;
+
+    }
+
+    .pulse {
+
+        position: absolute;
+        right: -9rem;
+        bottom: 0;
+        display: block;
+        width: 122px;
+        height: 122px;
+        border-radius: 50%;
+        background: ;
+        cursor: pointer;
+        box-shadow: 0 0 0 white;
+        animation: pulse 2s infinite;
+    }
+
+    .pulse:hover {
+        animation: none;
+    }
+
+    @-webkit-keyframes pulse {
+        0% {
+            -webkit-box-shadow: 0 0 0 0 white;
+        }
+        70% {
+            -webkit-box-shadow: 0 0 0 20rem rgba(204, 169, 44, 0);
+        }
+        100% {
+            -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            -moz-box-shadow: 0 0 0 0 white;
+            box-shadow: 0 0 0 0 white;
+        }
+        70% {
+            -moz-box-shadow: 0 0 0 20rem rgba(204, 169, 44, 0);
+            box-shadow: 0 0 0 20rem rgba(204, 169, 44, 0);
+        }
+        100% {
+            -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+            box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        }
+    }
 
 </style>
 
 
-
 <main role="main" class="banner ">
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="  mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="  mt-5">
+
+                </div>
+                <div class="">
+
+                </div>
+
+                <div class="">
+                    <h1 class="jumbotron-heading mb-0"><span style="color: crimson !important;">//</span> Building
+                        Disruptive Technology Solutions for Deep Learning Generation.</h1>
+                    <p class="lead text-muted">
+                        Web and Mobile Applications | BigData and Predictive Analytics | Artificial Intelligence
+
+                    </p>
+                    <div class="mb-1 clearfix"></div>
+
+                </div>
+
+            </div>
+            <div class="clearfix">
+
+            </div>
 
         </div>
-        <div class="">
 
-        </div>
-
-        <div class="">
-          <h1 class="jumbotron-heading mb-0"><span style="color: crimson !important;">//</span> Building Disruptive Technology Solutions for Deep Learning Generation.</h1>
-          <p class="lead text-muted">
-            Web and Mobile Applications | BigData and Predictive Analytics | Artificial Intelligence
-
-          </p>
-          <div class="mb-1 clearfix"></div>
-
-        </div>
-
-      </div>
-      <div class="clearfix">
-
-      </div>
-
-    </div>
-    <!-- <div class="row">
-      <div class="col col-1">
-        <img class="img-fluid" src="https://www.python.org/static/opengraph-icon-200x200.png" alt="">
-      </div>
-      <div class="col col-1">
-        <img class="img-fluid" src="https://www.elastic.co/assets/blt9a26f88bfbd20eb5/icon-elasticsearch-bb.svg" alt="">
-      </div>
-      <div class="col col-2">
-        <img class="img-fluid" src="http://orientdb.com/wp-content/uploads/2014/09/orientdb_logo_2x11.png" alt="">
-      </div>
-      <div class="col col-2">
-        <img class="img-fluid" src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="">
-      </div>
-      <div class="col col-2">
-        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png" alt="">
-      </div>
-      <div class="col col-1">
-        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="">
-      </div>
-      <div class="col col-1">
-        <img class="img-fluid" src="https://camo.githubusercontent.com/b6ba9075a54c192efc59bba53c92e7c23ec8cfe8/68747470733a2f2f63646e2e7261776769742e636f6d2f67696c626172626172612f6c6f676f732f653762316463323636366333646162653663313237366162643061373637623665626436616634332f6c6f676f732f6e6f64656a732d69636f6e2e737667" alt="">
-      </div>
-      <div class="col col-1">
-        <img class="img-fluid" src="https://angular.io/assets/images/logos/angular/angular.svg" alt="">
-      </div>
-
-      <div class="col col-2">
-        <img class="img-fluid" src="https://www.djangoproject.com/s/img/logos/django-logo-positive.png" alt="">
-      </div>
-      <div class="col col-2">
-        <img class="img-fluid" src="http://flask.pocoo.org/static/logo/flask.png" alt="">
-      </div>
-      <div class="col col-2">
-        <img class="img-fluid" src="https://logos-download.com/wp-content/uploads/2016/12/Amazon_Web_Services_logo_AWS.png" alt="">
-      </div>
-      <div class="col col-3">
-        <img class="img-fluid" src="https://cloud.google.com/_static/78566a3ebb/images/cloud/gcp-logo.svg" alt="">
-      </div>
-    </div> -->
-    <!-- <div class="row">
-      <div class="col-12">
-        <hr>
-        <div class="alert alert-light" role="alert">
-          We do a lot of tech stuff in opensource. Look at our opensource
-          <a href="/internships">projects and positions</a> to get involved in the
-          tech.
+        <!-- <div class="row">
+          <div class="col col-1">
+            <img class="img-fluid" src="https://www.python.org/static/opengraph-icon-200x200.png" alt="">
           </div>
-      </div>
-    </div> -->
-    <!-- <hr> -->
-  </div>
+          <div class="col col-1">
+            <img class="img-fluid" src="https://www.elastic.co/assets/blt9a26f88bfbd20eb5/icon-elasticsearch-bb.svg" alt="">
+          </div>
+          <div class="col col-2">
+            <img class="img-fluid" src="http://orientdb.com/wp-content/uploads/2014/09/orientdb_logo_2x11.png" alt="">
+          </div>
+          <div class="col col-2">
+            <img class="img-fluid" src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="">
+          </div>
+          <div class="col col-2">
+            <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png" alt="">
+          </div>
+          <div class="col col-1">
+            <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="">
+          </div>
+          <div class="col col-1">
+            <img class="img-fluid" src="https://camo.githubusercontent.com/b6ba9075a54c192efc59bba53c92e7c23ec8cfe8/68747470733a2f2f63646e2e7261776769742e636f6d2f67696c626172626172612f6c6f676f732f653762316463323636366333646162653663313237366162643061373637623665626436616634332f6c6f676f732f6e6f64656a732d69636f6e2e737667" alt="">
+          </div>
+          <div class="col col-1">
+            <img class="img-fluid" src="https://angular.io/assets/images/logos/angular/angular.svg" alt="">
+          </div>
+
+          <div class="col col-2">
+            <img class="img-fluid" src="https://www.djangoproject.com/s/img/logos/django-logo-positive.png" alt="">
+          </div>
+          <div class="col col-2">
+            <img class="img-fluid" src="http://flask.pocoo.org/static/logo/flask.png" alt="">
+          </div>
+          <div class="col col-2">
+            <img class="img-fluid" src="https://logos-download.com/wp-content/uploads/2016/12/Amazon_Web_Services_logo_AWS.png" alt="">
+          </div>
+          <div class="col col-3">
+            <img class="img-fluid" src="https://cloud.google.com/_static/78566a3ebb/images/cloud/gcp-logo.svg" alt="">
+          </div>
+        </div> -->
+        <!-- <div class="row">
+          <div class="col-12">
+            <hr>
+            <div class="alert alert-light" role="alert">
+              We do a lot of tech stuff in opensource. Look at our opensource
+              <a href="/internships">projects and positions</a> to get involved in the
+              tech.
+              </div>
+          </div>
+        </div> -->
+        <!-- <hr> -->
+    </div>
+    <!--<span class="pulse"></span>-->
 
 </main>
 <div class="container">
 
-  <div class="row mt-5">
+    <div class="row mt-5">
 
-      <div class="col-1">
+        <div class="col-1">
 
-      </div>
-      <div class="col-5">
-          <!-- <h3 class="h4 bold">It's time for things beyond Cloud</h3> -->
+        </div>
+        <div class="col-5">
+            <!-- <h3 class="h4 bold">It's time for things beyond Cloud</h3> -->
 
-          <!-- <h3>Graph Computing</h3> -->
-      </div>
+            <!-- <h3>Graph Computing</h3> -->
+        </div>
 
-  </div>
+    </div>
 
-  <!-- <div class="row homepage">
+    <!-- <div class="row homepage">
 
-      <div class="col-6">
-          <h3 class="bold">AI for Computer Aided Drug Discovery</h3>
-          <p>graph database is a database that uses graph structures for semantic queries with nodes, edges and properties to represent and store data. A key concept of the system is the graph (or edge or relationship), which directly relates data items in the store</p>
-      </div>
-      <div class="col-6">
+        <div class="col-6">
+            <h3 class="bold">AI for Computer Aided Drug Discovery</h3>
+            <p>graph database is a database that uses graph structures for semantic queries with nodes, edges and properties to represent and store data. A key concept of the system is the graph (or edge or relationship), which directly relates data items in the store</p>
+        </div>
+        <div class="col-6">
 
-          <h3 class="bold">Automation and Assistant Bots</h3>
+            <h3 class="bold">Automation and Assistant Bots</h3>
 
-          <p>Distributed computing is a field of computer science that studies distributed systems. A distributed system is a model in which components located on networked computers communicate and coordinate their actions by passing messages</p>
-      </div>
-      <div class="col-6">
+            <p>Distributed computing is a field of computer science that studies distributed systems. A distributed system is a model in which components located on networked computers communicate and coordinate their actions by passing messages</p>
+        </div>
+        <div class="col-6">
 
-          <h3>Data Analytics</h3>
+            <h3>Data Analytics</h3>
 
-          <p>Data analysis, also known as analysis of data or data analytics, is a process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, suggesting conclusions, and supporting decision-making.</p>
-      </div>
-  </div> -->
+            <p>Data analysis, also known as analysis of data or data analytics, is a process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, suggesting conclusions, and supporting decision-making.</p>
+        </div>
+    </div> -->
 </div>
