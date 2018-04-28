@@ -149,12 +149,17 @@ section {
 }
 
 .contact {
-  background-color: #fff;
-  padding-bottom: 0;
-  .container {
-    padding: 5rem;
-    padding-bottom: 0;
+  padding: 0rem;
 
+  background-color: #fff;
+  .talk-to-us {
+    padding: 5rem;
+    padding-bottom: 0 !important;
+    h4 {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
   }
 
 }
