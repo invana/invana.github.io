@@ -48,7 +48,7 @@ a:hover {
 }
 
 .homepage-banner{
-  min-height: 75%;
+  min-height: 85%;
 }
 .homepage h3 {
   font-size: 24px;
@@ -78,6 +78,7 @@ a:hover {
 
 .jumbotron-heading {
   //margin-top: 10rem;
+
 }
 
 section.header {
@@ -128,8 +129,11 @@ section {
 }
 
 .section-heading{
-  font-size: 2.4rem;
-  font-weight: bold;
+
+      font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
 }
 
 .about{
