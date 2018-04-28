@@ -137,15 +137,16 @@ section {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 4rem;
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .about {
   padding: 5rem;
   blockquote {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     line-height: 3rem;
     color: #666;
+    font-weight: normal;
   }
 }
 
@@ -163,4 +164,47 @@ section {
     }
   }
 
+}
+
+.pulse {
+  margin: 100px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  animation: pulse 2s infinite;
+}
+
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 2rem rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(208, 206, 213, 0.4);
+    box-shadow: 0 0 0 0 rgba(208, 206, 213, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10rem rgba(208, 206, 213, 0);
+    box-shadow: 0 0 0 10rem rgba(208, 206, 213, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(208, 206, 213, 0);
+    box-shadow: 0 0 0 0 rgba(208, 206, 213, 0);
+  }
 }
