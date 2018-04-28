@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-
 html, body, h1, h2, h3, h4, h5, h6, p, li {
   font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Montserrat', sans-serif;
@@ -13,8 +12,9 @@ html, body {
   font-size: 14px;
   background: #efefef;
 }
-html, body{
-  height:100%;
+
+html, body {
+  height: 100%;
 }
 
 a, .a {
@@ -43,18 +43,20 @@ a:hover {
   margin-bottom: 2rem;
   background: #3b67cc;
   //background:  url(../images/bg-pattern.png),linear-gradient(to left,#9a5050,#27418a);
-  background:  linear-gradient(to left,#9a5050,#27418a);
+  background: linear-gradient(to left, #9a5050, #27418a);
   box-shadow: 0px 6px #e8e8e8;
 }
 
-.homepage-banner{
+.homepage-banner {
   min-height: 85%;
 }
+
 .homepage h3 {
   font-size: 24px;
   color: #666;
 }
-.jumbotron-heading{
+
+.jumbotron-heading {
   font-size: 1.8rem;
   font-weight: bold;
   padding-top: 28%;
@@ -63,11 +65,13 @@ a:hover {
 .banner h1, .banner p, .banner h2 {
   color: white;
 }
-.banner h1, .banner h2{
+
+.banner h1, .banner h2 {
   font-size: 1.8rem;
   font-weight: bold;
 
 }
+
 .text-muted {
   color: #dedede !important
 }
@@ -94,8 +98,7 @@ footer {
 .navbar {
   border-bottom: none;
   //background-color: #3b67cc ;
-      background:  linear-gradient(to left,#9a5050,#27418a);
-
+  background: linear-gradient(to left, #9a5050, #27418a);
 
 }
 
@@ -120,27 +123,38 @@ a.navbar-brand:hover {
   font-weight: bold;
 }
 
-
-.card{
+.card {
   border-radius: 0;
 }
+
 section {
   padding: 4rem 1rem;
 }
 
-.section-heading{
+.section-heading {
 
-      font-size: 1.4rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
-.about{
+.about {
   padding: 5rem;
-  blockquote{
+  blockquote {
     font-size: 1.5rem;
     line-height: 3rem;
     color: #666;
   }
+}
+
+.contact {
+  background-color: #fff;
+  padding-bottom: 0;
+  .container {
+    padding: 5rem;
+    padding-bottom: 0;
+
+  }
+
 }
