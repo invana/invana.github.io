@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +10,8 @@ export class AppComponent {
   email_id = "hello@invanatech.com";
 
   showContact() {
-   var btn = document.getElementById('contact-details');
-   btn.innerHTML = "Contact us " + this.email_id +" or +91 9052053549";
-   window.location.href= "mailto:" + this.email_id ;
+    var btn = document.getElementById('contact-details');
+    btn.innerHTML = "Contact us " + this.email_id + " or +91 9052053549";
+    window.location.href = "mailto:" + this.email_id;
   }
 }
