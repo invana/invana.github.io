@@ -14,4 +14,8 @@ export class AppComponent {
     btn.innerHTML = "Contact us " + this.email_id + " or +91 9052053549";
     window.location.href = "mailto:" + this.email_id;
   }
+  scroll(el_id) {
+  document.getElementById( el_id).scrollIntoView();
+    window.location.hash =  el_id;
+}
 }

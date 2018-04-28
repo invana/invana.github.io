@@ -7,7 +7,8 @@
       <strong>Invanatech</strong>
     </a></h5>
     <nav class="my-2 header-menu my-md-0 mr-md-3">
-      <a class="white pl-4" href="/careers/">What we do</a>
+      <a class="white pl-4" (click)="scroll('about-section')">What we do</a>
+      <a class="white pl-4" (click)="scroll('contact-section')">Contact Us</a>
       <a class="white pl-4" href="/careers/"><span class="fab fa-linkedin"></span> We are Hiring</a>
       <!--<a class="white pl-4 mr-1" href="/opensource/"> <i class="fab fa-github"></i>-->
       <!--Opensource</a>-->
@@ -48,7 +49,7 @@
 
 </main>
 
-<section>
+<section id="about-section">
   <div class="container bg-white about">
     <div class="row">
       <div class="col col-12">
@@ -129,7 +130,7 @@
   </div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact-section">
   <div class="container ">
     <div class="row">
       <div class="col-md-12 talk-to-us">
