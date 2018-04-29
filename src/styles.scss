@@ -141,7 +141,8 @@ section {
 }
 
 .about {
-  padding: 5rem;
+  padding: 2rem;
+
   blockquote {
     font-size: 2.2rem;
     line-height: 3rem;
@@ -150,20 +151,48 @@ section {
   }
 }
 
-.contact {
+.contact, .team {
   padding: 0rem;
 
   background-color: #fff;
   .talk-to-us {
-    padding: 5rem;
-    padding-bottom: 0 !important;
+    //padding: 5rem;
+    padding-bottom: 0;
     h4 {
       text-transform: uppercase;
       font-size: 1.2rem;
       font-weight: bold;
     }
   }
+}
 
+.team {
+  background: #3f51b5;
+  h4, p, h2 {
+    color: white !important;
+
+  }
+  .talk-to-us {
+    padding-top: 6rem !important;
+    padding-bottom: 16rem !important;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .contact, .team {
+    .talk-to-us {
+      padding: 5rem;
+    }
+  }
+  .team {
+    .section-heading {
+      padding: 5rem;
+    }
+  }
+  .about {
+    padding: 5rem;
+  }
 }
 
 .pulse {
