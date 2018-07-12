@@ -1,0 +1,164 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body, h1, h2, h3, h4, h5, h6, p, li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.8em;
+}
+
+html, body {
+    font-size: 14px;
+/ / background: #efefef;
+    background: white;
+}
+
+html, body {
+    height: 100%;
+}
+
+a, .a {
+    color: #0ba568;
+    cursor: pointer;
+}
+
+.nav-link {
+    font-weight: normal !important;
+    text-transform: uppercase;
+    margin-right: 1rem !important;
+}
+
+.nav-link:hover {
+    color: #0ba568 !important;
+
+}
+
+a:hover {
+    color: #0ba568;
+}
+
+.classroom-content h2, .classroom-content h3, .classroom-content h4, .classroom-content h5 {
+    font-weight: 400;
+}
+
+.banner {
+    padding: 4rem 2rem 1rem;
+    /* border-bottom: 2px solid #eee; */
+    background: white;
+    /*//background:  url(../images/bg-pattern.png),linear-gradient(to left,#9a5050,#27418a);*/
+    /*//background: linear-gradient(to top,#121d3a,#4973e6);*/
+    /*//box-shadow: 0px 6px #e8e8e8;*/
+}
+
+.homepage-banner {
+    min-height: 65%;
+}
+
+.homepage h3 {
+    font-size: 24px;
+    color: #666;
+}
+
+.jumbotron-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#homepage-banner .container {
+    padding-top: 11rem !important;
+    padding-bottom: 8rem !important;
+
+}
+
+.banner p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.banner h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-bottom: 1.2rem !important;
+    color: #545454;
+}
+
+.text-muted {
+    color: #dedede !important
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+.section-heading {
+
+    font-weight: bold;
+    /*font-size: 2.8rem;*/
+}
+
+.section-sub-heading {
+    font-size: 1.1rem;
+    color: #999999;
+}
+
+.technology-col {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.technology-col h3 {
+    font-weight: bold;
+    line-height: 2.8rem;
+
+}
+
+.technology-col p {
+    color: #666666;
+    font-size: 1.2rem;
+}
+
+.team {
+    background: #0ba568;
+}
+
+.team h4, .team p, .team h2 {
+    color: white !important;
+
+}
+
+.team.talk-to-us {
+    padding-top: 6rem !important;
+    padding-bottom: 16rem !important;
+}
+
+.team a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+    .contact, .team
+    .talk-to-us {
+        padding: 5rem;
+    }
+
+    .team .section-heading {
+        padding: 5rem;
+    }
+}
+
+.secondary-header {
+    /*border-bottom: 1px solid #efefef;*/
+    /*font-size: 3.2rem !important;*/
+}
+
+.navbar-brand {
+    color: #0ba568 !important;
+}
+
+.btn-success {
+    background: #0ba568 !important;
+    border-color: #0ba568 !important;
+}
