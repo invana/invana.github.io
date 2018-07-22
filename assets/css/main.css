@@ -32,7 +32,11 @@ a, .a {
     color: #0ba568 !important;
 
 }
-
+footer .nav-link{
+  font-weight: normal !important;
+  text-transform: capitalize;
+  margin-right: 1rem !important;
+}
 a:hover {
     color: #0ba568;
 }
@@ -71,7 +75,7 @@ a:hover {
 }
 
 .banner p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #777;
 }
 
@@ -98,7 +102,7 @@ footer {
 }
 
 .section-sub-heading {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: #999999;
 }
 
@@ -161,4 +165,28 @@ footer {
 .btn-success {
     background: #0ba568 !important;
     border-color: #0ba568 !important;
+}
+
+.navbar-top {
+    border-bottom: 1px solid #ececec;
+}
+
+.navbar-bottom {
+    padding: 0;
+}
+
+.navbar-bottom .nav-link, .navbar-bottom .dropdown-item {
+    font-size: 14px;
+}
+.nav-explore{
+  font-weight: bold !important;
+color: #0ca567 !important;
+}
+
+.aw{
+  background: #0ba568 !important;
+  color: #fff;
+  padding: 0 10px !important;
+  margin: 0 10px;
+  margin-left: 0;
 }
