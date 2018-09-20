@@ -18,7 +18,12 @@ html, body {
 .fw-400{
   font-weight: 400 !important;
 }
-.industries li{
+.list-process li{
+
+    font-weight: bold;
+    color: #555555;
+}
+.industries li, .list-process li{
   padding-bottom: .5rem;
   font-size: 1.2rem;
 }
@@ -63,7 +68,8 @@ a:hover {
 }
 
 .banner {
-padding: 20% 2rem 10%;
+    padding-top: 20%;
+    padding-bottom: 10%;
     /* border-bottom: 2px solid #eee; */
     background: white;
     /*//background:  url(../images/bg-pattern.png),linear-gradient(to left,#9a5050,#27418a);*/
@@ -72,7 +78,8 @@ padding: 20% 2rem 10%;
 }
 
 .contact-banner {
-padding: 10% 2rem 10%;
+    padding-top: 20%;
+    padding-bottom: 10%;
     /* border-bottom: 2px solid #eee; */
     background: white;
     /*//background:  url(../images/bg-pattern.png),linear-gradient(to left,#9a5050,#27418a);*/
