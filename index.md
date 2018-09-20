@@ -3,5 +3,5 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-title: "Build and Deploy Technology Skills for your Applications with our Deep Learning and Knowledge Graph Solutions"
+title: "AI driven Applications Development Company"
 ---

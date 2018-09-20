@@ -24,7 +24,9 @@ title: Contact Us | Invana
                     Hitech City,
                     Hyderabad - 500081.
                 </p>
-                <p><a target="_blank" class="bold" href="https://www.google.co.in/maps/dir//91springboard+hitec+city+hyderabad+google+maps/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bcb93da8c1e7057:0x704b969717cc250d?sa=X&ved=2ahUKEwiIn9q0rsndAhUGfysKHfd-DRcQ9RcwC3oECAoQEQ">get directions</a></p>
+                <p><a target="_blank" class="bold"
+                      href="https://www.google.co.in/maps/dir//91springboard+hitec+city+hyderabad+google+maps/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bcb93da8c1e7057:0x704b969717cc250d?sa=X&ved=2ahUKEwiIn9q0rsndAhUGfysKHfd-DRcQ9RcwC3oECAoQEQ">get
+                    directions</a></p>
                 <hr>
                 <h4 class="bold">Reach us at</h4>
                 <p>hello@invanatech.com | +91 9052 053 549</p>
@@ -39,7 +41,7 @@ title: Contact Us | Invana
     <div class="container ">
         <div class="row">
             <div class="col-md-12  mt-5">
-                <h4 class="text-center bold">                     Just fill the below details, we will connect to you
+                <h4 class="text-center bold"> Just fill the below details, we will connect to you
 
                 </h4>
             </div>
@@ -49,24 +51,27 @@ title: Contact Us | Invana
 
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control form-control-lg" id="name" >
+                        <input type="text" required class="form-control form-control-lg" id="name">
                     </div>
                     <div class="form-group">
                         <label for="company">Company</label>
-                        <input type="text" class="form-control form-control-lg" id="company" >
+                        <input type="text" required class="form-control form-control-lg" id="company">
                     </div>
                     <div class="form-group">
                         <label for="email">Email address</label>
-                        <input type="email" class="form-control form-control-lg" id="email" >
+                        <input type="email" required class="form-control form-control-lg" id="email">
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                     <div class="form-group">
                         <label for="description">Please give us a brief idea of the project.</label>
-                        <textarea class="form-control form-control-lg" rows="4" id="description"></textarea>
+                        <textarea required class="form-control form-control-lg" rows="4" id="description"></textarea>
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
-                    <button type="submit" class="btn btn-success btn-block">Send Message</button>
+                    <button type="submit" id="send-message" class="btn btn-success btn-block">Send Message</button>
+
+                    <div id="contact-result"></div>
                 </form>
+
 
 
             </div>

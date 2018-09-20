@@ -1,4 +1,4 @@
-# invanalabs.ai
+# invanatech.com
 
 
 deploy to `gh-pages` using `git subtree push --prefix _site origin gh-pages`
