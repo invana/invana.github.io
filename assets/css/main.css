@@ -12,7 +12,24 @@ html, body {
 / / background: #efefef;
     background: white;
 }
+.bold{
+  font-weight: bold;
+}
+.fw-400{
+  font-weight: 400 !important;
+}
+.industries li{
+  padding-bottom: .5rem;
+  font-size: 1.2rem;
+}
 
+.bullet-points h5{
+  color: #555 !important;
+}
+section#what-we-do {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
 html, body {
     height: 100%;
 }
@@ -46,7 +63,16 @@ a:hover {
 }
 
 .banner {
-    padding: 4rem 2rem 1rem;
+padding: 20% 2rem 10%;
+    /* border-bottom: 2px solid #eee; */
+    background: white;
+    /*//background:  url(../images/bg-pattern.png),linear-gradient(to left,#9a5050,#27418a);*/
+    /*//background: linear-gradient(to top,#121d3a,#4973e6);*/
+    /*//box-shadow: 0px 6px #e8e8e8;*/
+}
+
+.contact-banner {
+padding: 10% 2rem 10%;
     /* border-bottom: 2px solid #eee; */
     background: white;
     /*//background:  url(../images/bg-pattern.png),linear-gradient(to left,#9a5050,#27418a);*/
@@ -55,7 +81,7 @@ a:hover {
 }
 
 .homepage-banner {
-    min-height: 65%;
+    /*min-height: 90%;*/
 }
 
 .homepage h3 {
@@ -64,13 +90,13 @@ a:hover {
 }
 
 .jumbotron-heading {
-    font-size: 1.8rem;
+    font-size: 2.4rem !important;
     font-weight: bold;
 }
 
 #homepage-banner .container {
-    padding-top: 11rem !important;
-    padding-bottom: 8rem !important;
+    /* padding-top: 8rem !important; */
+    /* padding-bottom: 8rem !important; */
 
 }
 
@@ -92,7 +118,7 @@ a:hover {
 }
 
 footer {
-    margin-top: 3rem;
+    margin-top: 0rem;
 }
 
 .section-heading {
@@ -123,12 +149,11 @@ footer {
 }
 
 .team {
-    background: #0ba568;
+    /* background: #0ba568; */
 }
 
 .team h4, .team p, .team h2 {
     color: white !important;
-
 }
 
 .team.talk-to-us {
