@@ -6,20 +6,25 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             url: "https://asia-northeast1-aerial-mission-208308.cloudfunctions.net/function-1",
-            data: {
+            data: JSON.stringify({
                 "name": $("#name").val(),
                 "organisation": $("#organisation").val(),
                 "email": $("#email").val(),
                 "description": $("#description").val(),
+            }),
+            headers : {
+              "Content-Type": "application/json"
             },
-            processData: false,
-            success: function (msg) {
+
+            success: function (result) {
                 $("#contact-result").append("Message sent successfully");
             },
-            error: function (msg) {
+            error: function (xhr, ajaxOptions, thrownError) {
+                console.log(xhr);
                 $("#contact-result").append("Fail to send you message, please send us email at hello@invanatech.com ");
 
             }
+
         });
     };
 
@@ -28,7 +33,7 @@ $(document).ready(function () {
     });
 
     $('form').submit(function (event) {
-           event.preventDefault();
+        event.preventDefault();
 
         send_email();
     });
