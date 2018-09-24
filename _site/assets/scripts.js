@@ -2,21 +2,28 @@
 $(document).ready(function () {
     console.log("ready!");
 
+
+    console.log(JSON.stringify({
+                "name": $("#name").val(),
+                "organisation": $("#organisation").val(),
+                "email": $("#email").val(),
+                "description": $("#description").val(),
+            }));
     var send_email = function () {
         $.ajax({
+
             type: "POST",
             url: "https://asia-northeast1-aerial-mission-208308.cloudfunctions.net/function-1",
-            data: JSON.stringify({
+            data:  JSON.stringify({
                 "name": $("#name").val(),
                 "organisation": $("#organisation").val(),
                 "email": $("#email").val(),
                 "description": $("#description").val(),
             }),
-            headers : {
-              "Content-Type": "application/json"
-            },
+    dataType : "json",
+            contentType: "application/json",
 
-            success: function (result) {
+            done: function (result) {
                 $("#contact-result").append("Message sent successfully");
             },
             error: function (xhr, ajaxOptions, thrownError) {
@@ -39,3 +46,5 @@ $(document).ready(function () {
     });
 
 });
+
+
