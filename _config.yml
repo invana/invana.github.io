@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: invaana
 #github_username:  invaana
-permalink: /:categories/:title/
+permalink: /:categories/:title
 
 
 markdown: kramdown
@@ -51,4 +51,4 @@ exclude:
 collections:
   projects       :
     output    : true
-    permalink : /:collection/:title/
+    permalink : /:collection/:title
