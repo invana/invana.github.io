@@ -12,29 +12,35 @@ html, body {
 / / background: #efefef;
     background: white;
 }
-.bold{
-  font-weight: bold;
+
+.bold {
+    font-weight: bold;
 }
-.fw-400{
-  font-weight: 400 !important;
+
+.fw-400 {
+    font-weight: 400 !important;
 }
-.list-process li{
+
+.list-process li {
 
     font-weight: bold;
     color: #555555;
 }
-.industries li, .list-process li{
-  padding-bottom: .5rem;
-  font-size: 1.2rem;
+
+.industries li, .list-process li {
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
 }
 
-.bullet-points h5{
-  color: #555 !important;
+.bullet-points h5 {
+    color: #555 !important;
 }
+
 section#what-we-do {
     padding-bottom: 5rem;
     padding-top: 5rem;
 }
+
 html, body {
     height: 100%;
 }
@@ -54,11 +60,13 @@ a, .a {
     color: #0ba568 !important;
 
 }
-footer .nav-link{
-  font-weight: normal !important;
-  text-transform: capitalize;
-  margin-right: 1rem !important;
+
+footer .nav-link {
+    font-weight: normal !important;
+    text-transform: capitalize;
+    margin-right: 1rem !important;
 }
+
 a:hover {
     color: #0ba568;
 }
@@ -210,15 +218,35 @@ footer {
 .navbar-bottom .nav-link, .navbar-bottom .dropdown-item {
     font-size: 14px;
 }
-.nav-explore{
-  font-weight: bold !important;
-color: #0ca567 !important;
+
+.nav-explore {
+    font-weight: bold !important;
+    color: #0ca567 !important;
 }
 
-.aw{
-  background: #0ba568 !important;
-  color: #fff;
-  padding: 0 10px !important;
-  margin: 0 10px;
-  margin-left: 0;
+.aw {
+    background: #0ba568 !important;
+    color: #fff;
+    padding: 0 10px !important;
+    margin: 0 10px;
+    margin-left: 0;
+}
+
+.features .col-md-3 {
+    border: 1px solid #dedede;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.features h3{
+    text-align: center;
+    padding-bottom: 3rem;
+
+}
+
+.features-section {
+    background: #efefef;
+    padding-top: 9rem;
+    padding-bottom: 15rem;
 }
