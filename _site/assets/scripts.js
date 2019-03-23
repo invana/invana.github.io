@@ -28,7 +28,7 @@ $(document).ready(function () {
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 console.log(xhr);
-                $("#contact-result").append("Fail to send you message, please send us email at hello@invanatech.com ");
+                $("#contact-result").append("Fail to send you message, please send us email at hello@invanalabs.ai ");
 
             }
 
