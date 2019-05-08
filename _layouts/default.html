@@ -1,16 +1,23 @@
-
 <!DOCTYPE html>
 <html>
 {% include head.html %}
 
 <body>
-  {% include nav.html %}
-  {% include header.html %}
-  <main style="height:80%">
+{% include nav.html %}
+{% include header.html %}
+<main style="height:80%">
     {{ content }}
     {% include footer.html %}
-  </main>
-	{% include js-includes.html %}
+</main>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4171975485780139",
+        enable_page_level_ads: true
+    });
+</script>
+{% include js-includes.html %}
 </body>
 
 </html>
