@@ -49,6 +49,12 @@ exclude:
 # include: ['_pages', '_posts']
 
 collections:
-  projects       :
+  products:
+    output    : true
+    permalink : /:collection/:title
+  company:
+    output    : true
+    permalink : /:collection/:title
+  resources:
     output    : true
     permalink : /:collection/:title
