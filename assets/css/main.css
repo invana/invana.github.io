@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body, h1, h2, h3, h4, h5, h6, p, li {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6em;
 }
 
@@ -11,8 +11,22 @@ html, body {
     color: #333;
 }
 
+p {
+    color: #666666;
+}
+
 .bold {
     font-weight: bold;
+}
+
+h4 {
+    font-size: 18px !important;
+    /*font-weight: bold;*/
+}
+
+h3 {
+    font-size: 24px !important;
+    /*font-weight: bold !important;*/
 }
 
 .primary-color {
@@ -20,16 +34,52 @@ html, body {
 }
 
 .banner.homepage-banner {
-    background-image: linear-gradient(to top, #613E67, #362C6E);
-    min-height: 550px;
-    height: 90vh;
+    /*background-image: linear-gradient(to top, #613E67, #362C6E);*/
+    height: 100vh;
+    /*height: 90vh;*/
     color: white !important;
+    /*background: url("https://www.imandra.ai/assets/images/www/intro__background-cover--main-fd5cf8380766a67bc977f85adacbf8a1.svg") 52% -11em/3000px no-repeat,url("https://www.imandra.ai/assets/images/www/intro_asset_78-e7eeef1052a3e74f24e85aea0ea2a509.svg") top/1900px no-repeat,radial-gradient(circle at top left,#051e3f 0,#084d9a 8%,#1071c0 12%,#0d65b6 40%,#053774);;*/
+    background: url("https://www.imandra.ai/assets/images/www/intro_asset_78-e7eeef1052a3e74f24e85aea0ea2a509.svg") top/1900px no-repeat, radial-gradient(circle at top left, #051e3f 0, #084d9a 8%, #1071c0 12%, #0d65b6 40%, #053774);
+}
+
+.banner {
+    /*color: white !important;*/
+    /*background: url("https://www.imandra.ai/assets/images/www/intro__background-cover--main-fd5cf8380766a67bc977f85adacbf8a1.svg") 52% -11em/3000px no-repeat,url("https://www.imandra.ai/assets/images/www/intro_asset_78-e7eeef1052a3e74f24e85aea0ea2a509.svg") top/1900px no-repeat,radial-gradient(circle at top left,#051e3f 0,#084d9a 8%,#1071c0 12%,#0d65b6 40%,#053774);;*/
+    background: #efefef;
+
+}
+
+.banner h1 {
+    padding-top: 2rem;
 }
 
 .homepage-banner h1 {
     font-size: 2rem;
     line-height: 2.6rem !important;
-    padding-top: 20rem;
+    padding-top: 25%;
+}
+
+.homepage-banner p {
+    color: inherit;
+}
+
+.homepage-secondary-section {
+    top: -3rem;
+    margin-bottom: 6rem;
+}
+
+.homepage-secondary-section .inner-section {
+    border: 1px solid #efefef;
+    border-radius: 1px;
+    padding: 3rem;
+    margin-top: -8rem;
+    background: white;
+}
+
+.homepage-secondary-section h3 {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
 }
 
 .fw-400 {
@@ -47,15 +97,18 @@ html, body {
 .why-invana-dropdown {
     width: 350px;
 }
+
 .dropdown-menu-wide {
     width: 350px !important;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     width: 220px;
 }
-.dropdown-menu-wide .nav-link, .dropdown-menu .nav-link{
-    padding-left: 0  !important;
-    padding-right: 0  !important;
+
+.dropdown-menu-wide .nav-link, .dropdown-menu .nav-link {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .navbar-nav .dropdown-menu {
@@ -63,22 +116,24 @@ html, body {
 }
 
 .dropdown-menu h4 {
-    margin-bottom: 0;
-    font-size: 1.2rem;
+ margin-bottom: 0;
+    font-size: 1.1rem !important;
     color: #333;
     padding: 0;
+    font-weight: bold;
 }
 
 .dropdown-menu p {
     color: #777;
     padding: 0;
+        font-size: 14px !important;
+        /*margin-bottom: 0;*/
 }
 
 .products-dropdown li a.nav-link:hover p,
 .products-dropdown li a.nav-link:hover h4,
 .dropdown-menu .nav-link:hover {
     color: #0ba568 !important;
-
 }
 
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
@@ -87,4 +142,26 @@ html, body {
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(0, 0, 0, .7);
+}
+
+
+.card-pricing.popular {
+    z-index: 1;
+    border: 3px solid #007bff;
+}
+.card-pricing .list-unstyled li {
+    padding: .5rem 0;
+    color: #6c757d;
+}
+
+.product-banner{
+    padding-bottom: 5rem;
+}
+.product-banner p{
+    font-size: 20px;
+}
+.product-banner h1{
+font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
 }
