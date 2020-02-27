@@ -1,37 +1,97 @@
 ---
 layout: default
+title: Create Data and Knowledge APIs in realtime.
 ---
 
+<style type="text/css">
 
-<section class="banner homepage-banner" id="homepage-banner" role="main">
+    .animate-text {
+        animation-name: head;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+
+    }
+
+
+    @keyframes head {
+        0% {
+            opacity: .5;
+        }
+        15% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+</style>
+<section class="banner homepage-banner page-height" role="main">
 
     <div class="container">
         <div class="row">
-            <div class=" col-md-8 ">
-                <h1 class="bold">
-                    <span class="primary-color">Invana</span> Knowledge Platform
-                </h1>
+            <div class=" col-md-6 ">
+                <h1><span id="banner-heading" class="animate-text">Enrich and Transform data</span> <br> <s>near</s>
+                    realtime at Scale</h1>
                 <p>
-                    A suite of web scrapers, artificial intelligence and automation engines
-                    to create pool of well-connected facts and experiences called "Knowledge".
-                    The experience-based knowledge can be used in the era of Artificial Intelligence to
-                    create great User Experiences, Accelerate Scientific Research and more..
+
+                    <!-- Orchestrate Intelligence brewing  Microservices from unstructured and structured data in near realtime at Scale. Deploy workers to automate your data pipelines, knowledge extraction and management. -->
+                    <!--Invana is an open source engine that connects to your databases, -->
+                    <!--streams of data and knowledge brewing microservices instantly giving -->
+                    <!--you a production-ready GraphQL Knowledge API .-->
+
+
+                    Invana is an open source distributed processing engine aiming to allow you run microservices
+                    on top of your data(static or streams), giving
+                    you a <s>production-ready</s> Knowledge and Data APIs in <s>near</s> realtime.
+
+
+                    <!-- Convert structured and unstructured data into Knowledge APIs.  -->
+
+                    <!-- Automate Knowledge extraction from unstructured and structured data at Scale in near-Realtime.  -->
+
+                    <!-- Invana Empowers Innovations with the data and intelligence that can be leveraged with it.. -->
+
+                    <!-- Automate your Data pipelines at Scale. -->
+
+                    <!-- A suite of web scrapers, artificial intelligence and automation engines -->
+                    <!-- to create pool of well-connected experience-based facts called "Knowledge". -->
+                    <!-- Such knowledge can be used to Accelerate Scientific Research, Improve Health Care,  -->
+                    <!-- enhance Customer Experiences in e-commerce, Evaluating Good Governance and more.. -->
                 </p>
-                <a class="btn btn-success homepage-btn btn-lg" target="_blank"
-                href="http://linkedin.com/company/invanalabs">Get in touch</a>
-            </div>
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-12">
-                <p></p>
+
+                <!-- <a class="btn btn-outline-light btn-lg " href="/roadmap/">Checkout Roadmap</a> -->
+           <!--      <div class="input-group mb-3">
+                  <input type="text" class="form-control form-control-lg" placeholder="john.doe@invanalabs.ai">
+                  <div class="input-group-append">
+                    <button class="btn btn-lg btn-secondary" type="button">Get Notified</button>
+                  </div>
+                </div> -->
+                <div class="clearfix"></div>
             </div>
         </div>
-
-
     </div>
-
 </section>
 
 
+<script type="application/javascript">
+    window.onload = function () {
+        console.log("Great. Connect to me at https://github.com/rrmerugu ");
+        var headings = ["Get Data Insights", "Build Data APIs", "Brew Knowledge Graphs", "Enrich and Transform data" ];
+        var heading_index = 0;
+        setInterval(function () {
+            document.getElementById("banner-heading").innerHTML = headings[heading_index];
+            if (heading_index === headings.length - 1) {
+                heading_index = 0;
+            } else {
+                heading_index += 1;
+            }
+        }, 5000);
+    }
+</script>
 
 

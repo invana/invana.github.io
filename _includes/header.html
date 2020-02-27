@@ -1,4 +1,26 @@
-<nav class="navbar  navbar-expand-md navbar-light bg-white navbar-top">
+ <style type="text/css">
+     .beta-notification{
+        background: #444;
+        padding: 5px;
+        color: #a1a1a1;
+        text-align: center;
+     }
+     .beta-notification span{
+        border: 1px solid orange;
+        padding: 1px 6px;
+        border-radius: 2px;
+     }
+ </style>
+ <section class="beta-notification">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                We are currently in <span>beta</span> . Click here to get notified about any updates.
+            </div>
+        </div>
+    </div>
+</section>
+<nav class="navbar  navbar-expand-md navbar-dark bg-primary  navbar-top">
     <div class="container">
 
         <a class="navbar-brand" href="{{site.baseurl}}/">
@@ -12,28 +34,72 @@
 
             <ul class="navbar-nav mr-auto">
 
+               <li class="nav-item">
+                    <a class="nav-link nav-item mr-2" href="/technology/">
+                        Technology
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-item mr-2" href="/use-cases/">
+                        Use Cases
+                    </a>
+                </li>
+     
 
+            
             </ul>
 
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link nav-item" target="_blank" href="https://medium.com/invanalabs">
-                        <i class="fab fa-medium"></i>
+     <li class="nav-item">
+                    <a class="nav-link nav-item" href="/blog/">
+                        Blog
                     </a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link  nav-item" target="_blank" href="https://www.linkedin.com/company/invanalabs">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a></li>
+                    <span class="nav-link nav-item">
+                        |
+                    </span>
+                </li>
                 <li class="nav-item">
-
-
-                    <a class="nav-link  nav-item" target="_blank" href="https://github.com/invanalabs">
+                  <a class="nav-link nav-item" target="_blank" href="https://github.com/invanalabs">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
+                   <li class="nav-item">
+                  <a class="nav-link nav-item" target="_blank" href="https://medium.com/invanalabs">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link nav-item">
+                        |
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-item btn btn-outline-light pl-3 pr-3" target="_blank" href="https://github.com/rrmerugu">
+                        Contact us
+                    </a>
+                </li>
+
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link nav-item" target="_blank" href="https://medium.com/invanalabs">-->
+                <!--<i class="fab fa-medium"></i>-->
+                <!--</a>-->
+                <!--</li>-->
+
+                <!--<li class="nav-item">-->
+
+                <!--<a class="nav-link  nav-item" target="_blank" href="https://www.linkedin.com/company/invanalabs">-->
+                <!--<i class="fab fa-linkedin-in"></i>-->
+                <!--</a></li>-->
+                <!--<li class="nav-item">-->
+
+
+                <!--<a class="nav-link  nav-item" target="_blank" href="https://github.com/invanalabs">-->
+                <!--<i class="fab fa-github"></i>-->
+                <!--</a>-->
+                <!--</li>-->
             </ul>
         </div>
     </div>

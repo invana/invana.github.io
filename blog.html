@@ -1,0 +1,50 @@
+---
+layout: default
+title: Blog - Updates and Research Notes
+---
+<style>
+
+</style>
+<section class="heading-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Invana Blog</h1>
+                <p>Product updates, our learnings, tips and stories from the world of data and automation.</p>
+            </div>
+            <!--<div class="col-md-12">-->
+                <!--<ul class="nav">-->
+
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link pl-0" href="#">Updates</a>-->
+                    <!--</li>-->
+                       <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" href="#">Use Cases</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item ">-->
+                        <!--<a class="nav-link " href="#">Research</a>-->
+                    <!--</li>-->
+
+
+                <!--</ul>-->
+            <!--</div>-->
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-md-8" style="min-height: 400px">
+            {% for post in site.posts %}
+            {% if post.post_type == 'default' %}
+            {% include blog/default.html %}
+            {% endif%}
+            {% endfor %}
+        </div>
+
+    </div>
+
+
+</div>
