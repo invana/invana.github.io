@@ -6,33 +6,82 @@
     color: #dfdfdf !important;
 
 }
-a{
+
+a {
     color: #232323;
 }
 
-html, body{
+.animate-text {
+    animation-name: head;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+
+}
+
+
+.blog-menu {
+    display: inline;
+}
+
+.blog-menu .nav-item {
+    display: inline;
+    margin-right: 6px;
+}
+
+@keyframes head {
+    0% {
+        opacity: .5;
+    }
+    15% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html, body {
     height: 100%;
     font-size: 14px;
     line-height: 1.8rem;
 }
-.homepage-banner h1{
-    margin-top: 200px;
+
+.homepage-banner .company-info {
+    margin-top: 10rem;
+    border-radius: 2px;
+    background: #134c82;
+    border: 1px solid #2a6092;
+    padding: 5px 15px;
+    display: inline-block;
+    color: white;
+}
+
+.homepage-banner h1 {
+    margin-top: 3rem;
     font-weight: 700;
     font-size: 3rem;
     color: white;
 }
-.homepage-banner h1 span{
+
+.homepage-banner h1 span {
     /*color: #1971c2;*/
 }
-.homepage-banner p{
+
+.homepage-banner p {
     font-size: 1.2rem;
     color: #fff4f4;
-    line-height:1.8rem
+    line-height: 1.8rem
 }
-.page-height{
+
+.page-height {
     /*min-height:500px; */
 }
-.homepage-banner{
+
+.homepage-banner {
     background: #1971c2;
     min-height: 87vh;
 }
@@ -43,21 +92,23 @@ html, body{
 
     padding: 50px 0 0 0;
     border-bottom: 1px solid #efefef;
-    color:  #333 !important;
+    color: #333 !important;
     border-bottom: 1px solid #eaeaea;
     margin-bottom: 20px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: .55rem;
         padding-left: .55rem;
     }
 }
+
 ul.list, ol.list {
     margin-left: 0;
     padding-left: 20px;
 }
-nav.navbar-top{
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 2px 6px 2px rgba(60,64,67,.15);
+
+nav.navbar-top {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
 }
