@@ -9,6 +9,19 @@
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,900&display=swap" rel="stylesheet">
     <link href="{{ 'public/styles/main.css' | relative_url }}?v=1" rel="stylesheet">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "feed.xml" | relative_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ " feed.xml" | relative_url }}">
     <meta name="description" content="{{site.description}}"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159301905-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159301905-1');
+    </script>
+
 </head>
