@@ -5,18 +5,17 @@ title: RSS Feed
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>{{ site.name | xml_escape }}</title>
+		<title>{{ site.title | xml_escape }}</title>
 		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
 		<link>{{ site.site_url }}</link>
 		<atom:link href="{{ site.site_url }}/feed.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.pages limit:10 %}
-		{% if post.title != "Page Not Found" and post.title != "RSS Feed" %}
+		{% for page in site.pages limit:10 %}
+		{% if page.title != "Page Not Found" and page.title != "RSS Feed" %}
 			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				<description>{{ post.description | xml_escape }}</description>
-				<pubDate>{{ post.date | date: "%Y-%m-%dT%H:%M:%S%z" }}</pubDate>
-				<link>{{ site.site_url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.site_url }}{{ post.url }}</guid>
+				<title>{{ page.title | xml_escape }}</title>
+				<description>{{ page.description | xml_escape }}</description>
+				<link>{{ page.site_url }}{{ page.url }}</link>
+				<guid isPermaLink="true">{{ site.site_url }}{{ page.url }}</guid>
 			</item>
 		{% endif %}
 		{% endfor %}

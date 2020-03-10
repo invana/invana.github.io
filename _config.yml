@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Create Data and Knowledge APIs in realtime | Invana
+title: Enrich your data with information available on the Internet | Invana
 email: hi@invanalabs.ai
 description: >- # this means to ignore newlines until "baseurl:"
   Connect to your databases, microservices or data from internet and create Knowledge & Data APIs in near realtime
