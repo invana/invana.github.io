@@ -14,7 +14,7 @@ title: RSS Feed
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<description>{{ post.description | xml_escape }}</description>
-				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+				<pubDate>{{ post.date | date: "%Y-%m-%dT%H:%M:%S%z" }}</pubDate>
 				<link>{{ site.site_url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.site_url }}{{ post.url }}</guid>
 			</item>
