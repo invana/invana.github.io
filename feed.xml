@@ -19,14 +19,5 @@ title: RSS Feed
 			</item>
 		{% endif %}
 		{% endfor %}
-		{% for post in site.posts limit:10 %}
-			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				<description>{{ post.content | xml_escape }}</description>
-				<pubDate>{{ post.date | date: "%Y-%m-%dT%H:%M:%S%z" }}</pubDate>
-				<link>{{ site.site_url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.site_url }}{{ post.url }}</guid>
-			</item>
-		{% endfor %}
 	</channel>
 </rss>
