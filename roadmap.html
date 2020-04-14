@@ -55,9 +55,8 @@ description: Status of the Roadmap of Invana's Technology.
     $(document).ready(function () {
 
 
-        let headers = {"Authorization": "token e971719115b11303424ceadaeb17f2235a1b1e7e"};
+        let headers = {};
         let preview_feature_headers = {
-            "Authorization": "token e971719115b11303424ceadaeb17f2235a1b1e7e",
             "Accept": "application/vnd.github.mercy-preview+json"
         };
 
@@ -89,9 +88,7 @@ description: Status of the Roadmap of Invana's Technology.
                     data.forEach(function (datum) {
                         if (datum.name === repo_name) {
                             let last_commit_url = "https://api.github.com/repos/invanalabs/" + datum.name + "/commits?sha=" + datum.default_branch;
-
                             let topics_url = "https://api.github.com/repos/invanalabs/" + datum.name + "/topics";
-
                             $.ajax({
                                 url: topics_url,
                                 type: 'GET',
