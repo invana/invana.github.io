@@ -16,7 +16,7 @@ h4, h5, h6 {
 }
 
 .roadmap-table a {
-    color: #232323;
+    color: #2d2d2d;
     /*text-decoration: underline;*/
 }
 
@@ -72,10 +72,10 @@ html, body {
 }
 
 .homepage-banner .company-info {
-    margin-top: 10rem;
+    margin-top: 8rem;
     border-radius: 2px;
-    background: #134c82;
-    border: 1px solid #2a6092;
+    background: #182848;
+    border: 1px solid #182848;
     padding: 5px 15px;
     display: inline-block;
     color: white;
@@ -85,7 +85,11 @@ html, body {
     margin-top: 3rem;
     font-weight: 700;
     font-size: 3rem;
-    color: white;
+}
+
+.homepage-banner h1, .homepage-banner p {
+    color: #d8d8d8;
+    /*color: #424242 !important;*/
 }
 
 .homepage-banner h1 span {
@@ -94,7 +98,6 @@ html, body {
 
 .homepage-banner p {
     font-size: 1.2rem;
-    color: #fff4f4;
     line-height: 1.8rem
 }
 
@@ -102,9 +105,28 @@ html, body {
     /*min-height:500px; */
 }
 
+.homepage-icon {
+    background: rgba(25, 41, 74, 0.45);
+    /*width: 252px;*/
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.homepage-techstack {
+    margin-top: 7rem;
+}
+
 .homepage-banner {
+
+
+    /*linear-gradient(to left,#4a528a,#312842)*/
+
     background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
-    /*background: linear-gradient(90deg, #2f4263 0%, #45526e 100%);*/
+
+    /*background: url(https://invaana.github.io/img/bg-pattern.png), linear-gradient(90deg, #182848 0%, #213864 40%, #4b6cb7 100%);*/
+    /*background:  linear-gradient(90deg, #182848 0%, #213864 40%, #4b6cb7 100%);*/
     min-height: 87vh;
 }
 
@@ -145,8 +167,9 @@ ul.list, ol.list {
     margin-left: 0;
     padding-left: 20px;
 }
-.btn-secondary{
-background: linear-gradient(90deg, #d53369 0%, #da496e 100%);
+
+.btn-secondary {
+    background: linear-gradient(90deg, #d53369 0%, #da496e 100%);
     border-color: #d53369 !important;
 }
 

@@ -41,6 +41,8 @@ description: Status of the Roadmap of Invana's Technology.
                     </tr>
                     </tbody>
                 </table>
+                <p class="text-muted">Note: Roadmap data is gathered using GitHub public APIs, if no data is populated, it might be
+                    because you hit a throttle limit on your IP address(may be). Try in some time.</p>
             </div>
 
 
@@ -112,15 +114,15 @@ description: Status of the Roadmap of Invana's Technology.
                                             var datestring = date_obj.getDate() + " " + month_names[date_obj.getMonth()] + ", " + date_obj.getFullYear();
 
                                             let topics_html = "";
-                                            topics_data.names.forEach(function(topic){
-                                                topics_html  += "<span class='badge badge-secondary mr-2'>" + topic + "</span>";
+                                            topics_data.names.forEach(function (topic) {
+                                                topics_html += "<span class='badge badge-secondary mr-2'>" + topic + "</span>";
                                             })
                                             let tr = "<tr>" +
                                                 "<td>" + ($('tbody tr').length + 1) + "</td>" +
                                                 "<td>" +
                                                 "<h5><a target='_blank' href='" + datum.html_url + "'>" + datum.name + "</a></h5>" +
                                                 "<p class='mb-0'>" + datum.description + "</p>" +
-                                                "<p>" +topics_html + "</p>" +
+                                                "<p>" + topics_html + "</p>" +
                                                 "</td>" +
                                                 "<td>" + datum.language + "</td>" +
                                                 "<td>" +
