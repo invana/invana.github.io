@@ -1,114 +1,7 @@
-.bg-primary {
-    background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
-}
-
-.btn {
-    border-radius: 0 !important;
-}
-
-.bg-primary a {
-    color: #dfdfdf !important;
-
-}
-
-h4, h5, h6 {
-    font-weight: bold;
-}
-
-.roadmap-table a {
-    color: #2d2d2d;
-    /*text-decoration: underline;*/
-}
-
-.check-roadmap-section {
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-    margin-top: 2rem;
-    color: white;
-    padding: 100px 15px;
-}
-
-.roadmap-table a.btn {
-    color: white;
-}
-
-
-.animate-text {
-    animation-name: head;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-
-}
-
-
-.blog-menu {
-    display: inline;
-}
-
-.blog-menu .nav-item {
-    display: inline;
-    margin-right: 6px;
-}
-
-@keyframes head {
-    0% {
-        opacity: .5;
-    }
-    15% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-html, body {
-    height: 100%;
-    font-size: 14px;
-    line-height: 1.8rem;
-}
-
-.homepage-banner .company-info {
-    margin-top: 8rem;
-    border-radius: 2px;
-    background: #182848;
-    border: 1px solid #182848;
-    padding: 5px 15px;
-    display: inline-block;
-    color: white;
-}
-
-.homepage-banner h1 {
-    margin-top: 8rem;
-    font-weight: 700;
-    font-size: 3rem;
-}
-
-.homepage-banner h1, .homepage-banner p {
-    color: #d8d8d8;
-    /*color: #424242 !important;*/
-}
-
-.homepage-banner h1 span {
-    /*color: #105290;*/
-}
-
-.homepage-banner p {
-    font-size: 1.2rem;
-    line-height: 1.8rem
-}
-
-.page-height {
-    /*min-height:500px; */
-}
-
 .homepage-icon {
-    background: rgba(25, 41, 74, 0.45);
+    /*background: rgba(25, 41, 74, 0.45);*/
     /*width: 252px;*/
-    padding: 20px;
+    padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
     display: inline-block;
@@ -118,63 +11,195 @@ html, body {
     margin-top: 7rem;
 }
 
-.homepage-banner {
-
-
-    /*linear-gradient(to left,#4a528a,#312842)*/
-
-    background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
-
-    /*background: url(https://invaana.github.io/img/bg-pattern.png), linear-gradient(90deg, #182848 0%, #213864 40%, #4b6cb7 100%);*/
-    /*background:  linear-gradient(90deg, #182848 0%, #213864 40%, #4b6cb7 100%);*/
-    min-height: 87vh;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 2.2rem;
-}
-
-h3 {
-    font-weight: bold;
-}
-
-.card-body {
-    font-size: 1.1rem;
-    padding-top: 2rem;
-}
-
-
-.heading-banner {
-    /*background-color: #105290 !important;*/
-    background-color: #efefef !important;
-
-    padding: 50px 0 0 0;
-    border-bottom: 1px solid #efefef;
-    color: #333 !important;
-    border-bottom: 1px solid #eaeaea;
-    margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-    .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: .55rem;
-        padding-left: .55rem;
-    }
+html, body {
+    height: 100%;
+    font-size: 14px;
+    line-height: 1.8rem;
+    color: #343434;
 }
 
 ul.list, ol.list {
     margin-left: 0;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 
-
-
-.btn-secondary {
-    background: linear-gradient(90deg, #d53369 0%, #da496e 100%);
-    border-color: #d53369 !important;
+.homepage-banner h1 {
+    margin-top: 8rem;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
-nav.navbar-top {
-    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
+.navbar-light .navbar-nav .nav-link {
+    margin-left: 10px;
 }
+h3{
+    font-size: 1.5rem;
+}
+
+/*.bg-primary {*/
+/*    !*background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);*!*/
+/*}*/
+
+/*.btn {*/
+/*    border-radius: 0 !important;*/
+/*}*/
+
+/*.bg-primary a {*/
+/*    color: #dfdfdf !important;*/
+
+/*}*/
+
+/*h4, h5, h6 {*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.roadmap-table a {*/
+/*    color: #2d2d2d;*/
+/*    !*text-decoration: underline;*!*/
+/*}*/
+
+/*.check-roadmap-section {*/
+/*    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);*/
+/*    margin-top: 2rem;*/
+/*    color: white;*/
+/*    padding: 100px 15px;*/
+/*}*/
+
+/*.roadmap-table a.btn {*/
+/*    color: white;*/
+/*}*/
+
+
+/*.animate-text {*/
+/*    animation-name: head;*/
+/*    animation-duration: 5s;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-delay: 0s;*/
+
+/*}*/
+
+
+/*.blog-menu {*/
+/*    display: inline;*/
+/*}*/
+
+/*.blog-menu .nav-item {*/
+/*    display: inline;*/
+/*    margin-right: 6px;*/
+/*}*/
+
+/*@keyframes head {*/
+/*    0% {*/
+/*        opacity: .5;*/
+/*    }*/
+/*    15% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*    80% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
+/*html, body {*/
+/*    height: 100%;*/
+/*    font-size: 14px;*/
+/*    line-height: 1.8rem;*/
+/*}*/
+
+/*.homepage-banner .company-info {*/
+/*    margin-top: 8rem;*/
+/*    border-radius: 2px;*/
+/*    !*background: #182848;*!*/
+/*    !*border: 1px solid #182848;*!*/
+/*    padding: 5px 15px;*/
+/*    display: inline-block;*/
+/*    color: white;*/
+/*}*/
+
+/*.homepage-banner h1 {*/
+/*    margin-top: 8rem;*/
+/*    font-weight: 700;*/
+/*    font-size: 3rem;*/
+/*}*/
+
+/*.homepage-banner h1, .homepage-banner p {*/
+/*    color: #d8d8d8;*/
+/*    !*color: #424242 !important;*!*/
+/*}*/
+
+/*.homepage-banner h1 span {*/
+/*    !*color: #105290;*!*/
+/*}*/
+
+/*.homepage-banner p {*/
+/*    font-size: 1.2rem;*/
+/*    line-height: 1.8rem*/
+/*}*/
+
+/*.page-height {*/
+/*    !*min-height:500px; *!*/
+/*}*/
+
+
+/*.homepage-banner {*/
+
+
+/*    !*linear-gradient(to left,#4a528a,#312842)*!*/
+
+/*    !*background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);*!*/
+
+/*    !*background: url(https://invaana.github.io/img/bg-pattern.png), linear-gradient(90deg, #182848 0%, #213864 40%, #4b6cb7 100%);*!*/
+/*    !*background:  linear-gradient(90deg, #182848 0%, #213864 40%, #4b6cb7 100%);*!*/
+/*    min-height: 87vh;*/
+/*}*/
+
+/*h2 {*/
+/*    font-weight: bold;*/
+/*    font-size: 2.2rem;*/
+/*}*/
+
+/*h3 {*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.card-body {*/
+/*    font-size: 1.1rem;*/
+/*    padding-top: 2rem;*/
+/*}*/
+
+
+/*.heading-banner {*/
+/*    !*background-color: #105290 !important;*!*/
+/*    background-color: #efefef !important;*/
+
+/*    padding: 50px 0 0 0;*/
+/*    border-bottom: 1px solid #efefef;*/
+/*    color: #333 !important;*/
+/*    border-bottom: 1px solid #eaeaea;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*    .navbar-expand-md .navbar-nav .nav-link {*/
+/*        padding-right: .55rem;*/
+/*        padding-left: .55rem;*/
+/*    }*/
+/*}*/
+
+/*ul.list, ol.list {*/
+/*    margin-left: 0;*/
+/*    padding-left: 20px;*/
+/*}*/
+
+
+/*.btn-secondary {*/
+/*    background: linear-gradient(90deg, #d53369 0%, #da496e 100%);*/
+/*    border-color: #d53369 !important;*/
+/*}*/
+
+/*nav.navbar-top {*/
+/*    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);*/
+/*}*/
