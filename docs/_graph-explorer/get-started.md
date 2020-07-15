@@ -18,7 +18,7 @@ user shall be able to make queries, visualise data, query more.
 [here](http://graph-explorer.herokuapp.com){:target="_blank"} )  
 
   
-> **Hint:** If you dont have any database preference to startup with, 
+> **Hint:** If you dont have any database preference to start with, 
 > you can use any latest version of [JanusGraph](https://janusgraph.org){:target="_blank"}
 > that is distributed with 
 > Apache Tinkerpop 3.4.x. You can follow instructions to install JanusGraph from
