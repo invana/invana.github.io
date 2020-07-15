@@ -1,0 +1,150 @@
+---
+layout: default
+title:  Technology | Invana
+description: Open source projects at Invana.
+---
+
+
+<section class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Technology</h2>
+                <p>We wish to govern our projects in the open source,
+                    hoping brilliant minds would contribute. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered roadmap-table">
+                    <thead>
+                    <tr>
+                        <th width="40">#</th>
+                        <th>Project Name</th>
+                        <th>Language</th>
+                        <th width="180">Latest Commit</th>
+                        <th width="180">status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td width="100%" colspan="5">
+                            loading...
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="text-muted">Note: Roadmap data is gathered using GitHub public APIs, if no data is populated, it might be
+                    because you hit a throttle limit on your IP address(may be). Try in some time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+
+    $(document).ready(function () {
+        let headers = {};
+        let preview_feature_headers = {
+            "Accept": "application/vnd.github.mercy-preview+json"
+        };
+        var repos_of_interest = [
+            "graph-explorer",
+            "invana-graph",
+            "browser-engine",
+            "invana-bot",
+            // "docker-builder",
+            "web-parsers",
+        ];
+        var repos_url = "https://api.github.com/orgs/invanalabs/repos";
+        const month_names = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+
+
+        var table = $("table tbody");
+        $.ajax({
+            url: repos_url,
+            type: 'GET',
+            dataType: 'json',
+            headers: headers,
+            contentType: 'application/json; charset=utf-8',
+            success: function (result) {
+                let data = result;
+                table.html("");
+                repos_of_interest.forEach(function (repo_name) {
+                    data.forEach(function (datum) {
+                        if (datum.name === repo_name) {
+                            let last_commit_url = "https://api.github.com/repos/invanalabs/" + datum.name + "/commits?sha=" + datum.default_branch;
+                            let topics_url = "https://api.github.com/repos/invanalabs/" + datum.name + "/topics";
+                            $.ajax({
+                                url: topics_url,
+                                type: 'GET',
+                                dataType: 'json',
+                                headers: preview_feature_headers,
+                                contentType: 'application/json; charset=utf-8',
+                                success: function (topics_data) {
+
+
+                                    $.ajax({
+                                        url: last_commit_url,
+                                        type: 'GET',
+                                        dataType: 'json',
+                                        headers: headers,
+                                        contentType: 'application/json; charset=utf-8',
+                                        success: function (commit_data) {
+
+
+                                            let latest_commit = commit_data[0];
+                                            let date_obj = new Date(datum.updated_at);
+                                            var datestring = date_obj.getDate() + " " + month_names[date_obj.getMonth()] + ", " + date_obj.getFullYear();
+
+                                            let topics_html = "";
+                                            topics_data.names.forEach(function (topic) {
+                                                topics_html += "<span class='badge badge-secondary mr-2'>" + topic + "</span>";
+                                            })
+                                            let tr = "<tr>" +
+                                                "<td>" + ($('tbody tr').length + 1) + "</td>" +
+                                                "<td>" +
+                                                "<h5><a target='_blank' href='" + datum.html_url + "'>" + datum.name + "</a></h5>" +
+                                                "<p class='mb-0'>" + datum.description + "</p>" +
+                                                "<p>" + topics_html + "</p>" +
+                                                "</td>" +
+                                                "<td>" + datum.language + "</td>" +
+                                                "<td>" +
+                                                "<a target='_blank' href='" + latest_commit.html_url + "'>" + latest_commit.sha.slice(0, 7) + "</a>" +
+                                                "<br><a target='_blank' href='" + latest_commit.committer.html_url + "'><img class='committer-img' src='" + latest_commit.committer.avatar_url + "' alt='" + latest_commit.committer.login + "'> </a>" +
+                                                "" + datestring +
+                                                "</td>" +
+                                                "<td>" +
+                                                "<a target='_blank' href='" + datum.html_url + "/stargazers'>" + datum.stargazers_count + " stars</a>" +
+                                                "<a target='_blank' class='ml-2' href='" + datum.html_url + "/issues'>" + datum.open_issues + " issues</a><br>" +
+                                                "<a target='_blank' href='" + datum.html_url + "/watchers'>" + datum.watchers + " watchers</a>" +
+                                                "<a target='_blank' class='ml-2' href='" + datum.html_url + "/network/members'>" + datum.forks + " forks</a>" +
+                                                "<a target='_blank' class='btn-sm btn btn-primary mt-2' href='" + datum.html_url + "'>start contributing</a>" +
+                                                "</td>" +
+                                                "</tr>";
+                                            // table_rows.push($(tr));
+                                            // console.log("===table_rows", table_rows)
+                                            table.append($(tr))
+                                        }
+                                    });
+
+                                }
+                            });
+
+
+                        }
+
+                    });
+                });
+                // console.log("table_rows", table_rows)
+            }
+        });
+
+
+    });
+</script>
+
+
