@@ -1,0 +1,54 @@
+---
+layout: default
+title: Documentation | Invana
+description: Official documentation
+
+---
+<style>
+
+</style>
+<section class="" style="padding-top:5rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <h1>Documentation</h1>
+                <p>Documentation for the products </p>
+            </div>
+            <!--<div class="col-md-12">-->
+            <!--<ul class="nav">-->
+
+            <!--<li class="nav-item">-->
+            <!--<a class="nav-link pl-0" href="#">Updates</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--<a class="nav-link" href="#">Use Cases</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item ">-->
+            <!--<a class="nav-link " href="#">Research</a>-->
+            <!--</li>-->
+
+
+            <!--</ul>-->
+            <!--</div>-->
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+
+    <div class="row">
+
+        {% for post in site.posts %}
+        {% if post.post_type == 'default' %}
+        <div class="col-md-4" style="min-height: 400px">
+            {% include blog/default.html %}
+        </div>
+        {% endif%}
+        {% endfor %}
+
+
+    </div>
+
+
+</div>
