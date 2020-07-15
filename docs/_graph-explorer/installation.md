@@ -33,7 +33,7 @@ If you need  any further information, you can check on how to deploy on google r
 [here](https://cloud.google.com/run/docs/quickstarts/build-and-deploy?authuser=3&_ga=2.76313557.-1934094456.1587553907)
 
 
-### 2.3 Build your own docker 
+### 2.4 Build your own docker 
 {% highlight shell  %}
 git clone git@github.com:invanalabs/graph-explorer.git
 cd graph-explorer
