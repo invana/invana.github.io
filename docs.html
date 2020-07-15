@@ -2,53 +2,52 @@
 layout: default
 title: Documentation | Invana
 description: Official documentation
-
 ---
-<style>
-
-</style>
-<section class="" style="padding-top:5rem">
+<section>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 ">
+            <div class="col-md-12 mt-5">
                 <h1>Documentation</h1>
-                <p>Documentation for the products </p>
+                <hr>
             </div>
-            <!--<div class="col-md-12">-->
-            <!--<ul class="nav">-->
+            <div class="col-md-7">
+                <div class="row">
+                    {% for item in site.data.products %}
+                    <div class="col-md-6">
+                        <a href="/docs/{{ item.slug }}/get-started" class="doc-list">
+                            <div class="card">
+                                <img src="https://miro.medium.com/max/1400/1*0Ypx8TvwxBBxZQr2-PD5NA.png"
+                                     class="card-img-top" alt="...">
 
-            <!--<li class="nav-item">-->
-            <!--<a class="nav-link pl-0" href="#">Updates</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-            <!--<a class="nav-link" href="#">Use Cases</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item ">-->
-            <!--<a class="nav-link " href="#">Research</a>-->
-            <!--</li>-->
+                                <div class="card-body">
+                                    <h5>{{ item.title }}</h5>
+
+                                    <p>{{item.description}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Useful Resources</h3>
+                <hr>
+                <ul class="list">
+                    {% for item in site.data.resources %}
+                    <li>
+                        <a href="{{ item.url }}" target="_blank">
+                            <i class="fas fa-cube"></i> {{ item.title }} <i class="fas fa-external-link-square-alt"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
 
 
-            <!--</ul>-->
-            <!--</div>-->
         </div>
     </div>
 </section>
 
-<div class="container">
 
-
-    <div class="row">
-
-        {% for post in site.posts %}
-        {% if post.post_type == 'default' %}
-        <div class="col-md-4" style="min-height: 400px">
-            {% include blog/default.html %}
-        </div>
-        {% endif%}
-        {% endfor %}
-
-
-    </div>
-
-
-</div>
