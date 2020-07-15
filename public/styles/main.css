@@ -20,6 +20,12 @@ html, body {
 
 a {
     color: #212529;
+
+
+}
+
+.primary-color {
+    color: #28a028;
 }
 
 a:hover {
@@ -42,7 +48,13 @@ ul.list, ol.list {
 }
 
 .navbar-brand, .navbar-light .navbar-nav .nav-link {
-    color: #28a028 !important;
+    /*color: #28a028 !important;*/
+    font-weight: bold;
+    color: #212529;
+}
+
+.navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+    color: #28a028;
 }
 
 h3 {
