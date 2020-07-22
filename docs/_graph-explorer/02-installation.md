@@ -1,6 +1,6 @@
 ---
-layout: doc
-title:  "2. Installation"
+layout: doc-graph-explorer
+title:  2. Installation
 permalink: /docs/:collection/:title:output_ext
 ---
 

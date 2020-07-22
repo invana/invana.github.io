@@ -20,6 +20,10 @@ html, body {
     color: #343434;
 }
 
+img {
+    max-width: -webkit-fill-available;
+}
+
 a {
     color: #212529;
 }

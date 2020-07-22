@@ -1,6 +1,6 @@
 ---
-layout: doc
-title:  "1. Get Started"
+layout: doc-graph-explorer
+title:  1. Get Started
 permalink: /docs/:collection/:title:output_ext
 ---
 

@@ -46,6 +46,8 @@ collections_dir: docs
 collections:
   graph-explorer:
     output: true
+  gremlin-proxy:
+    output: true
 
 
 

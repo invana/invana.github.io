@@ -14,10 +14,10 @@ description: Official documentation
                 <div class="row">
                     {% for item in site.data.products %}
                     <div class="col-md-6">
-                        <a href="/docs/{{ item.slug }}/get-started" class="doc-list">
+                        <a href="/docs/{{ item.slug }}/01-get-started" class="doc-list">
                             <div class="card">
-                                <img src="https://miro.medium.com/max/1400/1*0Ypx8TvwxBBxZQr2-PD5NA.png"
-                                     class="card-img-top" alt="...">
+                                <img src="{{item.cover_image}}"
+                                     class="card-img-top" alt="{{item.title}}">
 
                                 <div class="card-body">
                                     <h5>{{ item.title }}</h5>
