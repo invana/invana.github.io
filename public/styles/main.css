@@ -80,6 +80,7 @@ h3 {
     padding: 5px;
     color: #a1a1a1;
     text-align: center;
+    border-top: 2px solid #bbbbbb;
 }
 
 .beta-notification span {
