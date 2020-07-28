@@ -16,7 +16,7 @@ or event logging.
 ![Overview Diagram](https://raw.githubusercontent.com/invanalabs/gremlin-proxy/develop/diagram.png "Overview Diagram")
 
 
-## 1.1. Requirements
+## 1.1 Requirements
 
 - Any database that supports Apache Tinkerpop 3.4.x 
 - docker to run gremlin-proxy as a service.
