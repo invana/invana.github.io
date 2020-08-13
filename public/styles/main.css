@@ -58,8 +58,9 @@ ul.list li, ol.list li {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    margin-left: 10px;
+    /*margin-left: 10px;*/
 }
+
 
 .navbar-brand, .navbar-light .navbar-nav .nav-link {
     /*color: #28a028 !important;*/
