@@ -20,6 +20,10 @@ html, body {
     color: #343434;
 }
 
+p {
+    /*margin-bottom: 1rem;*/
+}
+
 img {
     max-width: -webkit-fill-available;
 }
@@ -147,7 +151,9 @@ blockquote p {
 }
 
 .doc-content h2 {
-    font-size: 2.0rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+
 }
 
 .doc-content h3 {
