@@ -1,10 +1,10 @@
 - title: Graph Explorer
-  description : Open source, extendable data visualiser for Apache TinkerPop's Gremlin supported graph databases.
+  description : Visualise and traverse through knowledge graphs.
   slug: graph-explorer
   cover_image: https://miro.medium.com/max/1400/1*0Ypx8TvwxBBxZQr2-PD5NA.png
-- title: Gremlin Proxy
-  description : Proxy layer for Apache TinkerPop's Gremlin Server to support their authentication abilities from web browsers enabling CORS
-  slug: gremlin-proxy
+- title: Invana Engine
+  description : GraphQL API for building and querying knowledge graphs.
+  slug: invana-engine
   cover_image: https://repository-images.githubusercontent.com/260868666/1b01f680-cc68-11ea-8d32-6ff81fbfb413
 
 

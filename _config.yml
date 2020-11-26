@@ -46,7 +46,7 @@ collections_dir: docs
 collections:
   graph-explorer:
     output: true
-  gremlin-proxy:
+  invana-engine:
     output: true
 
 
