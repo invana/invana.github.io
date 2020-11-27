@@ -38,17 +38,22 @@ kramdown:
     default_lang: html
     css_class   : 'syntax'
 
-permalink:  /:categories/:title
+#permalink:  /:categories/:title
 
-collections_dir: docs
+collections_dir: collections
 
 
 collections:
-  graph-explorer:
-    output: true
-  invana-engine:
-    output: true
 
+  help:
+    output: true
+#    permalink: /help/:title
+#  help:
+#    output: true
+#  graph-explorer:
+#    output: true
+#  invana-engine:
+#    output: true
 
 
 # Build settings
