@@ -1,0 +1,70 @@
+---
+layout: default
+title: Get Started | Invana
+description: Get started with first knowledge graph using Invana.
+---
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 mt-5">
+                <h1>Get Started</h1>
+                <p>Get started with building and exploring first knowledge graph using Invana.
+                </p>
+
+            </div>
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <p>Invana works on top of graph databases that support <a href="https://tinkerpop.apache.org/">Apache
+                    TinkerPop</a>.
+                    Apache TinkerPop&trade; is an opensource graph computing framework for both graph databases (OLTP)
+                    and graph
+                    analytic systems (OLAP) maintained by Apache Software Foundation. </p>
+                <p>To build a knowledge graph, We need the following : </p>
+                <ul>
+                    <li><strong>Graph Database</strong> - a graph database that support Apache TinkerPop, so we use
+                        <a href="https://janusgraph.org/">JanusGraph</a></li>
+                    <li><strong>Invana Engine</strong> - GraphQL API for building the knowledge graph.</li>
+                    <li><strong>Graph Explorer</strong> - For visualising the knowledge graphs as connected nodes and
+                        tables.
+                    </li>
+                </ul>
+
+                <div class="alert alert-warning" role="alert">
+                    Currently, only JanusGraph is supported with Invana Engine.
+                </div>
+                <h5>Starting JanusGraph server</h5>
+                <code class="code  ">docker run -it -p 8182:8182 janusgraph/janusgraph</code>
+
+
+                <p>This will start the JanusGraph, will gremlin server running at port 8182.
+                    More installation methods can be found <a
+                            href="https://docs.janusgraph.org/getting-started/installation/">here</a></p>
+
+                <h5>Starting Invana Engine</h5>
+                <code class="code">docker run -p 8000:8000 -d -e GREMLIN_SERVER_URL=ws://127.0.0.1:8182/gremlin
+                    --name invana-engine invanalabs/invana-engine </code>
+                <p>This will start invana engine GraphQL API at 8000 port. More installation methods can be found <a
+                        href="https://github.com/invanalabs/invana-engine">here</a></p>
+
+                <h5>Starting Graph Explorer</h5>
+                <code class="code">docker run -p 8888:8888 -d --name graph-explorer invanalabs/graph-explorer</code>
+                <p>This will start graph explorer on 8888 port.</p>
+
+                <p>Go to http://localhost:8000 and </p>
+            </div>
+
+            <div class="col-md-12 mt-5">
+                <p>Go to <a href="/help.html">Help</a> for more tutorials.</p>
+
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+

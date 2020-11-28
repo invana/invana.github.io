@@ -16,7 +16,7 @@
 html, body {
     height: 100%;
     font-size: 14px;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     color: #343434;
 }
 
@@ -259,3 +259,8 @@ blockquote p {
 /*    display: inline-block;*/
 /*    font-size: 14px;*/
 /*}*/
+
+.code{
+    background: #343434; color: #efefef; padding: 5px 10px; border-radius: 2px;
+    display: block;
+}
