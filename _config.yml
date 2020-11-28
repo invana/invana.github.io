@@ -47,7 +47,7 @@ collections:
 
   help:
     output: true
-#    permalink: /help/:title
+    permalink: /help/:title
 #  help:
 #    output: true
 #  graph-explorer:
