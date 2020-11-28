@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="699" height="615" viewBox="0 0 699 615">
+  <g id="Group_1" data-name="Group 1" transform="translate(-962 -274)">
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="485" height="615" transform="translate(962 274)" fill="#efefef" opacity="0.9"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="180" height="615" transform="translate(1481 274)" fill="#efefef" opacity="0.9"/>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(1499 293)" fill="#5d5d5d" stroke="#7ccae6" stroke-width="6" opacity="0.9">
+      <rect width="145" height="270" stroke="none"/>
+      <rect x="3" y="3" width="139" height="264" fill="none"/>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(1499 601)" fill="#5d5d5d" stroke="#7ccae6" stroke-width="6" opacity="0.9">
+      <rect width="145" height="270" stroke="none"/>
+      <rect x="3" y="3" width="139" height="264" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(1153 464)" fill="#5d5d5d" stroke="#7ccae6" stroke-width="6" opacity="0.9">
+      <rect width="270" height="238" stroke="none"/>
+      <rect x="3" y="3" width="264" height="232" fill="none"/>
+    </g>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="43" height="6" transform="translate(1574 560) rotate(90)" fill="#7ccae6" opacity="0.9"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="49" height="41" transform="translate(1443 631)" fill="#efefef" opacity="0.9"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="82" height="6" transform="translate(1423 649)" fill="#7ccae6" opacity="0.9"/>
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(984 721)" fill="#5d5d5d" stroke="#7ccae6" stroke-width="6" opacity="0.9">
+      <rect width="270" height="145" stroke="none"/>
+      <rect x="3" y="3" width="264" height="139" fill="none"/>
+    </g>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="24" height="6" transform="translate(1185.873 702) rotate(90)" fill="#7ccae6" opacity="0.9"/>
+    <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(1153 296)" fill="#5d5d5d" stroke="#7ccae6" stroke-width="6" opacity="0.9">
+      <rect width="270" height="145" stroke="none"/>
+      <rect x="3" y="3" width="264" height="139" fill="none"/>
+    </g>
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="24" height="6" transform="translate(1384.302 440) rotate(90)" fill="#7ccae6" opacity="0.9"/>
+    <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(984 296)" fill="#5d5d5d" stroke="#7ccae6" stroke-width="6" opacity="0.9">
+      <rect width="145" height="405" stroke="none"/>
+      <rect x="3" y="3" width="139" height="399" fill="none"/>
+    </g>
+    <rect id="Rectangle_15" data-name="Rectangle 15" width="24" height="6" transform="translate(1128.878 497)" fill="#7ccae6" opacity="0.9"/>
+    <g id="Rectangle_16" data-name="Rectangle 16" transform="translate(1423.5 721.5) rotate(90)" fill="#5d5d5d" stroke="#7ccae6" stroke-width="6" opacity="0.9">
+      <rect width="143" height="60" stroke="none"/>
+      <rect x="3" y="3" width="137" height="54" fill="none"/>
+    </g>
+    <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(1337.5 721.5) rotate(90)" fill="#5d5d5d" stroke="#7ccae6" stroke-width="6" opacity="0.9">
+      <rect width="143" height="60" stroke="none"/>
+      <rect x="3" y="3" width="137" height="54" fill="none"/>
+    </g>
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="24" height="6" transform="translate(1311.179 699) rotate(90)" fill="#7ccae6" opacity="0.9"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" width="24" height="6" transform="translate(1396.182 702) rotate(90)" fill="#7ccae6" opacity="0.9"/>
+    <text id="Invana_Engine_API" data-name="Invana 
+Engine API" transform="translate(1247 550)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI" opacity="0.9"><tspan x="0" y="0">Invana </tspan><tspan x="0" y="27">Engine API</tspan></text>
+    <text id="Authorisation" transform="translate(1169 324)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI" opacity="0.9"><tspan x="0" y="0">Authorisation</tspan></text>
+    <text id="Caching" transform="translate(999 752)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI" opacity="0.9"><tspan x="0" y="0">Caching</tspan></text>
+    <text id="GraphQL_API" data-name="GraphQL API" transform="translate(997 324)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI" opacity="0.9"><tspan x="0" y="0">GraphQL API</tspan></text>
+    <text id="Graph_DB" data-name="Graph DB" transform="translate(1512 324)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI" opacity="0.9"><tspan x="0" y="0">Graph DB</tspan></text>
+    <text id="Apache_TinkerPop_API" data-name="Apache 
+TinkerPop API" transform="translate(1510 633)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI" opacity="0.9"><tspan x="0" y="0">Apache </tspan><tspan x="0" y="27">TinkerPop API</tspan></text>
+  </g>
+</svg>

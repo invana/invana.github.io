@@ -236,7 +236,7 @@ blockquote p {
 }
 
 .home-section .card {
-    min-height: 340px;
+    min-height: 220px;
 }
 
 .home-section ul {
@@ -251,11 +251,11 @@ blockquote p {
     border-color: #319442;
 }
 
-.platform-note {
-    border: 1px solid #cccccc;
-    background: #efefef;
-    padding: 2px 5px 0;
-    border-left: 4px solid #00a751;
-    display: inline-block;
-    font-size: 14px;
-}
+/*.platform-note {*/
+/*    border: 1px solid #cccccc;*/
+/*    background: #efefef;*/
+/*    padding: 2px 5px 0;*/
+/*    border-left: 4px solid #00a751;*/
+/*    display: inline-block;*/
+/*    font-size: 14px;*/
+/*}*/
