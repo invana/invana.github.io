@@ -40,6 +40,7 @@ h1 {
 
 
 .primary-color {
+    /*color: #2a7ae2;*/
     color: #28a028;
 }
 
@@ -263,4 +264,5 @@ blockquote p {
 .code{
     background: #343434; color: #efefef; padding: 5px 10px; border-radius: 2px;
     display: block;
+    margin-bottom: 5px;
 }
