@@ -55,6 +55,7 @@ ul.list, ol.list {
 
 ul.list li, ol.list li {
     display: block;
+    margin-bottom: 5px;
 }
 
 main {
