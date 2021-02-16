@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     font-size: 16px;
     line-height: 1.6rem;
-    color: #343434;
+    color: #1d1d1d;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -287,12 +287,60 @@ blockquote p {
     margin-bottom: 5px;
 }
 
-.page-header-section{
+.page-header-section {
     border-bottom: 1px solid #efefef;
     padding-bottom: 10px;
+    margin-bottom: 1rem;
 }
-.page-header-section h1{
+
+.page-header-section h1 {
     font-size: 1.6rem;
     font-weight: bold;
     margin-top: 4rem;
+}
+
+.ignore-link-hover:hover {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+.ignore-link-hover img:hover {
+    opacity: 0.8;
+}
+
+
+/* cards */
+
+
+.card.blog-card {
+    border-radius: 0;
+    /*margin-top: 20px;*/
+    border-color: transparent;
+}
+
+.card.blog-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: .5rem;
+}
+
+.card.blog-card h3 a {
+    color: #343434;
+}
+
+.card.blog-card .abstract-text {
+    color: #1d1d1d;
+}
+
+.card.blog-card img {
+    /*margin: -20px -20px 20px -20px;*/
+    /*max-width: calc(100% + 40px) !important;*/
+}
+
+/* cards ends here */
+
+
+.card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
