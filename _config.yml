@@ -38,7 +38,7 @@ kramdown:
     default_lang: html
     css_class   : 'syntax'
 
-#permalink:  /:categories/:title
+permalink:  /:categories/:title
 
 collections_dir: collections
 
@@ -48,6 +48,9 @@ collections:
   help:
     output: true
     permalink: /help/:title
+  blog:
+    output: true
+    permalink: /blog/:title
 #  help:
 #    output: true
 #  graph-explorer:
