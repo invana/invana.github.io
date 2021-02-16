@@ -45,15 +45,19 @@ collections_dir: collections
 
 collections:
 
-  help:
+  guide:
     output: true
-    permalink: /help/:title
+    permalink: /guide/:title
   blog:
     output: true
     permalink: /blog/:title
-#  guide:
-#    output: true
-#    permalink: /guide/:category/:title
+  invana-studio:
+    output: true
+    permalink: /guide/invana-studio/:title
+  invana-engine:
+    output: true
+    permalink: /guide/invana-engine/:title
+
 #  help:
 #    output: true
 #  graph-explorer:

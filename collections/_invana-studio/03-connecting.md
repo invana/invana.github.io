@@ -1,7 +1,6 @@
 ---
-layout: doc-graph-explorer
+layout: guide-detail
 title:  3. Connecting
-permalink: /docs/:collection/:title:output_ext
 ---
 
 We ship this tool as docker builds, so you can deploy 

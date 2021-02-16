@@ -1,7 +1,6 @@
 ---
-layout: doc-graph-explorer
-title:  1. Get Started
-permalink: /docs/:collection/:title:output_ext
+layout: guide-detail
+title:  1. Introduction to Invana Studio
 ---
 
 Graph Explorer is an open source, extendable data visualiser for 

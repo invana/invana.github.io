@@ -1,7 +1,6 @@
 ---
-layout: doc-graph-explorer
-title:  2. Installation
-permalink: /docs/:collection/:title:output_ext
+layout: guide-detail
+title:  2. How to install and setup Invana Studio
 ---
 
 We ship this tool as docker builds, so you can deploy 

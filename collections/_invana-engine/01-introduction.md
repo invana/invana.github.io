@@ -1,7 +1,6 @@
 ---
-layout: doc-gremlin-proxy
-title:  1. Get Started
-permalink: /docs/:collection/:title:output_ext
+layout: guide-detail
+title:  1. Introduction to Invana Engine
 ---
 
 
