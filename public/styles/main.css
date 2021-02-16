@@ -303,6 +303,9 @@ blockquote p {
     color: inherit !important;
     text-decoration: none;
 }
+.ignore-link-hover .card p{
+    color: #1d1d1d !important;
+}
 
 .ignore-link-hover img:hover {
     opacity: 0.8;
