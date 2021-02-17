@@ -172,6 +172,14 @@ blockquote p {
     min-height: 200px;
 }
 
+.doc-nav h1,
+.doc-nav h2,
+.doc-nav h3,
+.doc-nav h4,
+.doc-nav h5,
+.doc-nav h6 {
+}
+
 .doc-nav h5 {
     background-color: #efefef;
     padding: 5px 0;
@@ -195,7 +203,8 @@ blockquote p {
 }
 
 .doc-content h1, .doc-content h2, .doc-content h3, .doc-content h4, .doc-content h5 {
-    margin-top: 20px;
+    margin-top: 1.8rem;
+    font-weight: 500;
 }
 
 .doc-content h1 {
@@ -303,7 +312,8 @@ blockquote p {
     color: inherit !important;
     text-decoration: none;
 }
-.ignore-link-hover .card p{
+
+.ignore-link-hover .card p {
     color: #1d1d1d !important;
 }
 
@@ -348,11 +358,11 @@ blockquote p {
     font-weight: bold;
 }
 
-.bg-primary{
+.bg-primary {
     background-color: #85ba8d !important;
     /*color: white;*/
 }
 
-.dropdown-item h3{
+.dropdown-item h3 {
     font-weight: bold;
 }

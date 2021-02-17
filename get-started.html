@@ -4,37 +4,44 @@ title: Get Started | Invana
 description: Get started with first knowledge graph using Invana.
 ---
 <section>
-    <div class="container">
+    <div class="container  page-header-section">
         <div class="row">
-            <div class="col-md-7 mt-5">
+            <div class="col-md-7">
                 <h1>Get Started</h1>
                 <p>Get started with building and exploring first knowledge graph using Invana.
                 </p>
 
             </div>
-            <div class="col-md-12">
-                <hr>
-            </div>
-
         </div>
-        <div class="row mt-4">
-<!--            <div class="col-md-5">-->
-<!--                <p>Invana works on top of graph databases that support <a href="https://tinkerpop.apache.org/">Apache-->
-<!--                    TinkerPop</a>.-->
-<!--                    Apache TinkerPop&trade; is an opensource graph computing framework for both graph databases (OLTP)-->
-<!--                    and graph-->
-<!--                    analytic systems (OLAP) maintained by Apache Software Foundation. </p>-->
-<!--                <p>To build a knowledge graph, We need the following : </p>-->
-<!--                <ul>-->
-<!--                    <li><strong>Graph Database</strong> - a graph database that support Apache TinkerPop, so we use-->
-<!--                        <a href="https://janusgraph.org/">JanusGraph</a></li>-->
-<!--                    <li><strong>Invana Engine</strong> - GraphQL API for building the knowledge graph.</li>-->
-<!--                    <li><strong>Graph Explorer</strong> - For visualising the knowledge graphs as connected nodes and-->
-<!--                        tables.-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--            <div class="col-md-5">-->
+            <!--                <p>Invana works on top of graph databases that support <a href="https://tinkerpop.apache.org/">Apache-->
+            <!--                    TinkerPop</a>.-->
+            <!--                    Apache TinkerPop&trade; is an opensource graph computing framework for both graph databases (OLTP)-->
+            <!--                    and graph-->
+            <!--                    analytic systems (OLAP) maintained by Apache Software Foundation. </p>-->
+            <!--                <p>To build a knowledge graph, We need the following : </p>-->
+            <!--                <ul>-->
+            <!--                    <li><strong>Graph Database</strong> - a graph database that support Apache TinkerPop, so we use-->
+            <!--                        <a href="https://janusgraph.org/">JanusGraph</a></li>-->
+            <!--                    <li><strong>Invana Engine</strong> - GraphQL API for building the knowledge graph.</li>-->
+            <!--                    <li><strong>Graph Explorer</strong> - For visualising the knowledge graphs as connected nodes and-->
+            <!--                        tables.-->
+            <!--                    </li>-->
+            <!--                </ul>-->
+            <!--            </div>-->
             <div class="col-md-8">
+
+                <p>Invana has two components - invana engine and invana studio,
+                    which are intentionally separated as projects to decouple the GraphQL API
+                    and the User Interface people interact with.
+                </p>
+
+
+
                 <h5>1. Starting JanusGraph server</h5>
 
                 <code class="code  ">docker run -it -p 8182:8182 janusgraph/janusgraph</code>
@@ -55,6 +62,27 @@ description: Get started with first knowledge graph using Invana.
                     http://localhost:8888.</p>
                 <div class="alert alert-warning" role="alert">
                     Currently, only JanusGraph is supported with Invana Engine.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item pl-0"><a href="#download">Download as Package</a></li>
+                    <li class="list-group-item pl-0"><a href="#docker">Deploy using Docker </a></li>
+                    <li class="list-group-item pl-0"><a href="#build-from-source">Build from source </a></li>
+                    <!--                    <li class="list-group-item pl-0"><a href="{{ doc.url}}">Deploy using</a></li>-->
+
+                </ul>
+                <div class="card mt-3 pt-3 pb-3 pl-3 pr-3 bg-primary">
+                    <div class="card-body p-2 pt-3">
+                        <h3 class="h5 font-weight-bold">
+                            Need a demo of Invana ?
+                        </h3>
+                        <p>Get in touch with us, if you want us to walk you through the features
+                            of Invana with an example use case. </p>
+
+
+                        <a href="/contact" class="btn btn-dark">Request a demo</a>
+                    </div>
                 </div>
             </div>
         </div>
