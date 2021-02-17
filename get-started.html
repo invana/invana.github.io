@@ -37,10 +37,13 @@ description: Get started with first knowledge graph using Invana.
 
                 <p>Invana has two components - invana engine and invana studio,
                     which are intentionally separated as projects to decouple the GraphQL API
-                    and the User Interface people interact with.
+                    and the User Interface people interact with respectively.
                 </p>
 
-
+                <div class="alert alert-warning" role="alert">
+                    At the moment, Invana supports only <a href="https://janusgraph.org/">JanusGraph</a> as
+                    graph database backend.
+                </div>
 
                 <h5>1. Starting JanusGraph server</h5>
 
@@ -60,9 +63,7 @@ description: Get started with first knowledge graph using Invana.
                 <code class="code">docker run -p 8888:8888 -d --name graph-explorer invanalabs/graph-explorer</code>
                 <p>This will start graph explorer on 8888 port, you can access the application at
                     http://localhost:8888.</p>
-                <div class="alert alert-warning" role="alert">
-                    Currently, only JanusGraph is supported with Invana Engine.
-                </div>
+
             </div>
             <div class="col-md-4">
                 <ul class="list-group list-group-flush">
@@ -82,6 +83,7 @@ description: Get started with first knowledge graph using Invana.
 
 
                         <a href="/contact" class="btn btn-dark">Request a demo</a>
+<!--                        <a href="/guides" class="btn btn-outline-dark">Checkout Docs</a>-->
                     </div>
                 </div>
             </div>
