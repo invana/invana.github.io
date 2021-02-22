@@ -236,15 +236,16 @@ blockquote p {
 
 
 .home-section h2 {
-    font-size: 32px;
+    font-size: 1.8rem;
     font-weight: bold;
     /*margin-top: 4rem;*/
 
 }
 
 .home-section h3 {
-    font-size: 22px;
+    font-size: 1.2rem;
     font-weight: bold;
+    color: #286d2c;
     /*margin-top: 4rem;*/
 
 }
@@ -267,8 +268,14 @@ blockquote p {
 }
 
 .home-section ul {
-    padding-left: 15px;
+    padding-left: 0px;
 }
+
+.home-section ul li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
 
 .btn-outline-success:hover {
     background: #319442;
