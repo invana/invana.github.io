@@ -130,6 +130,7 @@ main {
 
 h3 {
     font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .beta-notification {
@@ -295,12 +296,17 @@ blockquote p {
 /*}*/
 
 .code {
-    background: #343434;
-    color: #efefef;
+    /*background: #343434;*/
+    background-color: #efefef;
+    color: #212121;
     padding: 5px 10px;
     border-radius: 2px;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.alert {
+    padding: .5rem !important;
 }
 
 .page-header-section {

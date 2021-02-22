@@ -17,12 +17,7 @@ description: Get started with first knowledge graph using Invana.
     </div>
     <div class="container">
         <div class="row">
-            <!--            <div class="col-md-5">-->
-            <!--                <p>Invana works on top of graph databases that support <a href="https://tinkerpop.apache.org/">Apache-->
-            <!--                    TinkerPop</a>.-->
-            <!--                    Apache TinkerPop&trade; is an opensource graph computing framework for both graph databases (OLTP)-->
-            <!--                    and graph-->
-            <!--                    analytic systems (OLAP) maintained by Apache Software Foundation. </p>-->
+            <!--            <div class="col-md-12">-->
             <!--                <p>To build a knowledge graph, We need the following : </p>-->
             <!--                <ul>-->
             <!--                    <li><strong>Graph Database</strong> - a graph database that support Apache TinkerPop, so we use-->
@@ -34,42 +29,58 @@ description: Get started with first knowledge graph using Invana.
             <!--                </ul>-->
             <!--            </div>-->
             <div class="col-md-8">
+                <p>Invana works on top of graph databases that support <a href="https://tinkerpop.apache.org/">Apache
+                    TinkerPop</a>.
+                    Apache TinkerPop&trade; is an opensource graph computing framework for both graph databases (OLTP)
+                    and graph analytic systems (OLAP) maintained by Apache Software Foundation. </p>
 
                 <p>Invana has two components - invana engine and invana studio,
                     which are intentionally separated as projects to decouple the GraphQL API
                     and the User Interface people interact with respectively.
                 </p>
 
-                <div class="alert alert-warning" role="alert">
-                    At the moment, Invana supports only <a href="https://janusgraph.org/">JanusGraph</a> as
-                    graph database backend.
+                <div class="alert alert-primary" role="alert">
+                    <strong>Note:</strong> At the moment, Invana supports only
+                    <a href="https://janusgraph.org/">JanusGraph</a> as graph database backend.
                 </div>
 
-                <h5>1. Starting JanusGraph server</h5>
 
-                <code class="code  ">docker run -it -p 8182:8182 janusgraph/janusgraph</code>
-                <p>This will start JanusGraph instance and the gremlin server is available at
-                    http://localhost:8182/gremlin.
-                    More installation instructions can be found <a
-                            href="https://docs.janusgraph.org/getting-started/installation/">here</a></p>
+                <h3>Start graph database server</h3>
 
-                <h5 class="mt-3">2. Starting Invana Engine</h5>
-                <code class="code">docker run -p 8000:8000 -d -e GREMLIN_SERVER_URL=ws://xx.xx.xx.xx:8182/gremlin
-                    --name invana-engine invanalabs/invana-engine </code>
-                <p>This will start invana engine GraphQL API at 8000 port. More installation methods can be found <a
-                        href="https://github.com/invanalabs/invana-engine">here</a></p>
+                <p>Deploy JanusGraph instance following the instructions from <a
+                        href="https://docs.janusgraph.org/getting-started/installation/">here</a>.
+                    Make sure gremlin server is accessible via ws://ip-address:8182/gremlin.</p>
 
-                <h5 class="mt-3">3.Starting Graph Explorer</h5>
-                <code class="code">docker run -p 8888:8888 -d --name graph-explorer invanalabs/graph-explorer</code>
+                <h3 id="deploy-using-docker">Deploy using Docker</h3>
+                <code class="code">
+                    $ docker run -p 8000:8000 -d -e GREMLIN_SERVER_URL=ws://ip-address:8182/gremlin
+                    --name invana-engine invanalabs/invana-engine
+                    <br>
+                    $ docker run -p 8888:8888 -d --name invana-studio invanalabs/invana-studio
+                </code>
+
+                <p>This will start invana engine GraphQL API at 8000 port and invana studio at 8888 port.
+                    You can access invana studio at http://ip-address:8888 </p>
+
+                <h3 class="mt-3">Build from source code</h3>
+                <code class="code">
+                    $ git clone git@github.com:invanalabs/invana-studio.git
+                    <br>
+                    $ npm install
+                    <br>
+                    $ npm build
+                </code>
                 <p>This will start graph explorer on 8888 port, you can access the application at
                     http://localhost:8888.</p>
 
             </div>
             <div class="col-md-4">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item pl-0"><a href="#download">Download as Package</a></li>
-                    <li class="list-group-item pl-0"><a href="#docker">Deploy using Docker </a></li>
+                    <li class="list-group-item pl-0"><a href="#deploy-using-docker">Deploy using Docker </a></li>
+                    <!--                    <li class="list-group-item pl-0"><a href="#kubernetes">Deploy on Kubernetes </a></li>-->
+                    <!--                    <li class="list-group-item pl-0"><a href="#download">Standalone Installation</a></li>-->
                     <li class="list-group-item pl-0"><a href="#build-from-source">Build from source </a></li>
+
                     <!--                    <li class="list-group-item pl-0"><a href="{{ doc.url}}">Deploy using</a></li>-->
 
                 </ul>
@@ -83,7 +94,7 @@ description: Get started with first knowledge graph using Invana.
 
 
                         <a href="/contact" class="btn btn-dark">Request demo</a>
-<!--                        <a href="/guides" class="btn btn-outline-dark">Checkout Docs</a>-->
+                        <!--                        <a href="/guides" class="btn btn-outline-dark">Checkout Docs</a>-->
                     </div>
                 </div>
             </div>
