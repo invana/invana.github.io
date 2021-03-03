@@ -3,6 +3,36 @@ layout: default
 title: Contact | Invana
 description: Get in touch with us
 ---
+
+<script>
+    function submitForm(form) {
+
+        let data = {};
+        data['whoYouAre'] = document.getElementsByName("whoYouAre")[0].value;
+        data['services'] = [];
+        data['description'] = document.getElementById("description").value;
+
+
+        if (document.getElementById("trainingService").checked === true) {
+            data['services'].push("Training")
+        }
+        if (document.getElementById("consultingService").checked === true) {
+            data['services'].push("Consulting")
+        }
+        if (document.getElementById("demoService").checked === true) {
+            data['services'].push("Product Demo")
+        }
+
+        let subject = "Request regarding " + data.services.join(' and ') + " services | Invana";
+
+        let body = "<h5>Request details: </h5><p>" + data['description'] + "</p><br>" +
+            "<h5>Request by</h5><p>" + data['whoYouAre'] + "</p>";
+        let email = "{{site.CONTACT_EMAIL}}";
+        window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" + encodeURIComponent(body);
+
+        console.log(data)
+    }
+</script>
 <section>
     <div class="container">
         <div class="row">
@@ -16,7 +46,21 @@ description: Get in touch with us
         <div class="row mt-5 mb-5">
 
             <div class="col-md-6">
+                <div class="card pt-2 pb-3 pl-3 pr-3 mb-3">
+                    <div class="card-body p-2 pt-3">
+                        <h3 class="h5 font-weight-bold">
+                            Wanna catch up for a chat ?
 
+                        </h3>
+                        <p>We are so excited to share our experiences working with knowledge graphs
+                            and how great they perform at what they do.
+
+                        </p>
+
+
+                        <!--                        <a href="/contact" class="btn btn-dark">Schedule a call</a>-->
+                    </div>
+                </div>
                 <div class="card pt-2 pb-3 pl-3 pr-3 bg-primary">
                     <div class="card-body p-2 pt-3">
                         <h3 class="h5 font-weight-bold">
@@ -31,43 +75,58 @@ description: Get in touch with us
                         <!--                        <a href="/contact" class="btn btn-dark">Schedule a call</a>-->
                     </div>
                 </div>
-                <div class=""></div>
-                <p>We can help you with the following:</p>
-                <ul class="">
-                    <li>Understand more about our products.</li>
-                    <li>Consult us on how you may approach your
-                        problem with knowledge graphs.
-                    </li>
-                    <li>Do great things with data.</li>
-                    <li>and more...</li>
-                </ul>
 
-                <p>
-                    It's important to us that we provide you with what you need to be successful.
-                    Simply complete the form and we'll be in touch soon.
-
-                </p>
 
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <blockquote class="border-bottom pb-2">Knowledge Graphs perform great at
-                            unifying the data, understanding the connections between the data
+                            unifying the data from many sources, understanding the connections between the data
                             and finding insights.
                         </blockquote>
-                        <p>Tell us a bit about what is that
-                            you are trying to solve and where do you need help.</p>
+                        <p>Tell us a bit about you and what is that
+                            you need help with or just request a demo.</p>
 
-                        <form action="">
+                        <form onsubmit="submitForm(this);return false">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="name">
+
+                                <div class="col-md-12 mb-2">
+                                    <input type="text" name="whoYouAre" required class="form-control"
+                                           placeholder="Who you are! (ex: Ravi Raja, Founder of Invana)">
                                 </div>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="Who you are (ex: Ravi, Founder, Invana)">
+                                <div class="col-md-12 mb-2">
+                                    <label for="" class="mb-0 mr-3">Please check the areas you are
+                                        interest in:</label><br>
+
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" id="trainingService" class="form-check-input"
+                                               id="training">
+                                        <label class="form-check-label" for="training">Training</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" id="consultingService" class="form-check-input"
+                                               id="consulting">
+                                        <label class="form-check-label" for="consulting">Consulting</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" id="demoService" class="form-check-input"
+                                               id="demoService">
+                                        <label class="form-check-label" for="demoService">Product Demo</label>
+                                    </div>
+
+
                                 </div>
-                            </div>
+                                <div class="col-md-12 mb-2">
+                                    <textarea required class="form-control" rows="5" id="description"
+                                              placeholder="Tell us a bit about what is the service you think you need from us and what is that problem you are trying to solve."></textarea>
+                                </div>
+                                <div class="col-md-12 mb-2">
+                                    <button type="submit" class="btn btn-success">Submit</button>
+
+                                    <p class="text-muted small">On submission, this form will take you to your default
+                                        email client.</p>
+                                </div>
                         </form>
 
 
@@ -111,28 +170,28 @@ description: Get in touch with us
                         <!--                                kept private.-->
                         <!--                            </p>-->
                         <!--                        </form>-->
-
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Contact Info</h3>
-                <hr>
-                <p class="mb-0 pb-0"><strong>Invana Technology Solutions Pvt Ltd.</strong></p>
-                <p class="mb-0 pb-0">102, Sreekar's Archana Manor
-                    <br>
-                    Kondapur, Hyderabad - 500084
-                    <br>
-                    India.
-                </p>
-                <p></p>
-                <p>Write to us at <a class="primary-color" href="mailto:hi@invana.io">hi[ at ]invana.io</a></p>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Contact Info</h3>
+            <hr>
+            <p class="mb-0 pb-0"><strong>Invana Technology Solutions Pvt Ltd.</strong></p>
+            <p class="mb-0 pb-0">102, Sreekar's Archana Manor
+                <br>
+                Kondapur, Hyderabad - 500084
+                <br>
+                India.
+            </p>
+            <p></p>
+            <p>Write to us at <a class="primary-color" href="mailto:hi@invana.io">hi[ at ]invana.io</a></p>
 
 
-            </div>
         </div>
+    </div>
     </div>
 </section>
 

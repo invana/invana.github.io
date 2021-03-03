@@ -28,7 +28,7 @@ site_url: "https://invana.io"
 twitter_username: invanalabs
 github_username:  invanalabs
 
-
+CONTACT_EMAIL: "hi@invana.io"
 markdown: kramdown
 highlighter: rouge
 
