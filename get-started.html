@@ -40,7 +40,7 @@ description: Get started with first knowledge graph using Invana.
                 </p>
 
                 <h3 id="download-invana-studio">1. Download Invana Studio</h3>
-                <p>Download and install the application that suites your requirement.</p>
+                <p>Download and install the application that suites the environment you work with .</p>
 
                 <h4>1.1 using installer</h4>
 
@@ -72,12 +72,16 @@ description: Get started with first knowledge graph using Invana.
 
                 <code class="code">
                     $ wget https://github.com/JanusGraph/janusgraph/releases/download/v0.5.3/janusgraph-full-0.5.3.zip
-                    $ unzip janusgraph-full-0.5.3.zip
-                    $
+                    <br>
+                    $ unzip janusgraph-full-0.5.3.zip <br>
+                    $ ./bin/gremlin-server.sh conf/gremlin-server/gremlin-server-cql-es.yaml
+
                 </code>
-                <p>Deploy JanusGraph instance following the instructions from <a
+                <p>This will start JanusGraph with cassandra as storage backend and elasticsearch as
+                    search backend. More installation instructions can be found <a
                         href="https://docs.janusgraph.org/getting-started/installation/">here</a>.
-                    Make sure gremlin server is accessible via ws://ip-address:8182/gremlin.</p>
+                </p>
+                <p>Make sure gremlin server is accessible via ws://ip-address:8182/gremlin.</p>
 
                 <div class="alert alert-primary" role="alert">
                     <strong>Note:</strong> At the moment, Invana supports only
@@ -85,13 +89,13 @@ description: Get started with first knowledge graph using Invana.
                 </div>
                 <h3 class="pt-4" id="install-invana-engine"> 3. Install and start Invana Engine </h3>
                 <p>You can install Invana Engine using PIP or docker.</p>
-                <h4>3.1 Install using PIP</h4>
+                <h4>3.1 using installer(pip)</h4>
                 <code class="code">
                     $ pip install invana-engine <br>
                     $ export GREMLIN_SERVER_URL="ws://ip-address:8182/gremlin" <br>
                     $ invana-engine-start
                 </code>
-                <h4>3.2 Deploy using Docker</h4>
+                <h4>3.2 using docker</h4>
                 <code class="code">
                     $ docker run -p 8200:8200 -d -e GREMLIN_SERVER_URL=ws://ip-address:8182/gremlin
                     --name invana-engine invanalabs/invana-engine
