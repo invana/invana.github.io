@@ -67,7 +67,12 @@ ul.list li, ol.list li {
 main {
     height: 100%;
 }
-
+.dropdown-item.active, .dropdown-item:active {
+    color: inherit !important;
+    text-decoration: none;
+    background-color: transparent !important;
+    /* background-color: #007bff; */
+}
 .homepage-banner {
     /*background: linear-gradient(*/
     /*        rgba(245, 245, 245, 0.95),*/
