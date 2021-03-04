@@ -62,6 +62,7 @@ description: Get started with first knowledge graph using Invana.
                         <button class="text-dark btn btn-link" onclick=downloadThis(".zip")>.zip</button>
                     </div>
                 </div>
+                <p>If you are using .zip file to download and start Invana Studio, you can use the executable "invana-studio" </p>
                 <h4>1.2 using docker <i class="fab fa-docker"></i></h4>
                 <code class="code">
                     $ docker run -p 8888:8888 -d --name invana-studio invanalabs/invana-studio
@@ -74,8 +75,8 @@ description: Get started with first knowledge graph using Invana.
                     $ wget https://github.com/JanusGraph/janusgraph/releases/download/v0.5.3/janusgraph-full-0.5.3.zip
                     <br>
                     $ unzip janusgraph-full-0.5.3.zip <br>
+                    $ cd janusgraph-full-0.5.3 <br>
                     $ ./bin/gremlin-server.sh conf/gremlin-server/gremlin-server.yaml
-
                 </code>
                 <p>This will start in-memory JanusGraph instance. You can start janusgraph with
                     persistent data backends like Cassandra and elasticsearch. More installation instructions can be found <a
