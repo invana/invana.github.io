@@ -47,16 +47,16 @@ collections:
 
   guide:
     output: true
-    permalink: /guide/:title
+    permalink: /docs/:title
   blog:
     output: true
     permalink: /blog/:title
   invana-studio:
     output: true
-    permalink: /guide/invana-studio/:title
+    permalink: /docs/invana-studio/:title
   invana-engine:
     output: true
-    permalink: /guide/invana-engine/:title
+    permalink: /docs/invana-engine/:title
 
 #  help:
 #    output: true
