@@ -23,7 +23,7 @@ email: hi@invana.io
 description: >- # this means to ignore newlines until "baseurl:"
   Connect to your data streams, microservices or data from internet and create Knowledge & Data APIs in near realtime
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://invana.io" # the base hostname & protocol for your site, e.g. http://example.com
 site_url: "https://invana.io"
 twitter_username: invanalabs
 github_username:  invanalabs
