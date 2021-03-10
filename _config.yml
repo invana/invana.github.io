@@ -22,6 +22,8 @@ title: Invana
 email: hi@invana.io
 description: >- # this means to ignore newlines until "baseurl:"
   Connect to your data streams, microservices or data from internet and create Knowledge & Data APIs in near realtime
+author: Ravi Raja Merugu
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://invana.io" # the base hostname & protocol for your site, e.g. http://example.com
 site_url: "https://invana.io"
@@ -34,6 +36,7 @@ highlighter: rouge
 
 plugins:
   - jekyll-seo-tag
+#  - jekyll-feed
 
 kramdown:
   input: GFM
@@ -60,6 +63,16 @@ collections:
   invana-engine:
     output: true
     permalink: /docs/invana-engine/:title
+
+feed:
+  collections:
+    - blog
+  posts_limit: 20
+
+#feed:
+#  categories:
+#    - news
+#    - updates
 
 #  help:
 #    output: true

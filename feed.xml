@@ -14,10 +14,21 @@ title: RSS Feed
 			<item>
 				<title>{{ page.title | xml_escape }}</title>
 				<description>{{ page.description | xml_escape }}</description>
-				<link>{{ page.site_url }}{{ page.url }}</link>
+				<link>{{ site.site_url }}{{ page.url }}</link>
 				<guid isPermaLink="true">{{ site.site_url }}{{ page.url }}</guid>
 			</item>
 		{% endif %}
 		{% endfor %}
+	  	{% for post in site.blog %}
+        {% unless post.draft %}
+        <item>
+            <title>{{ post.title | xml_escape }}</title>
+            <description>{{ post.content | xml_escape }}</description>
+            <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+            <link>{{ post.url | prepend: site.url }}</link>
+            <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
+        </item>
+        {% endunless %}
+        {% endfor %}
 	</channel>
 </rss>

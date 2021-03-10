@@ -46,9 +46,12 @@
 
     <link href="{{ 'public/styles/main.css' | relative_url }}?v=2" rel="stylesheet">
     <!--    <link href="{{ 'public/styles/native.css' | relative_url }}?v=1" rel="stylesheet">-->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }} RSS Feed"
-          href="{{ 'feed.xml' | relative_url }}">
-    <meta name="description" content="{{site.description}}"/>
+<!--    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }} RSS Feed"-->
+<!--          href="{{ 'feed.xml' | relative_url }}">-->
+
+
+    {% feed_meta %}
+<!--    <meta name="description" content="{{site.description}}"/>-->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160182934-1"></script>
