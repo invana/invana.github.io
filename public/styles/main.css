@@ -1,5 +1,8 @@
 @import "native.css";
 
+.min-page-height{
+    min-height: 50%;
+}
 .homepage-icon {
     /*background: rgba(25, 41, 74, 0.45);*/
     /*width: 252px;*/
@@ -112,13 +115,16 @@ main {
     padding-top: 0;
     padding-bottom: 0;
 }
-
-.navbar-brand, .navbar-light .navbar-nav .nav-link {
+.navbar-brand{
+    font-size: 18px !important;
+        font-weight: bold;
+}
+ .navbar-light .navbar-nav .nav-link {
     /*color: #28a028 !important;*/
     font-weight: bold;
     /*color: #212529;*/
-    text-transform: uppercase;
-    font-size: 14px;
+    /*text-transform: uppercase;*/
+    /*font-size: 14px;*/
 }
 
 .blog-menu .nav-link.btn-success {
@@ -242,6 +248,9 @@ h4, .h4{
 .doc-content a {
     text-decoration: underline;
     color: inherit;
+}
+.doc-content img{
+    max-width: 100% !important;
 }
 
 
@@ -387,4 +396,5 @@ h4, .h4{
 
 .dropdown-item h3 {
     font-weight: bold;
+    font-size: 14px !important;
 }

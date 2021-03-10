@@ -42,6 +42,9 @@ permalink:  /:categories/:title
 
 collections_dir: collections
 
+plugins:
+  - jekyll-redirect-from
+
 
 collections:
 

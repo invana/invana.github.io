@@ -28,4 +28,5 @@ end
 # Performance-booster for watching directories on Windows
 gem 'jekyll-watch'
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
+gem 'jekyll-redirect-from'
 
