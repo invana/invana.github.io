@@ -1,0 +1,200 @@
+---
+layout: default
+title: Install
+description: Get started with first knowledge graph using Invana.
+
+---
+<section>
+    <div class="container  page-header-section">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Install</h1>
+                <p>Get started with building and exploring first knowledge graph using Invana.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--            <div class="col-md-12">-->
+            <!--                <p>To build a knowledge graph, We need the following : </p>-->
+            <!--                <ul>-->
+            <!--                    <li><strong>Graph Database</strong> - a graph database that support Apache TinkerPop, so we use-->
+            <!--                        <a href="https://janusgraph.org/">JanusGraph</a></li>-->
+            <!--                    <li><strong>Invana Engine</strong> - GraphQL API for building the knowledge graph.</li>-->
+            <!--                    <li><strong>Graph Explorer</strong> - For visualising the knowledge graphs as connected nodes and-->
+            <!--                        tables.-->
+            <!--                    </li>-->
+            <!--                </ul>-->
+            <!--            </div>-->
+            <div class="col-md-8">
+
+
+                <h3 id="download-invana-studio">1. Download Invana Studio</h3>
+                <p>Download and install the application that suites the environment you work with .</p>
+
+                <h4>1.1 using installer</h4>
+
+                <div class="row pb-3 pt-3">
+                    <div class="col-md-4 text-center">
+                        <div style="font-size: 5rem"><i class="fab fa-windows"></i></div>
+                        <button class="text-dark btn btn-link" onclick=downloadThis(".msi")>.msi</button>
+                        <button class="text-dark btn btn-link" onclick=downloadThis("-win.zip")>.zip</button>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div style="font-size: 5rem"><i class="fab fa-apple"></i></div>
+                        <button class="text-dark btn btn-link" onclick=downloadThis(".dmg")>.dmg</button>
+                        <button class="text-dark btn btn-link" onclick=downloadThis("-mac.zip")>.zip</button>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div style="font-size: 5rem"><i class="fab fa-linux"></i></div>
+                        <button class="text-dark btn btn-link" onclick=downloadThis("_amd64.deb")>.deb</button>
+                        <button class="text-dark btn btn-link" onclick=downloadThis(".x86_64.rpm")>.rpm</button>
+                        <button class="text-dark btn btn-link" onclick=downloadThis(".zip")>.zip</button>
+                    </div>
+                </div>
+                <p>If you are using .zip file to download and start Invana Studio, you can use the executable "invana-studio" </p>
+                <h4>1.2 using docker <i class="fab fa-docker"></i></h4>
+                <code class="code">
+                    $ docker run -p 8888:8888 -d --name invana-studio invanalabs/invana-studio
+                </code>
+
+
+                <h3 class="pt-4" id="start-graph-database">2. Start a graph database server</h3>
+
+                <code class="code">
+                    $ wget https://github.com/JanusGraph/janusgraph/releases/download/v0.5.3/janusgraph-full-0.5.3.zip
+                    <br>
+                    $ unzip janusgraph-full-0.5.3.zip <br>
+                    $ cd janusgraph-full-0.5.3 <br>
+                    $ ./bin/gremlin-server.sh conf/gremlin-server/gremlin-server.yaml
+                </code>
+                <p>This will start in-memory JanusGraph instance. You can start janusgraph with
+                    persistent data backends like Cassandra and elasticsearch. More installation instructions can be found <a
+                        href="https://docs.janusgraph.org/getting-started/installation/">here</a>.
+                </p>
+                <p>Make sure gremlin server is accessible via ws://ip-address:8182/gremlin.</p>
+
+                <div class="alert alert-primary" role="alert">
+                    <strong>Note:</strong> At the moment, Invana supports only
+                    <a href="https://janusgraph.org/">JanusGraph</a> as graph database backend.
+                </div>
+                <h3 class="pt-4" id="install-invana-engine"> 3. Install and start Invana Engine </h3>
+                <p>You can install Invana Engine using PIP or docker.</p>
+                <h4>3.1 using installer(pip)</h4>
+                <code class="code">
+                    $ pip install invana-engine <br>
+                    $ export GREMLIN_SERVER_URL="ws://ip-address:8182/gremlin" <br>
+                    $ invana-engine-start
+                </code>
+                <h4>3.2 using docker</h4>
+                <code class="code">
+                    $ docker run -p 8200:8200 -d -e GREMLIN_SERVER_URL=ws://ip-address:8182/gremlin
+                    --name invana-engine invanalabs/invana-engine
+                </code>
+
+                <p>This will start invana engine GraphQL API at 8200 port, you can access invana engine at
+                    http://ip-address:8200. </p>
+                <h3 class="pt-4" id="setup-invana-studio"> 4. Setup Invana Studio</h3>
+                <p>Provide Invana Engine graphql added in Invana Studio connect page. Provide the
+                    invana engine url "http://ip-address:8200/graphql"</p>
+                <img src="../public/img/setup-invana-studio.png" class="img-fluid border" alt="">
+
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item pl-0"><a href="#download-invana-studio">1. Download Invana Studio </a>
+                    </li>
+
+                    <li class="list-group-item pl-0"><a href="#start-graph-database">2. Start a graph database
+                        server</a></li>
+                    <!--                    <li class="list-group-item pl-0"><a href="#kubernetes">Deploy on Kubernetes </a></li>-->
+                    <!--                    <li class="list-group-item pl-0"><a href="#download">Standalone Installation</a></li>-->
+                    <li class="list-group-item pl-0"><a href="#install-invana-engine">3. Install and start Invana
+                        Engine </a></li>
+                    <li class="list-group-item pl-0"><a href="#setup-invana-studio">4. Setup Invana Studio </a></li>
+
+                    <!--                    <li class="list-group-item pl-0"><a href="{{ docs.url}}">Deploy using</a></li>-->
+
+                </ul>
+                <div class="card mt-3 pt-3 pb-3 pl-3 pr-3 bg-primary">
+                    <div class="card-body p-2 pt-3">
+                        <h3 class="h5 font-weight-bold">
+                            Need a demo of Invana ?
+                        </h3>
+                        <p>Get in touch with us, if you want us to walk you through the features
+                            of Invana. </p>
+
+
+                        <a href="/contact" class="btn btn-dark">Request demo</a>
+                        <!--                        <a href="/guides" class="btn btn-outline-dark">Checkout Docs</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-12 mt-5">
+                <p>Go to <a href="/support.html">Help</a> for more tutorials.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+
+
+    function downloadThis(ext) {
+
+        const fileUrl = assetUrls[ext];
+        window.open(fileUrl)
+    }
+
+    let releasesUrl = "https://api.github.com/repos/invanalabs/invana-studio/releases";
+
+
+    let windowsExt = ['-win.zip', '.msi'];
+    let linuxExt = ['.x86_64.rpm', '_amd64.deb', '.zip'];
+    let macExt = ['-mac.zip', '.dmg'];
+    assetUrls = {}; // {"mac_dmg": "Invana-Studio-mac-0.0.1.dmg";
+    fetch(releasesUrl)
+        .then(response => response.json())
+        .then(data => {
+
+
+            var latestReleaseData = data[0];
+
+            const assets = latestReleaseData.assets;
+
+            for (let assetI in assets) {
+
+                const asset = assets[assetI];
+
+                for (let i in windowsExt) {
+                    const ext = windowsExt[i];
+                    if (asset.name.endsWith(ext)) {
+                        assetUrls[ext] = asset.browser_download_url;
+                    }
+                }
+                for (let i in linuxExt) {
+                    const ext = linuxExt[i];
+                    if (asset.name.endsWith(ext)) {
+                        assetUrls[ext] = asset.browser_download_url;
+                    }
+                }
+                for (let i in macExt) {
+                    const ext = macExt[i];
+                    if (asset.name.endsWith(ext)) {
+                        assetUrls[ext] = asset.browser_download_url;
+                    }
+                }
+
+            }
+
+            console.log(data)
+            console.log(assetUrls)
+        });
+</script>

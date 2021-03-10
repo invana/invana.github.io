@@ -29,4 +29,4 @@ end
 gem 'jekyll-watch'
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 gem 'jekyll-redirect-from'
-
+gem 'jekyll-seo-tag'
