@@ -1,32 +1,63 @@
-<div class="doc-nav">
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item border-0 p-1"><a href="/docs/get-started">Get Started</a></li>
-        <li class="list-group-item border-0 p-1"><a href="/docs/install">Installation</a></li>
-        <li class="list-group-item border-0 p-1"><a href="/docs/install">Invana Engine</a></li>
-    </ul>
+<!--<div class="doc-nav">-->
+<!--    <ul class="list-group list-group-flush">-->
+<!--        <li class="list-group-item border-0 p-1"><a href="/docs/get-started">Get Started</a></li>-->
+<!--        <li class="list-group-item border-0 p-1"><a href="/docs/install">Install</a></li>-->
+<!--        &lt;!&ndash;        <li class="list-group-item border-0 p-1"><a href="/docs/install">Invana Engine</a></li>&ndash;&gt;-->
+<!--    </ul>-->
 <!--    <h6 class="mt-2 pl-2 mb-0">Invana Engine</h6>-->
-    <ul class="list-group list-group-flush">
-        {% for doc in site.invana-engine %}
-        <li class="list-group-item border-0 p-1"><a href="{{ doc.url}}">{{ doc.title }}</a></li>
-        {% endfor %}
-    </ul>
+<!--    <ul class="list-group list-group-flush">-->
+<!--        {% for doc in site.invana-engine %}-->
+<!--        <li class="list-group-item border-0 p-1"><a href="{{ doc.url}}">{{ doc.title }}</a></li>-->
+<!--        {% endfor %}-->
+<!--    </ul>-->
 
-    <h6 class="mt-2 pl-2 mb-0">Invana Studio</h6>
-    <ul class="list-group list-group-flush">
-        {% for doc in site.invana-studio %}
-        <li class="list-group-item border-0 p-1"><a href="{{ doc.url}}">{{ doc.title }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
+<!--    <h6 class="mt-2 pl-2 mb-0">Invana Studio</h6>-->
+<!--    <ul class="list-group list-group-flush">-->
+<!--        {% for doc in site.invana-studio %}-->
+<!--        <li class="list-group-item border-0 p-1"><a href="{{ doc.url}}">{{ doc.title }}</a></li>-->
+<!--        {% endfor %}-->
+<!--    </ul>-->
+<!--</div>-->
+
+
+
+<ul id="accordionExample" class="nav flex-column">
+    <li class="nav-item">
+        <a class="nav-link p-1" href="/docs/get-started">Get Started</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link p-1" href="/docs/install">Install</a>
+    </li>
+    <li class="nav-item" data-toggle="collapse" data-target="#collapseOne">
+        <a class="nav-link p-1" href="javascript:void(0);"> Invana Studio <span class="fa-pull-right">+</span></a>
+        <ul id="collapseOne" class="collapse pl-4" data-parent="#accordionExample">
+            {% for doc in site.invana-studio %}
+            <li class="list-group-item border-0 p-1 bg-transparent"><a href="{{ doc.url}}">{{ doc.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </li>
+    <li class="nav-item" data-toggle="collapse" data-target="#collapseTwo">
+        <a class="nav-link p-1" href="javascript:void(0);"> Invana Engine <span class="fa-pull-right">+</span></a>
+
+        <ul id="collapseTwo" class="collapse pl-4" data-parent="#accordionExample">
+            {% for doc in site.invana-engine %}
+            <li class="list-group-item border-0 p-1 bg-transparent"><a href="{{ doc.url}}">{{ doc.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>
+
 <div class="card mt-5 pt-0 pb-3 pl-3 pr-3 bg-primary">
     <div class="card-body p-2 pt-3">
         <h3 class="h5 font-weight-bold">
             Need a demo ?
         </h3>
-        <p>Get in touch with us, if you want us to walk you through how you can build knowledge graphs using Invana. </p>
+        <p>Get in touch with us, if you want us to walk you through how you can build knowledge graphs using
+            Invana. </p>
 
 
         <a href="/contact" class="btn btn-dark">Request demo</a>
         <!--                        <a href="/guides" class="btn btn-outline-dark">Checkout Docs</a>-->
     </div>
 </div>
+
