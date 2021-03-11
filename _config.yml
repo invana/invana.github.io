@@ -51,9 +51,7 @@ collections_dir: collections
 
 collections:
 
-  guide:
-    output: true
-    permalink: /docs/:title
+
   blog:
     output: true
     permalink: /blog/:title
@@ -63,6 +61,9 @@ collections:
   invana-engine:
     output: true
     permalink: /docs/invana-engine/:title
+  guides:
+    output: true
+    permalink: /guides/:title
 
 feed:
   collections:

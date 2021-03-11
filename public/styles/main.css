@@ -408,3 +408,8 @@ h4, .h4 {
     font-weight: bold;
     font-size: 14px !important;
 }
+
+#docs-nav-accordion .list-group-item{
+        line-height: 1.4rem;
+    font-size: 14px;
+}
