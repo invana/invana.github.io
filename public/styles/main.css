@@ -1,8 +1,9 @@
 @import "native.css";
 
-.min-page-height{
+.min-page-height {
     min-height: 50%;
 }
+
 .homepage-icon {
     /*background: rgba(25, 41, 74, 0.45);*/
     /*width: 252px;*/
@@ -70,12 +71,14 @@ ul.list li, ol.list li {
 main {
     height: 100%;
 }
+
 .dropdown-item.active, .dropdown-item:active {
     color: inherit !important;
     text-decoration: none;
     background-color: transparent !important;
     /* background-color: #007bff; */
 }
+
 .homepage-banner {
     /*background: linear-gradient(*/
     /*        rgba(245, 245, 245, 0.95),*/
@@ -115,11 +118,13 @@ main {
     padding-top: 0;
     padding-bottom: 0;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-size: 18px !important;
-        font-weight: bold;
+    font-weight: bold;
 }
- .navbar-light .navbar-nav .nav-link {
+
+.navbar-light .navbar-nav .nav-link {
     /*color: #28a028 !important;*/
     font-weight: bold;
     /*color: #212529;*/
@@ -192,13 +197,17 @@ blockquote p {
 .doc-nav h6 {
 }
 
-h4, .h4{
+h4, .h4 {
     font-size: 1.2rem !important;
 }
 
-.doc-nav h5 {
+.doc-nav h5, .doc-nav h6 {
     background-color: #efefef;
     padding: 5px 0;
+}
+
+.doc-nav a {
+    color: #343434 !important;
 }
 
 .doc-nav ul {
@@ -249,7 +258,8 @@ h4, .h4{
     text-decoration: underline;
     color: inherit;
 }
-.doc-content img{
+
+.doc-content img {
     max-width: 100% !important;
 }
 

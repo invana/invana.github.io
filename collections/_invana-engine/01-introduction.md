@@ -1,5 +1,5 @@
 ---
-layout: guide-detail
+layout: doc-detail
 title:  1. Introduction to Invana Engine
 ---
 

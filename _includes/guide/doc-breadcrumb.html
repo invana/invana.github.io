@@ -1,0 +1,16 @@
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb p-0 bg-transparent">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/guides">Guides</a></li>
+                    <li class="breadcrumb-item"><a
+                            href="/docs/{% if page.url contains '/invana-studio/' %}invana-studio/{% endif %}{% if page.url contains '/invana-engine/' %}invana-engine/{% endif %}">
+                        {% if page.url contains '/invana-studio/' %}
+                        Invana Studio
+                        {% endif %}
+                        {% if page.url contains '/invana-engine/' %}
+                        Invana Engine
+                        {% endif %}
+                        guide</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
+                </ol>
+            </nav>

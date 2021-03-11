@@ -1,5 +1,5 @@
 ---
-layout: guide-detail
+layout: doc-detail
 title:  2. How to install and setup Invana Studio
 ---
 

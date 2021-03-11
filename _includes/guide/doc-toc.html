@@ -1,0 +1,32 @@
+<div class="doc-nav">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item border-0 p-1"><a href="/docs/get-started">Get Started</a></li>
+        <li class="list-group-item border-0 p-1"><a href="/docs/install">Installation</a></li>
+        <li class="list-group-item border-0 p-1"><a href="/docs/install">Invana Engine</a></li>
+    </ul>
+<!--    <h6 class="mt-2 pl-2 mb-0">Invana Engine</h6>-->
+    <ul class="list-group list-group-flush">
+        {% for doc in site.invana-engine %}
+        <li class="list-group-item border-0 p-1"><a href="{{ doc.url}}">{{ doc.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h6 class="mt-2 pl-2 mb-0">Invana Studio</h6>
+    <ul class="list-group list-group-flush">
+        {% for doc in site.invana-studio %}
+        <li class="list-group-item border-0 p-1"><a href="{{ doc.url}}">{{ doc.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="card mt-5 pt-0 pb-3 pl-3 pr-3 bg-primary">
+    <div class="card-body p-2 pt-3">
+        <h3 class="h5 font-weight-bold">
+            Need a demo ?
+        </h3>
+        <p>Get in touch with us, if you want us to walk you through how you can build knowledge graphs using Invana. </p>
+
+
+        <a href="/contact" class="btn btn-dark">Request demo</a>
+        <!--                        <a href="/guides" class="btn btn-outline-dark">Checkout Docs</a>-->
+    </div>
+</div>
