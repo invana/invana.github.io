@@ -409,7 +409,22 @@ h4, .h4 {
     font-size: 14px !important;
 }
 
-#docs-nav-accordion .list-group-item{
-        line-height: 1.4rem;
+#docs-nav-accordion .list-group-item a {
+    display: block;
+    padding: 5px 5px 5px 10px;
+}
+
+#docs-nav-accordion .list-group-item {
+    line-height: 1.4rem;
     font-size: 14px;
+    padding: 0;
+    /*padding:  5px !important;*/
+    /*padding-left: 0 !important;*/
+    /*margin-bottom: .5rem;*/
+    display: block;
+}
+
+
+#docs-nav-accordion .active {
+    background-color: #f3f8f3;
 }
