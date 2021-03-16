@@ -256,8 +256,14 @@ h4, .h4 {
 }
 
 .doc-content a {
-    /*text-decoration: underline;*/
+}
+
+.breadcrumb a {
     color: inherit;
+}
+
+.doc-content p a, .doc-content li a {
+    text-decoration: underline !important;
 }
 
 .doc-content img {
