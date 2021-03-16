@@ -45,86 +45,20 @@ description: Install and setup Invana Studio and Engine on cloud
         <p>Invana Studio can be accessed at "http://ip-address:8888".
             Provide Invana Engine graphql URL "http://ip-address:8200/graphql" in Invana Studio
             connect page and click connect.
-            </p>
+        </p>
         <img src="../public/img/setup-invana-studio.png" class="img-fluid border" alt="">
 
     </div>
-    <!--    <div class="col-md-3">-->
-    <!--        <ul class="list-group list-group-flush">-->
-    <!--            <li class="list-group-item pl-0"><a href="#download-invana-studio">1. Download Invana Studio </a>-->
-    <!--            </li>-->
 
-    <!--            <li class="list-group-item pl-0"><a href="#start-graph-database">2. Start a graph database-->
-    <!--                server</a>-->
-    <!--            </li>-->
-    <!--            <li class="list-group-item pl-0"><a href="#install-invana-engine">3. Install and start Invana-->
-    <!--                Engine </a>-->
-    <!--            </li>-->
-    <!--            <li class="list-group-item pl-0"><a href="#setup-invana-studio">4. Setup Invana Studio </a>-->
-    <!--            </li>-->
-    <!--        </ul>-->
-
-    <!--    </div>-->
 </div>
 <div class="row">
 
     <div class="col-md-12 mt-5">
-        <p>Go to <a href="/support.html">Help</a> for more tutorials.</p>
+
+        <a class="btn btn-outline-secondary float-left btn-sm" href="/docs/install">&larr; Install Standalone </a>
+        <a class="btn btn-outline-secondary float-right btn-sm" href="/docs/guides">Checkout guides &rarr;</a>
+
+
     </div>
 </div>
 
-
-<script>
-
-
-    function downloadThis(ext) {
-
-        const fileUrl = assetUrls[ext];
-        window.open(fileUrl)
-    }
-
-    let releasesUrl = "https://api.github.com/repos/invanalabs/invana-studio/releases";
-
-
-    let windowsExt = ['-win.zip', '.msi'];
-    let linuxExt = ['.x86_64.rpm', '_amd64.deb', '.zip'];
-    let macExt = ['-mac.zip', '.dmg'];
-    assetUrls = {}; // {"mac_dmg": "Invana-Studio-mac-0.0.1.dmg";
-    fetch(releasesUrl)
-        .then(response => response.json())
-        .then(data => {
-
-
-            var latestReleaseData = data[0];
-
-            const assets = latestReleaseData.assets;
-
-            for (let assetI in assets) {
-
-                const asset = assets[assetI];
-
-                for (let i in windowsExt) {
-                    const ext = windowsExt[i];
-                    if (asset.name.endsWith(ext)) {
-                        assetUrls[ext] = asset.browser_download_url;
-                    }
-                }
-                for (let i in linuxExt) {
-                    const ext = linuxExt[i];
-                    if (asset.name.endsWith(ext)) {
-                        assetUrls[ext] = asset.browser_download_url;
-                    }
-                }
-                for (let i in macExt) {
-                    const ext = macExt[i];
-                    if (asset.name.endsWith(ext)) {
-                        assetUrls[ext] = asset.browser_download_url;
-                    }
-                }
-
-            }
-
-            console.log(data)
-            console.log(assetUrls)
-        });
-</script>

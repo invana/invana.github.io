@@ -256,7 +256,7 @@ h4, .h4 {
 }
 
 .doc-content a {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     color: inherit;
 }
 
