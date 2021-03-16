@@ -1,7 +1,7 @@
 ---
 layout: doc-detail
-title: Download & Install
-description: Install and setup Invana Studio and Engine on your local machine or cloud
+title: Standalone Installation
+description: Install and setup Invana Studio and Engine on your machine
 ---
 
 <div class="row">
@@ -16,15 +16,21 @@ description: Install and setup Invana Studio and Engine on your local machine or
     <!--                    </li>-->
     <!--                </ul>-->
     <!--            </div>-->
-    <div class="col-md-9">
+    <div class="col-md-12">
 
-        <p>You can download a standalone desktop version of Invana Studio or deploy a
-            docker version for your cloud deployment needs.</p>
+        <p>Download and install standalone version of Invana Studio and
+            Engine to run it on your local machine.</p>
 
-        <h3 id="download-invana-studio">1. Download Invana Studio</h3>
-        <p>Download and install the application that suites the environment you work with .</p>
+        <h3 id="requirements"> Requirements </h3>
+        <ol>
+            <li>Apache TinkerPop enabled graph database. Setup <a href="https://docs.janusgraph.org/getting-started/installation/">JanusGraph server</a>.
+            Make sure gremlin server is accessible via ws://ip-address:8182/gremlin</li>
+            <li>Python 3.8 to run Invana Engine.</li>
+        </ol>
+        <h3 id="download-invana-studio">Download Invana Studio</h3>
+        <p>Download and install the application that suites the environment you work with.</p>
 
-        <h4>1.1 using installer</h4>
+        <!--        <h4>Install</h4>-->
 
         <div class="row pb-3 pt-3">
             <div class="col-md-4 text-center">
@@ -46,69 +52,50 @@ description: Install and setup Invana Studio and Engine on your local machine or
         </div>
         <p>If you are using .zip file to download and start Invana Studio, you can use the executable
             "invana-studio" </p>
-        <h4>1.2 using docker <i class="fab fa-docker"></i></h4>
-        <code class="code">
-            $ docker run -p 8888:8888 -d --name invana-studio invanalabs/invana-studio
-        </code>
 
 
-        <h3 class="pt-4" id="start-graph-database">2. Start a graph database server</h3>
 
-        <code class="code">
-            $ wget https://github.com/JanusGraph/janusgraph/releases/download/v0.5.3/janusgraph-full-0.5.3.zip
-            <br>
-            $ unzip janusgraph-full-0.5.3.zip <br>
-            $ cd janusgraph-full-0.5.3 <br>
-            $ ./bin/gremlin-server.sh conf/gremlin-server/gremlin-server.yaml
-        </code>
-        <p>This will start in-memory JanusGraph instance. You can start janusgraph with
-            persistent data backends like Cassandra and elasticsearch. More installation instructions can be found <a
-                    href="https://docs.janusgraph.org/getting-started/installation/">here</a>.
-        </p>
-        <p>Make sure gremlin server is accessible via ws://ip-address:8182/gremlin.</p>
 
         <div class="alert alert-primary" role="alert">
             <strong>Note:</strong> At the moment, Invana supports only
             <a href="https://janusgraph.org/">JanusGraph</a> as graph database backend.
         </div>
-        <h3 class="pt-4" id="install-invana-engine"> 3. Install and start Invana Engine </h3>
-        <p>You can install Invana Engine using PIP or docker.</p>
-        <h4>3.1 using installer(pip)</h4>
+        <h3 class="pt-4" id="install-invana-engine"> Install and start Invana Engine </h3>
+        <p>You can install Invana Engine using pip.</p>
         <code class="code">
             $ pip install invana-engine <br>
             $ export GREMLIN_SERVER_URL="ws://ip-address:8182/gremlin" <br>
             $ invana-engine-start
         </code>
-        <h4>3.2 using docker</h4>
-        <code class="code">
-            $ docker run -p 8200:8200 -d -e GREMLIN_SERVER_URL=ws://ip-address:8182/gremlin
-            --name invana-engine invanalabs/invana-engine
-        </code>
 
         <p>This will start invana engine GraphQL API at 8200 port, you can access invana engine at
             http://ip-address:8200. </p>
-        <h3 class="pt-4" id="setup-invana-studio"> 4. Setup Invana Studio</h3>
-        <p>Provide Invana Engine graphql added in Invana Studio connect page. Provide the
-            invana engine url "http://ip-address:8200/graphql"</p>
+
+
+        <h3 class="pt-4" id="setup-invana-studio"> Using Invana Studio</h3>
+        <p>Search for Invana Studio in your apps and open the application.
+            Provide Invana Engine graphql url ("http://ip-address:8200/graphql") in Invana Studio
+            connect page and click connect.
+             </p>
         <img src="../public/img/setup-invana-studio.png" class="img-fluid border" alt="">
 
     </div>
-    <div class="col-md-3">
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item pl-0"><a href="#download-invana-studio">1. Download Invana Studio </a>
-            </li>
+<!--    <div class="col-md-3">-->
+<!--        <ul class="list-group list-group-flush">-->
+<!--            <li class="list-group-item pl-0"><a href="#download-invana-studio">1. Download Invana Studio </a>-->
+<!--            </li>-->
 
-            <li class="list-group-item pl-0"><a href="#start-graph-database">2. Start a graph database
-                server</a>
-            </li>
-            <li class="list-group-item pl-0"><a href="#install-invana-engine">3. Install and start Invana
-                Engine </a>
-            </li>
-            <li class="list-group-item pl-0"><a href="#setup-invana-studio">4. Setup Invana Studio </a>
-            </li>
-        </ul>
+<!--            <li class="list-group-item pl-0"><a href="#start-graph-database">2. Start a graph database-->
+<!--                server</a>-->
+<!--            </li>-->
+<!--            <li class="list-group-item pl-0"><a href="#install-invana-engine">3. Install and start Invana-->
+<!--                Engine </a>-->
+<!--            </li>-->
+<!--            <li class="list-group-item pl-0"><a href="#setup-invana-studio">4. Setup Invana Studio </a>-->
+<!--            </li>-->
+<!--        </ul>-->
 
-    </div>
+<!--    </div>-->
 </div>
 <div class="row">
 
