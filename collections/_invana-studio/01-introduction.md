@@ -1,25 +1,16 @@
 ---
 layout: doc-detail
-title:  1. Introduction to Invana Studio
+title:  1. Introduction
 ---
 
-Graph Explorer is an open source, extendable data visualiser for 
-Apache TinkerPop's Gremlin supported graph databases.
+Invana Studio is an open source knowledge graphs visualiser and editor.
+
 
 This project aims at being the interactive User Interface for Graphs, where 
 user shall be able to make queries, visualise data, query more.
 
-## 1.1 Features 
 
-- Connect to any Apache TinkerPop enabled Graph Database.
-- Connect via HTTP or WebSocket protocols.
-- Connect to Basic and Token based Authentication gremlin server over http/s (you can use [gremlin-proxy](https://github.com/invanalabs/gremlin-proxy).
-- Visualise data in Force Directed Graphs, Tables and JSON.
-- Retain query history in your localstorage.
-- Update colors of nodes and edges.
-
-
-## 1.2 Requirements
+### Requirements
 
 - Any database that supports Apache Tinkerpop 3.4.x
 - docker to run the application (optional, you can use the free cloud version from 
@@ -32,10 +23,10 @@ user shall be able to make queries, visualise data, query more.
 > Apache Tinkerpop 3.4.x. You can follow instructions to install JanusGraph from
 > [here](https://docs.janusgraph.org/getting-started/installation/){:target="_blank"}.
  
-## 1.3 License
+### License
 
 This tool is distributed under open source 
-[Apache License 2.0](https://github.com/invanalabs/graph-explorer/blob/master/LICENSE). 
+[Apache License 2.0](https://github.com/invanalabs/invana-studio/blob/master/LICENSE). 
 
 
 
