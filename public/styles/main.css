@@ -95,13 +95,14 @@ main {
 }
 
 .homepage-banner h1 {
-    margin-top: 30%;
+    margin-top: 23%;
     font-weight: bold;
     font-size: 2rem;
 }
 
 .homepage-banner img {
-    margin-top: 10%;
+    margin-top: 1%;
+    border: 1px solid #efefef;
 }
 
 .navbar-light {
