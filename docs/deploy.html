@@ -1,0 +1,113 @@
+---
+layout: doc-detail
+title: Install and Deploy
+description: Deploy Invana on your local machine or cloud.
+---
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <p>Deploy Invana Platform on your local machine or cloud using
+            <a href="https://docs.docker.com/compose/">docker compose</a>.</p>
+
+        <h3>Deploy Invana Infrastructure</h3>
+        <code>
+            <pre>
+git clone git@github.com:invanalabs/docker-templates.git
+cd docker-templates/invana-with-janusgraph
+docker-compose up</pre>
+        </code>
+
+        <p>This will start the services Invana Engine and Invana Studio at 8200 and 8888 ports respectively.
+        </p>
+
+        <h3>Setup Invana Studio</h3>
+        <p>Access Invana Studio at http://localhost:8888,
+            connect to Invana Engine server URL which defaults to
+            http://localhost:8200/graphql.</p>
+
+        <img src="/public/img/connect-view.png" class="img-fluid border"/>
+
+
+    </div>
+    <!--    <div class="col-md-3">-->
+    <!--        <ul class="list-group list-group-flush">-->
+    <!--            <li class="list-group-item pl-0"><a href="#download-invana-studio">1. Download Invana Studio </a>-->
+    <!--            </li>-->
+
+    <!--            <li class="list-group-item pl-0"><a href="#start-graph-database">2. Start a graph database-->
+    <!--                server</a>-->
+    <!--            </li>-->
+    <!--            <li class="list-group-item pl-0"><a href="#install-invana-engine">3. Install and start Invana-->
+    <!--                Engine </a>-->
+    <!--            </li>-->
+    <!--            <li class="list-group-item pl-0"><a href="#setup-invana-studio">4. Setup Invana Studio </a>-->
+    <!--            </li>-->
+    <!--        </ul>-->
+
+    <!--    </div>-->
+</div>
+<div class="row">
+
+    <div class="col-md-12 mt-5">
+        <a class="btn btn-outline-secondary float-right btn-sm" href="/docs/deploy-using-docker">Install using Docker
+            &rarr; </a>
+    </div>
+</div>
+
+
+<script>
+
+
+    function downloadThis(ext) {
+
+        const fileUrl = assetUrls[ext];
+        window.open(fileUrl)
+    }
+
+    let releasesUrl = "https://api.github.com/repos/invanalabs/invana-studio/releases";
+
+
+    let windowsExt = ['-win.zip', '.msi'];
+    let linuxExt = ['.x86_64.rpm', '_amd64.deb', '.zip'];
+    let macExt = ['-mac.zip', '.dmg'];
+    assetUrls = {}; // {"mac_dmg": "Invana-Studio-mac-0.0.1.dmg";
+    fetch(releasesUrl)
+        .then(response => response.json())
+        .then(data => {
+
+
+            var latestReleaseData = data[0];
+
+            const assets = latestReleaseData.assets;
+
+            for (let assetI in assets) {
+
+                const asset = assets[assetI];
+
+                for (let i in windowsExt) {
+                    const ext = windowsExt[i];
+                    if (asset.name.endsWith(ext)) {
+                        assetUrls[ext] = asset.browser_download_url;
+                    }
+                }
+                for (let i in linuxExt) {
+                    const ext = linuxExt[i];
+                    if (asset.name.endsWith(ext)) {
+                        assetUrls[ext] = asset.browser_download_url;
+                    }
+                }
+                for (let i in macExt) {
+                    const ext = macExt[i];
+                    if (asset.name.endsWith(ext)) {
+                        assetUrls[ext] = asset.browser_download_url;
+                    }
+                }
+
+            }
+
+            console.log(data)
+            console.log(assetUrls)
+        });
+</script>

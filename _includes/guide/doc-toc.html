@@ -1,8 +1,8 @@
 <!--<div class="doc-nav">-->
 <!--    <ul class="list-group list-group-flush">-->
 <!--        <li class="list-group-item border-0 p-1"><a href="/docs/get-started">Get Started</a></li>-->
-<!--        <li class="list-group-item border-0 p-1"><a href="/docs/install">Install</a></li>-->
-<!--        &lt;!&ndash;        <li class="list-group-item border-0 p-1"><a href="/docs/install">Invana Engine</a></li>&ndash;&gt;-->
+<!--        <li class="list-group-item border-0 p-1"><a href="/docs/deploy">Install</a></li>-->
+<!--        &lt;!&ndash;        <li class="list-group-item border-0 p-1"><a href="/docs/deploy">Invana Engine</a></li>&ndash;&gt;-->
 <!--    </ul>-->
 <!--    <h6 class="mt-2 pl-2 mb-0">Invana Engine</h6>-->
 <!--    <ul class="list-group list-group-flush">-->
@@ -20,48 +20,48 @@
 <!--</div>-->
 
 
-<ul id="docs-nav-accordion" class="nav flex-column">
+<ul id="docs-nav-accordion" class="nav flex-column border pt-2 pb-2">
     <li class="nav-item">
-        <a class="nav-link  text-dark  p-1 {% if page.url == '/docs/get-started' %} active {% endif %} "
-           href="/docs/get-started">Get Started</a>
+        <a class="nav-link  text-dark pt-2 pb-1 pl-3 pr-3{% if page.url == '/docs/get-started' %} active {% endif %} "
+           href="/docs/get-started">Get Started with Invana</a>
     </li>
-    <li class="nav-item {% if page.url == '/docs/install' %} active {% endif %}">
-        <a class="nav-link  text-dark  p-1  " href="/docs/install">Install Standalone</a>
+    <li class="nav-item {% if page.url == '/docs/deploy' %} active {% endif %}">
+        <a class="nav-link  text-dark pt-1 pb-1 pl-3 pr-3 " href="/docs/deploy">Deploy Invana using Docker</a>
     </li>
-    <li class="nav-item {% if page.url == '/docs/install-using-docker' %} active {% endif %}">
-        <a class="nav-link  text-dark  p-1  " href="/docs/install-using-docker">Install using docker</a>
+    <li class="nav-item {% if page.url == '/docs/deploy-using-docker' %} active {% endif %}">
+        <a class="nav-link  text-dark pt-1 pb-1 pl-3 pr-3 " href="/docs/deploy-using-docker">Install using docker</a>
     </li>
     <li class="nav-item" data-toggle="collapse" data-target="#collapseThree">
-        <a class="nav-link  text-dark  p-1" href="javascript:void(0);">Product Guides <span class="fa-pull-right">+</span></a>
+        <a class="nav-link  text-dark  pt-1 pb-1 pl-3 pr-3" href="javascript:void(0);">Product Guides <span class="fa-pull-right">+</span></a>
 
         <ul id="collapseThree" class="collapse pl-4 {% if page.url contains '/guides/' %} show {% endif %}"
             data-parent="#docs-nav-accordion">
             {% for doc in site.guides %}
             <li class="list-group-item  border-0   {% if page.url == doc.url %} active {% endif %}">
-                <a class=" text-dark " href="{{ doc.url}}">{{ doc.title }}</a></li>
+                <a class=" text-dark  pt-1 pb-1 pl-3 pr-3 " href="{{ doc.url}}">{{ doc.title }}</a></li>
             {% endfor %}
         </ul>
     </li>
     <li class="nav-item" data-toggle="collapse" data-target="#collapseOne">
-        <a class="nav-link  text-dark  p-1" href="javascript:void(0);"> Invana Studio <span
+        <a class="nav-link  text-dark  pt-1 pb-1 pl-3 pr-3" href="javascript:void(0);"> Invana Studio <span
                 class="fa-pull-right">+</span></a>
         <ul id="collapseOne" class="collapse pl-4 {% if page.url contains '/invana-studio/' %} show {% endif %}"
             data-parent="#docs-nav-accordion">
             {% for doc in site.invana-studio %}
             <li class="list-group-item border-0   {% if page.url == doc.url %} active {% endif %}">
-                <a class=" text-dark  " href="{{ doc.url}}">{{ doc.title }}</a></li>
+                <a class=" text-dark  pt-1 pb-1 pl-3 pr-3 " href="{{ doc.url}}">{{ doc.title }}</a></li>
             {% endfor %}
         </ul>
     </li>
     <li class="nav-item" data-toggle="collapse" data-target="#collapseTwo">
-        <a class="nav-link  text-dark  p-1" href="javascript:void(0);"> Invana Engine <span
+        <a class="nav-link  text-dark  pt-1 pb-1 pl-3 pr-3" href="javascript:void(0);"> Invana Engine <span
                 class="fa-pull-right">+</span></a>
 
         <ul id="collapseTwo" class="collapse pl-4 {% if page.url contains '/invana-engine/' %} show {% endif %}"
             data-parent="#docs-nav-accordion">
             {% for doc in site.invana-engine %}
             <li class="list-group-item border-0   {% if page.url == doc.url %} active {% endif %}">
-                <a class=" text-dark " href="{{ doc.url}}">{{ doc.title }}</a></li>
+                <a class=" text-dark  pt-1 pb-1 pl-3 pr-3 " href="{{ doc.url}}">{{ doc.title }}</a></li>
             {% endfor %}
         </ul>
     </li>
