@@ -437,3 +437,11 @@ h4, .h4 {
 #docs-nav-accordion .active {
     background-color: #f3f8f3;
 }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 768px) {
+    .dropdown-menu.products-list {
+        width: 560px;
+    }
+}
+
