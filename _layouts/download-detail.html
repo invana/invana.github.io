@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="container  page-header-section">
+    <div class="row">
+<!--        <div class="col-md-2 "></div>-->
+        <div class="col-md-10 ">
+            <h1>Download {{ page.title }}</h1>
+            <p class="post-date text-muted mb-1">version : {{page.latest_version}}</p>
+            <p class="post-date text-muted mb-1">release date: {{page.latest_version_release_date}}</p>
+
+<!--            <hr>-->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8" style="min-height: 400px">
+            <img src="{{page.hero_image}}" class="img-fluid hero-image" alt="">
+            {{ content }}
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+</div>
+
+

@@ -13,13 +13,13 @@ user shall be able to make queries, visualise data, query more.
   
 [comment]: <> (> **Hint:** If you dont have any database preference to start with, )
 
-[comment]: <> (> you can use any latest version of [JanusGraph]&#40;https://janusgraph.org&#41;{:target="_blank"})
+[comment]: <> (> you can use any latest version of [JanusGraph]&#40;https://janusgraph.org&#41;{:})
 
 [comment]: <> (> that is distributed with )
 
 [comment]: <> (> Apache Tinkerpop 3.4.x. You can follow instructions to install JanusGraph from)
 
-[comment]: <> (> [here]&#40;https://docs.janusgraph.org/getting-started/installation/&#41;{:target="_blank"}.)
+[comment]: <> (> [here]&#40;https://docs.janusgraph.org/getting-started/installation/&#41;{:}.)
  
 ### License
 
