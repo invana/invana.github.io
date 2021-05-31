@@ -441,7 +441,7 @@ h4, .h4 {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 768px) {
     .dropdown-menu.products-list {
-        width: 560px;
+        width: 520px;
     }
 }
 
