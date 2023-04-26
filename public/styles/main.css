@@ -17,7 +17,8 @@
     margin-top: 7rem;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-size: 16px;
     line-height: 1.6rem;
@@ -25,7 +26,12 @@ html, body {
     font-family: 'DM Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -58,12 +64,14 @@ a:hover {
     /*color: #28a028;*/
 }
 
-ul.list, ol.list {
+ul.list,
+ol.list {
     /*margin-left: 0;*/
     padding-left: 0;
 }
 
-ul.list li, ol.list li {
+ul.list li,
+ol.list li {
     display: block;
     margin-bottom: 5px;
 }
@@ -72,7 +80,8 @@ main {
     height: 100%;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
     color: inherit !important;
     text-decoration: none;
     background-color: transparent !important;
@@ -89,13 +98,30 @@ main {
     /*height: calc(100% - 60px);*/
 }
 
+.homepage-banner .main-text {
+    margin-top: 15%;
+    padding-bottom: 5%;
+}
+
+.homepage-banner .main-banner {
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.homepage-banner .main-banner a.nav-link.active .text-dark,
+.homepage-banner .main-banner a.nav-link.active .text-secondary{
+    color: white !important;
+}
+.homepage-banner .main-banner .tab-pane{
+    min-height: 400px;
+}
+
 .hero-image-container {
     /*padding:1rem 2rem;*/
     margin-top: 2rem;
 }
 
 .homepage-banner h1 {
-    margin-top: 23%;
     font-weight: bold;
     font-size: 2rem;
 }
@@ -133,11 +159,12 @@ main {
     /*font-size: 14px;*/
 }
 
-.blog-menu .nav-link.btn-success {
+/* .blog-menu .nav-link.btn-success {
     color: white !important;
-}
+} */
 
-.navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:hover {
     color: #28a028;
 }
 
@@ -195,14 +222,15 @@ blockquote p {
 .doc-nav h3,
 .doc-nav h4,
 .doc-nav h5,
-.doc-nav h6 {
-}
+.doc-nav h6 {}
 
-h4, .h4 {
+h4,
+.h4 {
     font-size: 1.2rem !important;
 }
 
-.doc-nav h5, .doc-nav h6 {
+.doc-nav h5,
+.doc-nav h6 {
     background-color: #efefef;
     padding: 5px 0;
 }
@@ -228,7 +256,11 @@ h4, .h4 {
     margin-top: 0 !important;
 }
 
-.doc-content h1, .doc-content h2, .doc-content h3, .doc-content h4, .doc-content h5 {
+.doc-content h1,
+.doc-content h2,
+.doc-content h3,
+.doc-content h4,
+.doc-content h5 {
     margin-top: 1.8rem;
     font-weight: 500;
 }
@@ -256,14 +288,14 @@ h4, .h4 {
     font-size: 1rem;
 }
 
-.doc-content a {
-}
+.doc-content a {}
 
 .breadcrumb a {
     color: inherit;
 }
 
-.doc-content p a, .doc-content li a {
+.doc-content p a,
+.doc-content li a {
     text-decoration: underline !important;
 }
 
