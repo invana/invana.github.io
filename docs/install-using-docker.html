@@ -25,7 +25,7 @@ description: Install and setup Invana Studio and Engine on cloud
 
         <!--        <h4>1.2 using docker <i class="fab fa-docker"></i></h4>-->
         <code class="code">
-            $ docker run -p 8888:8888 -d --name invana-studio invanalabs/invana-studio
+            $ docker run -p 8888:8888 -d --name invana-studio invana/invana-studio
         </code>
         <p>This will start invana studio at 8888 port, you can access invana studio at
             http://ip-address:8888.</p>
@@ -34,7 +34,7 @@ description: Install and setup Invana Studio and Engine on cloud
 
         <code class="code">
             $ docker run -p 8200:8200 -d -e GREMLIN_SERVER_URL=ws://ip-address:8182/gremlin
-            --name invana-engine invanalabs/invana-engine
+            --name invana-engine invana/invana-engine
         </code>
 
         <p>This will start invana engine GraphQL API at 8200 port, you can access invana engine at

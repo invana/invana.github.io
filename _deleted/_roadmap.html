@@ -71,7 +71,7 @@ description: Opensource projects at Invana.
             "docker-builder",
             "web-parsers",
         ];
-        var repos_url = "https://api.github.com/orgs/invanalabs/repos";
+        var repos_url = "https://api.github.com/orgs/invana/repos";
         const month_names = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
         ];
@@ -90,8 +90,8 @@ description: Opensource projects at Invana.
                 repos_of_interest.forEach(function (repo_name) {
                     data.forEach(function (datum) {
                         if (datum.name === repo_name) {
-                            let last_commit_url = "https://api.github.com/repos/invanalabs/" + datum.name + "/commits?sha=" + datum.default_branch;
-                            let topics_url = "https://api.github.com/repos/invanalabs/" + datum.name + "/topics";
+                            let last_commit_url = "https://api.github.com/repos/invana/" + datum.name + "/commits?sha=" + datum.default_branch;
+                            let topics_url = "https://api.github.com/repos/invana/" + datum.name + "/topics";
                             $.ajax({
                                 url: topics_url,
                                 type: 'GET',

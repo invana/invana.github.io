@@ -28,7 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://invana.io" # the base hostname & protocol for your site, e.g. http://example.com
 site_url: "https://invana.io"
 twitter_username: invanalabs
-github_username:  invanalabs
+github_username:  invana
 
 CONTACT_EMAIL: "hi@invana.io"
 markdown: kramdown

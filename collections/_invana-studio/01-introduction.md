@@ -24,7 +24,7 @@ user shall be able to make queries, visualise data, query more.
 ### License
 
 This tool is distributed under open source 
-[Apache License 2.0](https://github.com/invanalabs/invana-studio/blob/master/LICENSE). 
+[Apache License 2.0](https://github.com/invana/invana-studio/blob/master/LICENSE). 
 
 
 
