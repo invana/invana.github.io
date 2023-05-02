@@ -117,7 +117,7 @@ description: Get the right tools for the job, model, query and visualise graph d
                         <a href="https://flask.palletsprojects.com/">Flask</a> Application
                     </li>
                     <li class="fs-5 mt-3 list-group-item ps-0"><i class="bi bi-check-circle"></i> Python API for <a
-                            href="https://github.com/apache/beam">Apache beam</a>.</li>
+                            href="https://github.com/apache/beam">Apache beam</a> to enable stream and batch processing.</li>
                     <!-- <li class="fs-5 mt-3 list-group-item ps-0"><i class="bi bi-check-circle"></i> Add properties to add attach meaning to your data.</li> -->
                 </ul>
             </div>
@@ -263,13 +263,17 @@ description: Get the right tools for the job, model, query and visualise graph d
             </div>
             <div class="col-md-6">
                 <ul class=" list-group list-group-flush">
-                    <li class="fs-5 mt-3 list-group-item ps-0"><i class="bi bi-check-circle"></i> Supports any Apache TinkerPop-enabled systems.</li>
-                    <li class="fs-5 mt-3 list-group-item ps-0"><i class="bi bi-check-circle"></i> Switch to supported graph db with minimal or no changes.</li>
-                    <li class="fs-5 mt-3 list-group-item ps-0"><i class="bi bi-check-circle"></i> Hassle free migration to supported graph systems.</li>
+                    <li class="fs-5 mt-3 list-group-item ps-0"><i class="bi bi-check-circle"></i> Supports any Apache
+                        TinkerPop-enabled systems.</li>
+                    <li class="fs-5 mt-3 list-group-item ps-0"><i class="bi bi-check-circle"></i> Switch to supported
+                        graph db with minimal or no changes.</li>
+                    <li class="fs-5 mt-3 list-group-item ps-0"><i class="bi bi-check-circle"></i> Hassle free migration
+                        to supported graph systems.</li>
                 </ul>
-                <p class="mt-3">  If you would like to request support for a new graph databackend, please get in touch with us. </p>
+                <p class="mt-3"> If you would like to request support for a new graph databackend, please get in touch
+                    with us. </p>
                 <a href="/contact" class="btn btn-outline-success mt-2">contact us</a>
-                
+
 
             </div>
             <div class="col-md-6">
@@ -278,12 +282,12 @@ description: Get the right tools for the job, model, query and visualise graph d
                     <div class="col-4 mb-4">
                         <h5>{{vendor.title}}</h5>
                         <a href="{{vendor.url}}">
-                            <img src="{{vendor.logo}}" class="img-fluid"  alt="{{vendor.title}}"> 
-                        </a> 
+                            <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
+                        </a>
                     </div>
                     {% endfor %}
                 </div>
-              
+
             </div>
         </div>
     </div>
@@ -296,21 +300,11 @@ description: Get the right tools for the job, model, query and visualise graph d
     </div>
 </section>
 
-<section class="home-section bg-primary">
+<section class="bg-primary">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 mt-5 mb-5 text-dark">
-                <p class="text-uppercase  font-weight-400">Get started in just few minutes.</p>
-                <h2>Build your first Knowledge Graph</h2>
-                <p>Developer or not a developer, build your first knowledge graph with
-                    our opensource tools. </p>
-                <a href="/get-started" class="btn btn-dark mt-2">Get Started</a>
-
-            </div>
-        </div>
+        {% include build-first-graph.html %}
     </div>
 </section>
-
 
 <script type="application/javascript">
     window.onload = function () {
