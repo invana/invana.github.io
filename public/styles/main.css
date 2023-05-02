@@ -130,14 +130,16 @@ main {
     margin-top: 1%;
     border: 1px solid #efefef;
 }
-
+/* 
 .navbar-light {
     border-bottom: 1px solid #dcdcdc;
-    /*padding-bottom: 0;*/
 }
 
 .navbar-light .navbar-nav .nav-link {
-    /*margin-left: 10px;*/
+} */
+
+.header .dropdown-menu.support-menu {
+    width: 700px;
 }
 
 .navbar-brand {
@@ -378,9 +380,9 @@ h4,
 }
 
 .page-header-section {
-    border-bottom: 1px solid #efefef;
-    padding-bottom: 10px;
-    margin-bottom: 1rem;
+    /* border-bottom: 1px solid #efefef; */
+    /* padding-bottom: 10px;
+    margin-bottom: 1rem; */
 }
 
 .page-header-section h1 {
