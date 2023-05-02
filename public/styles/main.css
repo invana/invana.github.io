@@ -84,7 +84,7 @@ main {
 .dropdown-item:active {
     color: inherit !important;
     text-decoration: none;
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
     /* background-color: #007bff; */
 }
 

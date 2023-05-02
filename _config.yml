@@ -30,6 +30,10 @@ site_url: "https://invana.io"
 twitter_username: invanalabs
 github_username:  invana
 
+get_started_url: https://docs.invana.io/getting-started
+guides_url: https://docs.invana.io/resources/guides
+product_manual_url: https://docs.invana.io/products/introduction
+
 CONTACT_EMAIL: "hi@invana.io"
 markdown: kramdown
 highlighter: rouge
