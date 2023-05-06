@@ -98,23 +98,7 @@ description: Invana helps people explore, analyse and find insights from data us
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <div class="row mt-5 mb-5 justify-content-md-center">
-            <div class="col-md-12 text-center mb-5 mt-5">
-                <h3>Supported graph databases</h3>
-            </div>
-            {% for vendor in site.data.vendors %}
-            <div class="col-md-2 col-sm-6 col-6 text-center mb-4">
-                <a href="{{vendor.url}}" class="text-decoration-none text-reset text-underline-0">
-                    <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
-                    <h6 class="mt-2">{{vendor.title}}</h6>
-                </a>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+
 <section>
     <div class="container pt-5" id="how-it-works">
         <div class="row">
@@ -188,6 +172,23 @@ type Starship {
     </div>
 </section>
 
+<section>
+    <div class="container">
+        <div class="row mt-5 mb-5 justify-content-md-center">
+            <div class="col-md-12 text-center mb-5 mt-5">
+                <h3>Supported graph databases</h3>
+            </div>
+            {% for vendor in site.data.vendors %}
+            <div class="col-md-2 col-sm-6 col-6 text-center mb-4">
+                <a href="{{vendor.url}}" class="text-decoration-none text-reset text-underline-0">
+                    <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
+                    <h6 class="mt-2">{{vendor.title}}</h6>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 
 <section class=" bg-success text-dark">
     <div class="container">
