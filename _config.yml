@@ -30,6 +30,8 @@ site_url: "https://invana.io"
 twitter_username: invanalabs
 github_username:  invana
 
+vision_statement: Building toolkit to detect and analyse the patterns.
+
 get_installation_methods_url: https://docs.invana.io/getting-started
 guides_url: https://docs.invana.io/resources/guides
 product_manual_url: https://docs.invana.io/products/introduction
