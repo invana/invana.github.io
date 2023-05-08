@@ -48,7 +48,7 @@ description: Invana helps people explore, analyse and find insights from data us
 
             <div class="col-md-12 text-center ">
                 <h2 class="fw-bold ">What invana offers</h2>
-                <p class="h5">An end-to-end solution for creating and 
+                <p class="h5">An end-to-end solution for creating and
                     analysing data with the power of Graph Computing.
                 </p>
             </div>
@@ -66,7 +66,8 @@ description: Invana helps people explore, analyse and find insights from data us
                         <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
                             <i class="bi bi-rocket-takeoff "></i>
                         </div>
-                        <p class="fs-5 lh-base">Python API for integrating with your AI and data workflows.</p>
+                        <p class="fs-5 lh-base">Python API for integrating with your AI and data workflows and
+                            pipelines.</p>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="d-inline-flex align-items-center justify-content-center fs-1 mb-3">
@@ -90,7 +91,7 @@ description: Invana helps people explore, analyse and find insights from data us
                         <div class="fs-1 mb-3">
                             <i class="bi bi-rocket-takeoff "></i>
                         </div>
-                        <p class="fs-5 lh-base">Search, visualise, interact with data  and annotate with out code. </p>
+                        <p class="fs-5 lh-base">Search, visualise, interact with data and annotate with out code. </p>
                     </div>
                 </div>
             </div>
@@ -98,7 +99,7 @@ description: Invana helps people explore, analyse and find insights from data us
     </div>
 </section>
 
-
+<!-- 
 <section>
     <div class="container pt-5" id="how-it-works">
         <div class="row">
@@ -106,24 +107,24 @@ description: Invana helps people explore, analyse and find insights from data us
                 <h2 class="text-center mb-5 mt-5 fw-bold">How it works</h2>
                 <ul class="nav nav-pills nav-fill  justify-content-center text-center " id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active border  text-reset rounded-0" id="pills-home-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
-                            aria-controls="pills-home" aria-selected="true">
+                        <a class="nav-link active border  text-reset rounded-0" id="pills-python-api-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-python-api" type="button" role="tab"
+                            aria-controls="pills-python-api" aria-selected="true">
                             <h4 class="mt-1 mb-0">Modelling</h4>
                             <p class="mb-0  small">Design a unified data schema</p>
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link border rounded-0  text-reset" id="pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        <a class="nav-link border rounded-0  text-reset" id="pills-graphql-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-graphql" type="button" role="tab" aria-controls="pills-graphql"
                             aria-selected="false">
                             <h4 class="mt-1 mb-0 ">Data Integrations</h4>
                             <p class="mb-0 small">Integrate data and apps with Python API</p>
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link border rounded-0  text-reset" id="pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        <a class="nav-link border rounded-0  text-reset" id="pills-graphql-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-graphql" type="button" role="tab" aria-controls="pills-graphql"
                             aria-selected="false">
                             <h4 class="mt-1 mb-0 ">GraphQL API</h4>
                             <p class="mb-0 small">Consume graph data in your apps</p>
@@ -141,8 +142,8 @@ description: Invana helps people explore, analyse and find insights from data us
                     </li>
                 </ul>
                 <div class="tab-content border p-3" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                        aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="tab-pane fade show active" id="pills-python-api" role="tabpanel"
+                        aria-labelledby="pills-python-api-tab" tabindex="0">
 
                         <div class="row">
                             <div class="col-md-6">
@@ -162,7 +163,7 @@ type Starship {
                         </div>
 
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    <div class="tab-pane fade" id="pills-graphql" role="tabpanel" aria-labelledby="pills-graphql-tab"
                         tabindex="0">...</div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
                         tabindex="0">...</div>
@@ -170,9 +171,176 @@ type Starship {
             </div>
         </div>
     </div>
+</section> -->
+
+<section id="ecosystem">
+    <div class="container pt-5">
+        <div class="row text-center ">
+            <div class="col-12">
+                <hr class="mb-5">
+            </div>
+            <div class="col-md-12   mb-3 mt-5 ">
+                <h2 class="fw-bold">Ecosytem</h2>
+                <p class="fs-5">Integrate Invana with your web applications and data analytics pipelines.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12 mb-3 ">
+                        <h3>Supported graph data backends</h3>
+                    </div>
+                    {% for vendor in site.data.vendors %}
+                    <div class="col-md-3 mt-1 col-sm-6 col-6 mb-4">
+                        <a href="{{vendor.url}}" target="_blank"
+                            class="text-decoration-none text-reset text-underline-0">
+                            <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
+                            <h6 class="mt-2 small">{{vendor.title}}</h6>
+                        </a>
+                    </div>
+                    {% endfor %}
+                    <div class="col-md-6 col-sm-12  mb-4 pt-3">
+                        <a href="">Request new backend <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12 mb-3 ">
+                        <h3>app integrations.</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
+                        <a href="https://spark.apache.org/" target="_blank"
+                            class="text-decoration-none text-reset text-underline-0">
+                            <img src="/public/img/integration-vendors/apache-spark.png" alt="apache spark"
+                                class="img-fluid">
+                            <h6 class="mt-2 small">Apache Spark</h6>
+
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6 mb-4 pt-4">
+                        <a href="https://beam.apache.org/" target="_blank"
+                            class="text-decoration-none text-reset text-underline-0">
+                            <img src="/public/img/integration-vendors/apache-beam.png" alt="apache spark"
+                                class="img-fluid">
+                            <h6 class="mt-2 small">Apache Beam</h6>
+
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6 mb-4 pt-4">
+                        <a href="https://beam.apache.org/" target="_blank"
+                            class="text-decoration-none text-reset text-underline-0">
+                            <img src="/public/img/integration-vendors/django.png" alt="apache spark" class="img-fluid">
+                            <h6 class="mt-2 small">Django</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6 mb-4 pt-4">
+                        <a href="https://beam.apache.org/" target="_blank"
+                            class="text-decoration-none text-reset text-underline-0">
+                            <img src="/public/img/integration-vendors/flask.png" alt="apache spark" class="img-fluid">
+                            <h6 class="mt-2 small">Flask</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-12  mb-4 pt-3">
+                        <a href="">Request new integration <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-12">
+                <hr class="mt-5">
+            </div>
+        </div>
+    </div>
 </section>
 
+
 <section>
+    <div class="container pt-5" id="how-it-works">
+        <div class="row">
+            <div class="col-md-12 text-center  mb-5 mt-5 ">
+                <h2 class="fw-bold">How it works</h2>
+                <p class="fs-5">Integrate your data from all sources, run analytics.</p>
+            </div>
+            <div class="col-md-12">
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                    <div class="col col-md-5 d-flex flex-column align-items-start gap-2">
+                        <h3 class="fw-bold mt-0 ">Model and Integrate your data.</h3>
+                        <!-- <ul class=" list-group list-group-flush">
+                            <li class="fs-6 mt-0 pt-0 list-group-item ps-0 border-0"><i class="bi bi-check-circle"></i>
+                                Import data with python and graphql APIs.</li>
+                            <li class="fs-6 mt-0 pt-0 list-group-item ps-0"><i class="bi bi-check-circle"></i>
+                                Build applications that consume data.</li>
+                        </ul> -->
+                        <p class="fs-5"> powered by Graph Computing. </p>
+
+                    </div>
+                    <div class="col col-md-7">
+                        {% include api-usage.html %}
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-12 mt-5">
+
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                    <div class="col col-md-5 d-flex flex-column align-items-start gap-2">
+                        <h3 class="fw-bold">Run Analytics</h3>
+                        <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.
+                            We'll add onto it with another sentence and probably just keep going until we run out of
+                            words.</p>
+                        <a href="/get-started" class="btn btn-success">Get started</a>
+                    </div>
+
+                    <div class="col col-md-7">
+                        <div class="row row-cols-1 row-cols-sm-2 g-4">
+                            <div class="col d-flex flex-column gap-2">
+                                <div class="fs-4">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <h4 class="fw-semibold mb-0">Search</h4>
+                                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the
+                                    heading.</p>
+                            </div>
+
+                            <div class="col d-flex flex-column gap-2">
+                                <div class="fs-4">
+                                    <i class="bi bi-window-fullscreen"></i>
+                                </div>
+                                <h4 class="fw-semibold mb-0">Visualise interactively</h4>
+                                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the
+                                    heading.</p>
+                            </div>
+
+                            <div class="col d-flex flex-column gap-2">
+                                <div class="fs-4">
+                                    <i class="bi bi-columns-gap"></i>
+                                </div>
+                                <h4 class="fw-semibold mb-0">Setup Automations</h4>
+                                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the
+                                    heading.</p>
+                            </div>
+
+                            <div class="col d-flex flex-column gap-2">
+                                <div class="fs-4">
+                                    <i class="bi bi-cpu"></i>
+                                </div>
+                                <h4 class="fw-semibold mb-0">Large scale queries</h4>
+                                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the
+                                    heading.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section>
     <div class="container">
         <div class="row mt-5 mb-5 justify-content-md-center">
             <div class="col-md-12 text-center mb-5 mt-5">
@@ -188,7 +356,7 @@ type Starship {
             {% endfor %}
         </div>
     </div>
-</section>
+</section> -->
 
 <section class=" bg-success text-dark">
     <div class="container">

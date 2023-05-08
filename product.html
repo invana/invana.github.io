@@ -270,22 +270,18 @@ description: Get the right tools for the job, model, query and visualise graph d
                     <i class="bi bi-info-circle"></i> If you would like to request support for a new graph database, please  
                     <a href="/contact" >contact us</a> us. 
                   </div>
-               
-
-
             </div>
             <div class="col-md-6">
                 <div class="row mt-4">
                     {% for vendor in site.data.vendors %}
                     <div class="col-4 mb-4">
-                        <h5>{{vendor.title}}</h5>
+                        <h6>{{vendor.title}}</h6>
                         <a href="{{vendor.url}}">
                             <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
                         </a>
                     </div>
                     {% endfor %}
                 </div>
-
             </div>
         </div>
     </div>
