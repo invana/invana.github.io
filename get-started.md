@@ -1,7 +1,7 @@
 ---
 layout: get-started
 title: Get Started
-description: Building your first knowledge graph
+description: How to get started with building your first knowledge graph with Invana
 ---
 
 
