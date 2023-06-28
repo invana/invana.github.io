@@ -1,0 +1,49 @@
+---
+layout: get-started
+title: Opensource projects
+description: Opensource projects from Invana
+---
+
+<section>
+    <div class="container">
+        <div class="row">
+            {% for project in site.data.projects %}
+            <div class="col-md-6  mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="{{project.gh_url}}" target="_blank"
+                            class="text-decoration-none text-reset text-underline-0">
+                            <h3 class="fs-5 text-success  "> <i class="bi bi-github"></i> {{project.title}}</h3>
+                        </a>
+                        <p class="mb-0">{{project.description}}</p>
+                        <a href="{{project.gh_url}}/fork" class="  text-muted  text-decoration-none"
+                            target="_blank">fork & contribute &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h2>Integrations</h2>
+            </div>
+            {% for project in site.data.integrations %}
+            <div class="col-md-6   border-bottom mb-3 pb-2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="{{project.gh_url}}" target="_blank"
+                            class="text-decoration-none text-reset text-underline-0">
+                            <h3 class="fs-5 text-success "> <i class="bi bi-github"></i> {{project.title}}</h3>
+                            <p class="mb-0">{{project.description}}</p>
+                        </a>
+                    </div>
+                    <div class="col-md-12">
+                        <a href="{{project.gh_url}}/fork" class=" text-muted text-decoration-none" target="_blank">Fork
+                            & Contribute &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
