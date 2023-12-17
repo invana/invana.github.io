@@ -3,7 +3,6 @@
 html,
 body {
     height: 100%;
-    font-size: 16px;
     line-height: 1.6rem;
     font-family: 'DM Sans', sans-serif;
 }
@@ -17,40 +16,67 @@ h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* .hero-banner {
+    height: calc(100vh - 90px);
+    background: linear-gradient(rgba(255, 255, 255, 0.95),
+            rgba(255, 255, 255, 0.85)),
+        url('https://raw.githubusercontent.com/invana/invana-studio/develop/screenshot.png') no-repeat;
+} */
 
+.hero-banner {
+    height: calc(100vh - 90px);
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.95),
+            rgba(255, 255, 255, 0.75)
+            ),
+        url('https://raw.githubusercontent.com/invana/invana-studio/develop/screenshot.png') no-repeat;
+}
+.hero-text {
+    padding-top: 10vh;
+}
+.hero-vendors-list{
+    padding-top: 5rem;
+
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+}
  
-a {color: #28a028;}
-
 .support-menu{
     width: 700px;
 }
 
 
+/* .navbar .nav-link{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+} */
+
+/* 
+
+ 
+a {color: #28a028;}
+
+
+
 .primary-color {    color: #28a028;}
-
-
-
-  main {
-    height: 100%;
-} 
-
 
  
 
+
 .homepage-banner .main-text {
-    margin-top: 15%;
-    /* padding-bottom: 5%; */
+    padding-top: 20%;
+}
+.homepage-banner .main-text h1{
+    font-size: 3.2rem;
 }
 
 .homepage-banner .main-banner {
-    margin-top: 5%;
+    padding-top: 5%;
     padding-bottom: 5%;
 }
-
-/* .homepage-banner .main-banner a.nav-link.active .text-dark,
-.homepage-banner .main-banner a.nav-link.active .text-secondary {
-    color: white !important;
-} */
+ 
 
 .homepage-banner .main-banner .tab-pane {
     min-height: 400px;
@@ -59,31 +85,12 @@ a {color: #28a028;}
 
 
 
-/*   
-.navbar-brand {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.navbar-brand {
-    font-size: 18px !important;
-    font-weight: bold;
-} */
-
+ 
 .navbar-light .navbar-nav .nav-link {
     font-weight: bold;
 }
 
-/* .blog-menu .nav-link.btn-success {
-    color: white !important;
-} */
-
-.navbar-brand:hover,
-.navbar-light .navbar-nav .nav-link:hover,
-.nav-link.btn:hover {
-    color: white !important;
-}
-
+ 
 
 
 h3 {
@@ -121,15 +128,10 @@ blockquote p {
     border-radius: 3px;
 }
 
-/* .committer-img {
-    width: 30px;
-    border-radius: 5px;
-} */
-
+ 
 
 
 .code {
-    /*background: #343434;*/
     background-color: #efefef;
     color: #212121;
     padding: 5px 10px;
@@ -140,4 +142,4 @@ blockquote p {
 
 .alert {
     padding: .5rem !important;
-}
+} */
