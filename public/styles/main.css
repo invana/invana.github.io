@@ -31,6 +31,20 @@ h6 {
             ),
         url('https://raw.githubusercontent.com/invana/invana-studio/develop/screenshot.png') no-repeat; */
 }
+
+/* .beta-notification {
+    background: #444;
+    padding: 5px;
+    color: #a1a1a1;
+    text-align: center;
+    border-top: 2px solid #bbbbbb;
+}
+
+.beta-notification span {
+    border: 1px solid orange;
+    padding: 1px 6px;
+    border-radius: 2px; */
+/* } */
 .hero-text {
     padding-top: 10vh;
 }
@@ -98,19 +112,7 @@ h3 {
     margin-top: 1.5rem;
 }
 
-.beta-notification {
-    background: #444;
-    padding: 5px;
-    color: #a1a1a1;
-    text-align: center;
-    border-top: 2px solid #bbbbbb;
-}
 
-.beta-notification span {
-    border: 1px solid orange;
-    padding: 1px 6px;
-    border-radius: 2px;
-}
 
 blockquote {
     padding: 10px;
