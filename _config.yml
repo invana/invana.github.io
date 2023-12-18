@@ -20,9 +20,11 @@
 
 title: Invana
 email: hi@invana.io
-home_title: Stitch data - detect and analyse the patterns
+home_title: Detect and analyse the patterns
 description: >- # this means to ignore newlines until "baseurl:"
-  Connect to your data streams, microservices or data from internet and create Knowledge & Data APIs in near realtime
+  Stitch data, run analytics; find insights to take data-driven decisions using the power of graph computing
+
+# Connect to your data streams, microservices or data from internet and create Knowledge & Data APIs in near realtime
 author: Ravi Raja Merugu
 
 baseurl: "" # the subpath of your site, e.g. /blog
