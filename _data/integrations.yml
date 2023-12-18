@@ -1,0 +1,16 @@
+- title: Apache Spark
+  url : https://spark.apache.org/
+  logo : /public/img/integration-vendors/apache-spark.png
+- title: Apache Beam
+  url : https://beam.apache.org/
+  logo : /public/img/integration-vendors/apache-beam.png
+- title: Django
+  url: https://www.djangoproject.com/
+  logo: /public/img/integration-vendors/django.png
+- title: Flask
+  url: https://flask.palletsprojects.com/
+  logo: /public/img/integration-vendors/flask.png
+
+
+
+  

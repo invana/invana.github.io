@@ -46,22 +46,14 @@ description: Get in touch with us
         <div class="row mt-5 mb-5">
 
             <div class="col-md-6">
-                <div class="card pt-2 pb-3 pl-3 pr-3 mb-3">
-                    <div class="card-body p-2 pt-3">
-                        <h3 class="h5 font-weight-bold">Let us catch up for a chat ?</h3>
-                        <p>We are so excited to share our experiences working with knowledge graphs
-                            and how great they perform at what they do.</p>
-                        <!--                        <a href="/contact" class="btn btn-dark">Schedule a call</a>-->
-                    </div>
-                </div>
-                <div class="card pt-2 pb-3 pl-3 pr-3 bg-primary">
-                    <div class="card-body p-2 pt-3">
+
+                <div class="card bg-secondary text-white p-3">
+                    <div class="card-body">
                         <h3 class="h5 font-weight-bold">
                             Need support ?
-
                         </h3>
                         <p>Get in touch with us, if you need support for any of the following </p>
-                        <ul class="list-group list-group-flush">
+                        <ul class="list-group list-group-flush mt-5">
                             {% include services-list.html %}
                         </ul>
 
@@ -72,23 +64,32 @@ description: Get in touch with us
 
             </div>
             <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body ">
+                        <h3 class=" font-weight-bold">Let us catch up for a chat ?</h3>
+                        <!-- <p>We are so excited to share our experiences working with knowledge graphs
+                            and how great they perform at what they do.</p> -->
+                        <!--                        <a href="/contact" class="btn btn-dark">Schedule a call</a>-->
+                    <!-- </div>
+                </div>
                 <div class="card">
-                    <div class="card-body">
-                        <blockquote class="border-bottom pb-2">Knowledge Graphs perform great at
+                    <div class="card-body"> -->
+                        <!-- <blockquote class="border-bottom pb-2">Knowledge Graphs perform great at
                             unifying the data from many sources, understanding the connections between the data
                             and finding insights.
-                        </blockquote>
-                        <p>Tell us a bit about you and what is that
+                        </blockquote> -->
+                        <p class="mb-4">Tell us a bit about you and what is that
                             you need help with or just request a demo.</p>
+                        <!-- <hr> -->
 
                         <form onsubmit="submitForm(this);return false">
                             <div class="row">
 
-                                <div class="col-md-12 mb-2">
+                                <div class="col-md-12 mb-4">
                                     <input type="text" name="whoYouAre" required class="form-control"
                                            placeholder="Who you are! (ex: Ravi Raja, Founder of Invana)">
                                 </div>
-                                <div class="col-md-12 mb-2">
+                                <div class="col-md-12 mb-4">
                                     <label for="" class="mb-0 mr-3">Please check the areas you are
                                         interest in:</label><br>
 
@@ -110,12 +111,12 @@ description: Get in touch with us
 
 
                                 </div>
-                                <div class="col-md-12 mb-2">
+                                <div class="col-md-12 mb-3">
                                     <textarea required class="form-control" rows="5" id="description"
                                               placeholder="Tell us a bit about what is the service you think you need from us and what is that problem you are trying to solve."></textarea>
                                 </div>
-                                <div class="col-md-12 mb-2">
-                                    <button type="submit" class="btn btn-success">Submit</button>
+                                <div class="col-md-12 mb-4">
+                                    <button type="submit" class="btn btn-success ps-4 pe-4">Submit</button>
 
                                     <p class="text-muted small">On submission, this form will take you to your default
                                         email client.</p>
@@ -169,15 +170,11 @@ description: Get in touch with us
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 mb-5">
             <h3>Contact Info</h3>
-            <hr>
             <p class="mb-0 pb-0"><strong>Invana Technology Solutions Pvt Ltd.</strong></p>
-            <p class="mb-0 pb-0">102, Sreekar's Archana Manor
-                <br>
-                Kondapur, Hyderabad - 500084, India.
+            <p class="mb-0 pb-3">Kondapur, Hyderabad - 500084, India.
             </p>
-            <p></p>
             <p>Write to us at <a class="primary-color" href="mailto:hi@invana.io">hi[ at ]invana.io</a></p>
 
 

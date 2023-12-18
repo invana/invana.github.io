@@ -1,150 +1,103 @@
-<!--<section class="beta-notification">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12">-->
-<!--                We are currently <span>brewing the tech</span>.-->
-<!--                Follow us on <a style="color: inherit; text-decoration: underline" href="https://twitter.com/invanalabs"-->
-<!--                                target="_blank">twitter</a>-->
-<!--                to get notified about any updates.-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<nav class="navbar  navbar-expand-md navbar-light  ">
+<section class="beta-notification alert alert-success">
     <div class="container">
-        <a class="navbar-brand" href="{{site.baseurl}}/">
-            Invana
-            <small class="badge badge-success">beta</small>
+        <div class="row">
+            <div class="col-md-12">
+                We are currently <span>brewing the tech</span>.
+                Follow us on <a style="color: inherit; text-decoration: underline" href="https://twitter.com/invanalabs"
+                    target="_blank">twitter</a>
+                to get notified about latest updates.
+            </div>
+        </div>
+    </div>
+</section>
+<nav class="navbar  navbar-expand-md navbar-light header ">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="{{site.baseurl}}/">
+            invana
+            <!-- <small class="badge bg-success">beta</small> -->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <!--                <li class="nav-item dropdown">-->
-                <!--                    <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01"-->
-                <!--                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>-->
-                <!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-                <!--                        <a class="dropdown-item pl-3 pr-3" href="#">Invana Studio</a>-->
-                <!--                        <a class="dropdown-item pl-3 pr-3" href="#">Invana Engine</a>-->
-                <!--                        &lt;!&ndash;                        <a class="dropdown-item pl-3 pr-3" href="#">Something else here</a>&ndash;&gt;-->
-                <!--                    </div>-->
-                <!--                </li>-->
-                <!--                <li class="nav-item dropdown">-->
-                <!--                    <a class="nav-link dropdown-toggle" href="https://example.com" id="resources-dropdown"-->
-                <!--                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Learn</a>-->
-                <!--                    <div class="dropdown-menu" aria-labelledby="resources-dropdown">-->
-                <!--                        <a class="dropdown-item pl-3 pr-3" href="/blogs">-->
-                <!--                            <h3 class="h6 mt-1 mb-1 pt-2">Blogs</h3>-->
-                <!--                            <p>Product updates, stories of people and our learnings</p>-->
-                <!--                        </a>-->
-                <!--                        <a class="dropdown-item pl-3 pr-3" href="/documentation">-->
-                <!--                            <h3 class="h6 mt-1 mb-1 pt-2">Documentation</h3>-->
-                <!--                            <p>Product docs and training videos</p>-->
-                <!--                        </a>-->
-                <!--&lt;!&ndash;                        <a class="dropdown-item pl-3 pr-3" href="/guides">&ndash;&gt;-->
-                <!--&lt;!&ndash;                            <h3 class="h6 font-weight-400 mb-1 pt-2">Case Studies</h3>&ndash;&gt;-->
-                <!--&lt;!&ndash;                            <p>Case studies of knowledge graph implementations </p>&ndash;&gt;-->
-                <!--&lt;!&ndash;                        </a>&ndash;&gt;-->
-                <!--                        &lt;!&ndash;                        <a class="dropdown-item pl-3 pr-3" href="#">Something else here</a>&ndash;&gt;-->
-                <!--                    </div>-->
-                <!--                </li>-->
-
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                       aria-haspopup="true" aria-expanded="false">Docs</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item pl-3 pr-3" href="#">
-                            <h6 class="pb-0 font-weight-bold">Get Started</h6>
-                            <p class="mb-2">Learn Invana basics and benefits of knowledge graphs. </p>
-
-                            <div class="clearfix pl-3 pr-3 border-bottom"></div>
-
-                        </a>
-                        <a class="dropdown-item pl-3 pr-3" href="https://docs.invana.io/get-started/install-invana">
-                            <h6 class="pb-0 font-weight-bold">Download and Install</h6>
-                            <p class="mb-2">Download and install Invana on your machine or cloud in a few easy
-                                steps. </p>
-                            <div class="clearfix pl-3 pr-3 border-bottom"></div>
-
-                        </a>
-                        <a class="dropdown-item pl-3 pr-3" href="#">
-                            <h6 class="pb-0 font-weight-bold">Guides</h6>
-                            <p class="mb-2">Learn how to setup Invana and start building knowledge graphs for your
-                                apps. </p>
-                            <div class="clearfix pl-3 pr-3 border-bottom"></div>
-
-                        </a>
-                        <a class="dropdown-item pl-3 pr-3" href="#">
-                            <h6 class="pb-0 font-weight-bold">Product Manual</h6>
-                            <p class="mb-2">Browse through the manuals and learn how to Invana Products.</p>
-<!--                            <div class="clearfix pl-3 pr-3 border-bottom"></div>-->
-
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item pl-3 pr-3" href="https://docs.invana.io/">go to docs.invana.io</a>
-                    </div>
-
-                </li>
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link nav-item mr-1" href="https://docs.invana.io">-->
-<!--                        &lt;!&ndash;                        <i class="far fa-question-circle"></i> &ndash;&gt;-->
-<!--                        Docs-->
-<!--                    </a>-->
-<!--                </li>-->
+            <ul class="navbar-nav me-auto ">
                 <li class="nav-item">
-                    <a class="nav-link nav-item mr-1" href="/support">
-                        <!--                        <i class="far fa-question-circle"></i> -->
-                        Support
+                    <a class="nav-link fw-bold  ms-3 " target="_blank" href="https://github.com/invana/invana-studio">
+                        <img src="https://img.shields.io/github/stars/invana/invana-studio?color=%2328a745&label=stars&logo=github&style=social"
+                            alt="">
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-item mr-1" href="/pricing">
-                        <!--                        <i class="far fa-question-circle"></i> -->
+    
+                <!-- <li class="nav-item">
+                    <a class="nav-link  fw-bold nav-item ms-3" href="/pricing">
                         Pricing
                     </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link  fw-bold nav-item ms-3" href="/about">
+                        Company
+                    </a>
                 </li>
-
-                <!--                <li class="nav-item">-->
-                <!--                    <span class="nav-link nav-item mr-2">|</span>-->
-                <!--                </li>-->
-
-                <!--                <li class="nav-item">-->
-                <!--                    <a class="nav-link nav-item mr-2" target="_blank"-->
-                <!--                       rel="noopener" href="https://twitter.com/invanalabs">-->
-                <!--                        <i class="fab fa-twitter"></i>-->
-                <!--                    </a>-->
-                <!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link  fw-bold nav-item ms-3" href="https://blog.invana.io">
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link fw-bold nav-item me-2 ms-3">|</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-item ms-3" target="_blank" rel="noopener"
+                        href="https://twitter.com/invanalabs">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-item ms-3" target="_blank" rel="noopener"
+                        href="https://www.linkedin.com/company/invanalabs">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                
             </ul>
-            <ul class="navbar-nav ml-auto blog-menu">
-
-                <!--                <li class="nav-item">-->
-                <!--                    <span class="nav-link nav-item mr-2">|</span>-->
-                <!--                </li>-->
-                <li class="nav-item">
-                    <a class="nav-link nav-item mr-2 btn btn-outline-secondary" href="/get-started">
-                        Get Started
+            <ul class="navbar-nav  ms-auto ">
+       
+  
+               <li class="nav-item">
+                    <a class="nav-link btn text-white  bg-success fw-bold ms-3" href="/contact">
+                        Contact
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-item mr-2  btn btn-success" href="/contact">
-                        Request Demo
+                </li> 
+                <!-- <li class="nav-item">
+                    <a class="nav-link btn text-white  bg-success fw-bold ms-3" href="/get-started">
+                        Request demo
                     </a>
-                </li>
-
-                <!--                <li class="nav-item">-->
-                <!--                    <a class="nav-link nav-item ml-2" rel="noopener"-->
-                <!--                       target="_blank" href="https://github.com/invanalabs/graph-explorer"-->
-                <!--                       style="padding-top: 5px"-->
-                <!--                    >-->
-                <!--                        <img src="https://img.shields.io/github/stars/invanalabs/graph-explorer?color=%2328a745&label=stars&logo=github&style=social"-->
-                <!--                             alt="">-->
-
-                <!--                    </a>-->
-                <!--                </li>-->
-
+                </li> -->
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link ms-3 nav-link dropdown-toggle" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
+                        <i class="bi bi-moon-stars-fill" id="theme-icon-active"></i>
+                      <span class="d-lg-none ms-3" id="bd-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                      <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                          <!-- <svg class="bi me-2theme-icon"><use href="#sun-fill"></use></svg> -->
+                          <i class="bi bi-sun-fill   theme-icon me-2"></i> Light <i class="bi bi-check2  ms-auto d-none"></i>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+                          <i class="bi bi-moon-stars-fill theme-icon me-2"></i>  Dark <i class="bi bi-check2  ms-auto d-none"></i>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                            <i class="bi bi-circle-half  theme-icon me-2"></i> Auto  <i class="bi bi-check2  ms-auto d-none"></i>
+                        </button>
+                      </li>
+                    </ul> 
+                  </li>
             </ul>
         </div>
     </div>

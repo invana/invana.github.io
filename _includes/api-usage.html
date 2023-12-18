@@ -1,0 +1,67 @@
+<ul class="nav nav-pills     " id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active border  text-reset rounded-0" id="pills-python-api-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-python-api" type="button" role="tab" aria-controls="pills-python-api"
+            aria-selected="true">
+            Python API
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link border rounded-0  text-reset" id="pills-graphql-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-graphql" type="button" role="tab" aria-controls="pills-graphql"
+            aria-selected="false">
+            GraphQL
+        </a>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <a class="nav-link border rounded-0  text-reset" id="pills-gremlin-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-gremlin" type="button" role="tab" aria-controls="pills-gremlin"
+            aria-selected="false">
+            Apache TinkerPop Gremlin
+        </a>
+    </li>
+</ul>
+<div class="tab-content border p-3" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-python-api" role="tabpanel" aria-labelledby="pills-python-api-tab"
+        tabindex="0">
+
+        <div class="row">
+            <div class="col-md-12">
+                <pre class="pb-3">
+from invana.ogm import models, fields
+
+graph = InvanaGraph("ws://connection-url:8182/gremlin")
+
+class Project(models.VertexModel):
+    name = fields.StringProperty(max_length=10, trim_whitespaces=True)
+    rating = fields.FloatProperty(allow_null=True)
+    created_at = fields.DateTimeProperty(default=lambda: datetime.now())
+</pre>
+            </div>
+        </div>
+
+    </div>
+    <div class="tab-pane fade" id="pills-graphql" role="tabpanel" aria-labelledby="pills-graphql-tab" tabindex="0">
+        <div class="row">
+            <div class="col-md-12">
+                <pre>
+{
+    project(name: "invana studio") {
+    rating,
+    created_at
+    }
+} </pre>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="pills-gremlin" role="tabpanel" aria-labelledby="pills-gremlin-tab" tabindex="0">
+        <div class="row">
+            <div class="col-md-12">
+                <pre>
+g.V().hasLabel('Person').has('name', 'invana studio')
+.elementMap().toList()</pre>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,217 +1,200 @@
 ---
 layout: default
-title: Model, Build and Explore Knowledge Graphs
-description: Invana helps people explore, analyse and find insights from data using the power of Knowledge Graphs.
+title: Stitch your data, detect and analyse the patterns
+description: Invana helps people explore, analyse and find insights from data using the power of graph computing.
 ---
 
-<section class=" homepage-banner" role="main">
+<section class="hero-banner" role="main">
     <div class="container">
-        <div class="row">
-            <div class="col-md-5 ">
-                <h1>Model, Build and Explore Knowledge Graphs <span>with Invana</span></h1>
-                <p>We help people explore, analyse and find insights
-                    from data using the power of Knowledge Graphs.</p>
+        <div class="row mb-5 ">
+            <div class="col-md-12 hero-text">
+                <h1 class="fw-bold ">{{site.home_title}}</h1>
+                <!-- <p class=" mb-4 h4 lh-base">Interactively narrow down your research and analysis
+                    using the power of graph computing.</p> -->
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <p class="h4 mb-4 lh-base">{{site.description}}.</p>
+            </div>
+            <div class="col-md-12 mb-5">
                 <div class="clearfix"></div>
-                <a href="#learn-more" class="btn btn-success mr-2">Learn more</a>
-                <a href="/docs/get-started.html" class="btn btn-outline-success">Get started</a>
+                <a href="#know-more" class="btn btn-success btn-lg">Know more</a>
+                <!-- <a href="/contact" class="btn btn-secondary btn-lg ms-3">Contact</a> -->
+                <div class="clearfix"></div>
 
             </div>
+            <div class="col-md-12 mt-2">
+                <img src="https://raw.githubusercontent.com/invana/invana-studio/develop/screenshot.png"
+                    class="img-fluid border" alt="">
+
+                <!-- <div class="row hero-vendors-list pb-5">
+
+                    {% for vendor in site.data.vendors %}
+                    <div class="col-md-2 mt-1 col-sm-6 col-6 mb-4">
+                        <a href="{{vendor.url}}" target="_blank"
+                            class="text-decoration-none text-reset text-underline-0">
+                            <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
+                            <h6 class="mt-2 small">{{vendor.title}}</h6>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div> -->
+            </div>
+
+        </div>
 
 
-            <div class="col-md-7">
-                <div class="clearfix"></div>
-                <div class="hero-image-container">
-                    <!--                    <img src="public/img/hero.png" class="img-fluid">-->
-                    <!--                    <img src="https://raw.githubusercontent.com/invanalabs/invana-studio/develop/screenshot.png" class="img-fluid" alt="">-->
-                    <img src="/public/img/hero2.png" class="img-fluid" alt="">
+    </div>
+</section>
 
-                    <div class="clearfix"></div>
+
+<section id="know-more">
+    <div class="container pt-5 pb-5">
+        <div class="row   mt-5">
+
+            <div class="col-md-12  mt-5">
+                <h2 class="fw-bold text-success">Powering research and analytics methodologies</h2>
+
+            </div>
+            <div class="col-md-8 col-sm-12   mb-5">
+                <p class="fs-4 lh-base">Our core capabilities helps you focus on the data science, simplifying your data
+                    development activities.</p>
+            </div>
+
+            <div class="col-md-12 mt-5">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h3 class="fw-bold h4"> <i class="bi bi-rocket-takeoff "></i> Unified Data Model</h3>
+                        <p class="fs-5 lh-base">Model your data as knowledge graphs - entity and relationships with
+                            properties. Model multiple sources data into Unified Schema.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="fw-bold h4"> <i class="bi bi-rocket-takeoff "></i> Instant GraphQL API</h3>
+                        <p class="fs-5 lh-base">Instantly build and ship all your data as secured GraphQL API; making
+                            your data model integrations ready.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="fw-bold h4"> <i class="bi bi-rocket-takeoff "></i> Stitch your data sources</h3>
+                        <p class="fs-5 lh-base">
+                            Connect all your data from your apps, tools,
+                            datasets, data and AI pipelines using Python and GraphQL API.
+                        </p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="fw-bold h4"> <i class="bi bi-rocket-takeoff "></i> Automate Insights and Inferences
+                        </h3>
+
+                        <p class="fs-5 lh-base">Schedule investigations with pattern recognition and rule-based
+                            algorithms on your data .</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="fw-bold h4"> <i class="bi bi-rocket-takeoff "></i> Interactive Graph search </h3>
+                        <p class="fs-5 lh-base">Extend your curiosity by traversing and filtering through the entities
+                            and relationships interactively with out code. </p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="fw-bold h4"> <i class="bi bi-rocket-takeoff "></i> Visualisations and Annotations
+                        </h3>
+                        <p class="fs-5 lh-base">Visualise, interact and annotate entities and relationships to generate
+                            intuitive and meaningful data representation. </p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3 class="fw-bold h4"> <i class="bi bi-rocket-takeoff "></i> Publish your work, make it
+                            re-usable </h3>
+                        <p class="fs-5 lh-base">Publish and share your data models, integrations and visualisations.</p>
+                    </div>
+
+
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
-<section class="home-section">
-    <div class="container" id="learn-more">
-        <div class="row mt-5   pt-5">
-            <div class="col-md-12">
-                <h2>Features</h2>
-                <p>Connect to any Apache TinkerPop enabled graph database, run queries, build and organise
-                    insights. </p>
+<!-- <section>
+    <div class="container pt-5" id="how-it-works">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h2 class="fw-bold text-success">Connect your data</h2>
+            </div>
+            <div class="col-md-8">
+                {% include api-usage.html %}
             </div>
         </div>
+    </div>
+</section> -->
+
+
+
+
+
+
+<section id="ecosystem" class="mb-5">
+    <div class="container pt-5 pb-5">
         <div class="row">
-            <div class="col-md-6">
-                <h3>Model data into Unified Schema</h3>
-                <ul>
-                    <li><i class="far fa-check-circle"></i> Establish relationships between entities from multiple
-                        sources
-                    </li>
-                    <li><i class="far fa-check-circle"></i> Design and organise data into a unified schema for your
-                        knowledge graphs
-                    </li>
-                </ul>
+            <div class="col-12 mt-5">
+                <hr class="mb-5">
             </div>
-
-            <div class="col-md-6">
-                <h3>Instant GraphQL APIs for Knowledge Graphs</h3>
-                <ul>
-                    <li><i class="far fa-check-circle"></i> Consume knowledge graphs instantly as GraphQL API</li>
-                    <li><i class="far fa-check-circle"></i> Integrate knowledge graphs to your applications using
-                        GraphQL API
-                    </li>
-                </ul>
-            </div>
-
         </div>
+        <div class="row text-center ">
 
-        <div class="row mt-3">
-
-            <div class="col-md-6">
-                <h3>Import any data into knowledge graphs with ease</h3>
-
-                <ul>
-                    <li><i class="far fa-check-circle"></i> Python and GraphQL API for programmatic access to knowledge
-                        graphs
-                    </li>
-                    <li><i class="far fa-check-circle"></i> Import data from database or any third-party apps
-                        integrating with the APIs
-                    </li>
-                </ul>
+            <div class="col-md-12   mb-3 mt-5 ">
+                <h2 class="fw-bold text-success">Ecosytem</h2>
+                <p class="fs-5 mb-5">Integrate Invana with your web applications and data analytics pipelines.</p>
             </div>
-            <div class="col-md-6">
-                <h3>Visualise data as Interactive Directed Graphs</h3>
-                <ul>
-                    <li><i class="far fa-check-circle"></i> Visualise entities and relationships as interactive directed
-                        graphs
-                    </li>
-                    <li><i class="far fa-check-circle"></i> Load graphs almost with no queries for most cases</li>
-                    <li><i class="far fa-check-circle"></i> Extend your curiosity interactively expanding in and out
-                        relationships of an entity
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <h3>OLTP and OLAP support with Apache TinkerPop. </h3>
-                <ul>
-                    <li><i class="far fa-check-circle"></i> Supports Online transaction processing (OLTP) and Online
-                        analytical processing (OLAP) with Apache TinkerPop's Gremlin
-                    </li>
-                    <li><i class="far fa-check-circle"></i> Query knowledge graphs with Apache TinkerPop's Gremlin</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h3>Switch graph database backend any-time </h3>
-                <ul>
-                    <li><i class="far fa-check-circle"></i> Invana supports Apache TinkerPop enabled graph databases
-                    </li>
-                    <li><i class="far fa-check-circle"></i> Need fixes on the element ID resolution for new database
-                        support and any graph database should work with Invana
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<section class="" id="technology">
-    <div class="container home-section ">
-        <div class="row ">
-            <div class="col-md-12 mb-3">
-                <h2>The Technology</h2>
-                <p>Invana makes modeling, building and exploring knowledge graphs easy using the following
-                    products. </p>
-            </div>
-            <div class="col-md-6">
-                <!--                <h5 class="mb-0">Invana Engine</h5>-->
-                <!--                <p> GraphQL API for Apache TinkerPop supported graph databases.</p>-->
-                <div class="card rounded-0" style="background: transparent; border: 1px solid #343434">
+            <div class="col-md-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="h5 mb-2 mt-2">Supported graph data backends</h3>
+                    </div>
                     <div class="card-body">
-                        <h3>Invana Engine</h3>
-                        <hr>
-                        <p>GraphQL API for building and querying knowledge graphs.</p>
+                        <div class="row mt-3 justify-content-md-center">
 
-                        <h4>Key features include:</h4>
-                        <ul>
-                            <li><i class="far fa-check-circle"></i> Works using Apache TinkerPop&trade; graph computing
-                                framework.
-                            </li>
-                            <li><i class="far fa-check-circle"></i> Python and GraphQL API.</li>
-                            <li><i class="far fa-check-circle"></i> Currently supports JanusGraph only, more databases
-                                support shall be
-                                added soon.
-                            </li>
-                        </ul>
-
-                        <!--                        <p class="text-muted small">-->
-                        <!--                            Checkout project status on-->
-                        <!--                            <a href="">GitHub <i class="fas fa-external-link-square-alt"></i></a>,-->
-                        <!--                            last committed at 281-, by Ravi Raja</p>-->
-
+                            {% for vendor in site.data.vendors %}
+                            <div class="col-md-3 mt-1 col-sm-6 col-6 mb-4">
+                                <a href="{{vendor.url}}" target="_blank"
+                                    class="text-decoration-none text-reset text-underline-0">
+                                    <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
+                                    <h6 class="mt-2 small">{{vendor.title}}</h6>
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <!--                <h5 class="mb-0">Graph Explorer</h5>-->
-                <!--                <p>Visualise data as force-directed graphs, tables, create knowledge graph views.</p>-->
-                <div class="card rounded-0" style="background: transparent; border: 1px solid #343434">
+
+            <div class="col-md-6 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="h5 mb-2 mt-2">integrations</h3>
+                    </div>
                     <div class="card-body">
-                        <h3>Invana Studio</h3>
-                        <hr>
-                        <p>Visualise and traverse through knowledge graphs.</p>
-                        <h4>Key features include:</h4>
-                        <ul>
-                            <li><i class="far fa-check-circle"></i> Query with Apache TinkerPop's Gremlin</li>
-                            <li><i class="far fa-check-circle"></i> Visualise as force-directed Graphs and Tables</li>
-                            <li><i class="far fa-check-circle"></i> Traverse through data extending in and out data.
-                            </li>
-                            <li><i class="far fa-check-circle"></i> Save your graph as Image</li>
-                        </ul>
-                        <!--                        <p class="text-muted small">-->
-                        <!--                            Checkout project status on-->
-                        <!--                            <a href="">GitHub <i class="fas fa-external-link-square-alt"></i></a>,-->
-                        <!--                            last committed at 281-, by Ravi Raja</p>-->
+                        <div class="row mt-3 justify-content-md-center">
+
+                            {% for vendor in site.data.integrations %}
+                            <div class="col-md-3 mt-1 col-sm-6 col-6 mb-4">
+                                <a href="{{vendor.url}}" target="_blank"
+                                    class="text-decoration-none text-reset text-underline-0">
+                                    <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
+                                    <h6 class="mt-2 small">{{vendor.title}}</h6>
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
-
             </div>
 
-
         </div>
-
     </div>
 </section>
 
-<section class="home-section bg-primary">
+
+
+
+<!-- <section class=" bg-body-tertiary border-top mt-5 ">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 mt-5 mb-5">
-                <p class="text-uppercase  font-weight-400">Get started in just few minutes.</p>
-                <h2>Build your first Knowledge Graph</h2>
-                <p>Developer or not a developer, build your first knowledge graph with
-                    our opensource tools. </p>
-                <a href="/docs/get-started.html" class="btn btn-dark mt-2">Get Started</a>
-
-            </div>
-        </div>
+        {% include build-first-graph.html %}
     </div>
-</section>
-
-
-<script type="application/javascript">
-    window.onload = function () {
-        console.log("Great. I appreciate your curiosity; " +
-            "Lets connect at https://twitter.com/rrmerugu or linkedIn [I trust you will figure it out :) ]");
-
-    }
-</script>
-
-
+</section> -->

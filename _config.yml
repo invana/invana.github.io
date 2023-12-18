@@ -20,15 +20,24 @@
 
 title: Invana
 email: hi@invana.io
+home_title: Detect and analyse the patterns
 description: >- # this means to ignore newlines until "baseurl:"
-  Connect to your data streams, microservices or data from internet and create Knowledge & Data APIs in near realtime
+  Stitch data, run analytics; find insights to take data-driven decisions using the power of graph computing
+
+# Connect to your data streams, microservices or data from internet and create Knowledge & Data APIs in near realtime
 author: Ravi Raja Merugu
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://invana.io" # the base hostname & protocol for your site, e.g. http://example.com
 site_url: "https://invana.io"
 twitter_username: invanalabs
-github_username:  invanalabs
+github_username:  invana
+
+vision_statement: Building toolkit to detect and analyse the patterns.
+
+get_installation_methods_url: https://docs.invana.io/getting-started
+guides_url: https://docs.invana.io/resources/guides
+product_manual_url: https://docs.invana.io/products/introduction
 
 CONTACT_EMAIL: "hi@invana.io"
 markdown: kramdown
