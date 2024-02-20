@@ -5,6 +5,7 @@ body {
     height: 100%;
     line-height: 1.6rem;
     font-family: 'DM Sans', sans-serif;
+    /* font-size: 14px; */
 }
 
 h1,
@@ -16,132 +17,24 @@ h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* .hero-banner {
-    height: calc(100vh - 90px);
-    background: linear-gradient(rgba(255, 255, 255, 0.95),
-            rgba(255, 255, 255, 0.85)),
-        url('https://raw.githubusercontent.com/invana/invana-studio/develop/screenshot.png') no-repeat;
+
+/* #toolkit-overview h2{
+    padding-top: 10vh;
 } */
 
-.hero-banner {
-    /* height: calc(100vh - 90px); */
-    /* background: linear-gradient(
-            rgba(255, 255, 255, 0.95),
-            rgba(255, 255, 255, 0.75)
-            ),
-        url('https://raw.githubusercontent.com/invana/invana-studio/develop/screenshot.png') no-repeat; */
-}
-
-/* .beta-notification {
-    background: #444;
-    padding: 5px;
-    color: #a1a1a1;
-    text-align: center;
-    border-top: 2px solid #bbbbbb;
-}
-
-.beta-notification span {
-    border: 1px solid orange;
-    padding: 1px 6px;
-    border-radius: 2px; */
-/* } */
 .hero-text {
-    padding-top: 10vh;
+    padding-top: 30rem;
 }
 .hero-vendors-list{
     padding-top: 5rem;
 
 }
 
-.hero-text h1 {
-    font-size: 2.8rem;
-}
  
 .support-menu{
     width: 700px;
 }
-
-
-/* .navbar .nav-link{
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-} */
-
-/* 
-
- 
-a {color: #28a028;}
-
-
-
-.primary-color {    color: #28a028;}
-
  
 
 
-.homepage-banner .main-text {
-    padding-top: 20%;
-}
-.homepage-banner .main-text h1{
-    font-size: 3.2rem;
-}
-
-.homepage-banner .main-banner {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
  
-
-.homepage-banner .main-banner .tab-pane {
-    min-height: 400px;
-}
-
-
-
-
- 
-.navbar-light .navbar-nav .nav-link {
-    font-weight: bold;
-}
-
- 
-
-
-h3 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-
-
-blockquote {
-    padding: 10px;
-    background-color: #efefef;
-    border-left: 3px solid #454545;
-}
-
-blockquote p {
-    margin-bottom: 0;
-}
-
-.highlight pre {
-    padding: 15px;
-    color: #efefef;
-    border-radius: 3px;
-}
-
- 
-
-
-.code {
-    background-color: #efefef;
-    color: #212121;
-    padding: 5px 10px;
-    border-radius: 2px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.alert {
-    padding: .5rem !important;
-} */
