@@ -20,11 +20,21 @@
 
 title: Invana
 email: hi@invana.io
-home_title: Detect and analyse the patterns
+home_title: Opensource Thinker's Toolkit
 description: >- # this means to ignore newlines until "baseurl:"
-  Stitch data, run analytics; find insights to take data-driven decisions using the power of graph computing
+  High-performance graph query engine and visualisations for curious people.
 
-# Connect to your data streams, microservices or data from internet and create Knowledge & Data APIs in near realtime
+vision_statement: Building toolkit to detect and analyse the patterns.
+
+#Opensource Thinker's toolkit with high-performance graph data query and visualisations.
+#Stitch data, run analytics; find insights to take data-driven decisions using the power of graph computing
+#High-performance graph data query and visualisations toolkit for human curiousity.
+#Invana is an opensource thinkers toolkit designed to help you create intelligence out of your data and 
+#       the best data interaction and analytics experience.
+#Empowering research and analytics methodologies
+#Connect to your data streams, microservices or data from internet and create Knowledge & Data APIs in near realtime
+#Invana helps people explore, analyse and find insights from data using the power of graph computing.
+#Ideas needs Thinking!
 author: Ravi Raja Merugu
 
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -33,7 +43,6 @@ site_url: "https://invana.io"
 twitter_username: invanalabs
 github_username:  invana
 
-vision_statement: Building toolkit to detect and analyse the patterns.
 
 get_installation_methods_url: https://docs.invana.io/getting-started
 guides_url: https://docs.invana.io/resources/guides

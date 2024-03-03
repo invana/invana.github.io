@@ -1,8 +1,12 @@
 # Dev notes
 
 ```
-brew install ruby
+brew install ruby rbenv ruby-build
 echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
-gem install bundler:2.1.4 --user-install
+
+rbenv install 3.1.2
+rbenv init
+eval "$(rbenv init - zsh)"
+rbenv global 3.1.2
 bundle install
 ```
