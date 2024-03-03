@@ -5,32 +5,81 @@ description: Invana helps people explore, analyse and find insights from data us
 ---
 
 
-<section class="hero-banner  h-100 " role="main">
+<section class="hero-banner  h-100 " role="main" >
+    <!-- style="min-height: calc(100% - 50px);"> -->
     <div class="container   h-100 ">
-        <div class="row mb-5  " style="min-height: calc(100% - 50px);">
-            <div class="col-md-7  col-sm-12 hero-text">
+        <div class="row mb-5  hero-text" >
+            <div class="col-md-10  col-sm-12 ">
                 <!-- <h1 class="fw-bold h2 ">{{site.home_title}}</h1> -->
                 <h1 class="fw-bold ">Ideas needs Thinking!</h1>
                 <p class="h4 mb-4 lh-base text-secondary">
-                    Invana is an opensource thinkers toolkit designed to help curious minds with
-                    the best data interaction and analytics experience.
+                    
+                    High-performance graph data query and visualisations toolkit for enabling human curiousity.
+                    <!-- Invana helps you with your quests and data interations to accelerate the multi-dimensional queries of Human Curiosity  -->
+
+                    <!-- Invana accelerates your interact with the data, so that you will find it. -->
+                    <!-- Invana is an opensource thinkers toolkit designed to help you create intelligence out of your data and 
+                    the best data interaction and analytics experience. -->
                 </p>
-                <a href="#toolkit-overview" class="btn btn-lg btn-outline-secondary">Know more</a>
+                <!-- <a href="#toolkit-overview" class="btn btn-lg btn-outline-secondary">Know more</a> -->
+            </div>
+            <div class="col-md-12 mt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4 class="h5 fw-bold">Invana Engine </h4>
+                        <p class="fs-5 text-secondary">Query engine for graph databases with GraphQL abilities</p>
+                        <a href="https://github.com/invana/invana-engine">
+                            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/invana/invana-engine?style=flat">
+                        </a>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="h5 fw-bold">Invana Studio</h4>
+                        <p class="fs-5 text-secondary">Data Navigator for connected data though time and space </p>
+                        <a href="https://github.com/invana/invana-studio">
+                            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/invana/invana-studio?style=flat">
+                        </a>
+                    </div>
+                </div>
             </div>
             <!-- <div class="col-md-7 mt-2">
                 <img src="https://raw.githubusercontent.com/invana/invana-studio/develop/screenshot.png"
                     class="img-fluid border" alt="">
             </div> -->
         </div>
+        <!-- <hr> -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="row">
+               
+
+
+                    <div class="col-md-12 mt-1 col-sm-6 col-6 mb-4">
+                        <h5 class="mb-2">Supported databases</h5>
+
+                    </div>
+                    {% for vendor in site.data.vendors %}
+                    <div class="col-md-3 mt-1 col-sm-6 col-6 mb-4">
+                        <a href="{{vendor.url}}" target="_blank"
+                            class="text-decoration-none text-reset text-underline-0">
+                            <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
+                            <h6 class="mt-2 small">{{vendor.title}}</h6>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
 
 
-<section id="toolkit-overview" class=" h-100">
+<!-- <section id="toolkit-overview" class=" h-100">
     <div class="container h-100">
         <div class="row ">
-            <div class="col-md-7 col-sm-12 mt-5 pt-5">
+            <div class="col-md-8 col-sm-12 mt-5 pt-5">
                 <div class="clearfix mt-5 mb-5"></div>
                 <h2 class="fw-bold  text-success">Enjoy Analytics like your favorite Game</h2>
                 <p class="fs-5 lh-base"> Our core capabilities helps you focus on the data analytics,
@@ -40,7 +89,7 @@ description: Invana helps people explore, analyse and find insights from data us
         <div class="row  mt-5 mb-5">
             <div class="col-md-4">
                 <h3 class="h5 fw-bold">Stitch and Model data</h3>
-                <p></p>
+                <p>A simplified, single programming model for your connected data.</p>
             </div>
             <div class="col-md-4">
                 <h3 class="h5 fw-bold">Interactive search engine</h3>
@@ -48,11 +97,10 @@ description: Invana helps people explore, analyse and find insights from data us
             </div>
             <div class="col-md-4">
                 <h3 class="h5 fw-bold">Beautiful UI & Data representations</h3>
-                <!-- <p>Beautifully UI components and representations</p> -->
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <!-- <section id="know-more">
@@ -137,7 +185,7 @@ description: Invana helps people explore, analyse and find insights from data us
 
 
 
-<section id="ecosystem" class="mb-5">
+<!-- <section id="ecosystem" class="mb-5">
     <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12 mt-5">
@@ -196,10 +244,11 @@ description: Invana helps people explore, analyse and find insights from data us
 
         </div>
     </div>
-</section>
+</section> -->
 
 
 
+<div class="clearfix mt-5 mb-5"></div>
 
 <!-- <section class=" bg-body-tertiary border-top mt-5 ">
     <div class="container">
