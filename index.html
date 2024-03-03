@@ -3,84 +3,72 @@ layout: default
 <!-- title: Stitch your data, detect and analyse the patterns -->
 description: Invana helps people explore, analyse and find insights from data using the power of graph computing.
 ---
- 
 
-<section class="hero-banner  h-100 " role="main" >
+
+<section class="hero-banner  h-100 " role="main">
     <!-- style="min-height: calc(100% - 50px);"> -->
     <div class="container   h-100 ">
-        <div class="row mb-5  hero-text" >
+        <div class="row mb-5  hero-text">
             <div class="col-md-10  col-sm-12 ">
-                <!-- <h1 class="fw-bold h2 ">{{site.home_title}}</h1> -->
-                <h1 class="fw-bold ">Ideas needs Thinking!</h1>
-                <p class="h4 mb-4 lh-base text-secondary">
-                    
-                    High-performance graph data query and visualisations toolkit for enabling human curiousity.
-                    <!-- Invana helps you with your quests and data interations to accelerate the multi-dimensional queries of Human Curiosity  -->
-
-                    <!-- Invana accelerates your interact with the data, so that you will find it. -->
-                    <!-- Invana is an opensource thinkers toolkit designed to help you create intelligence out of your data and 
-                    the best data interaction and analytics experience. -->
+                <p>
+                    <span class="badge rounded-pill text-bg-success">Under active development</span>
                 </p>
-                <!-- <a href="#toolkit-overview" class="btn btn-lg btn-outline-secondary">Know more</a> -->
+                <h1 class="fw-bold">{{site.home_title}}</h1>
+                <p class="fs-4 lh-base text-secondary">
+                    High-performance graph query engine and visualisations for curious people.
+                </p>
+                <!-- <a href="#toolkit-overview" class="btn btn-lg btn-outline-secondary mb-5">Know more</a> -->
             </div>
-            <div class="col-md-12 mt-5">
+            <div class="col-md-12 mt-3">
                 <div class="row">
                     <div class="col-md-4">
                         <h4 class="h5 fw-bold">Invana Engine </h4>
                         <p class="fs-5 text-secondary">Query engine for graph databases with GraphQL abilities</p>
                         <a href="https://github.com/invana/invana-engine">
-                            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/invana/invana-engine?style=flat">
+                            <img alt="GitHub Repo stars"
+                                src="https://img.shields.io/github/stars/invana/invana-engine?style=flat">
                         </a>
 
                     </div>
                     <div class="col-md-4">
                         <h4 class="h5 fw-bold">Invana Studio</h4>
-                        <p class="fs-5 text-secondary">Data Navigator for connected data though time and space </p>
+                        <p class="fs-5 text-secondary">Data Navigator for connected data through time and space </p>
                         <a href="https://github.com/invana/invana-studio">
-                            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/invana/invana-studio?style=flat">
+                            <img alt="GitHub Repo stars"
+                                src="https://img.shields.io/github/stars/invana/invana-studio?style=flat">
                         </a>
                     </div>
                 </div>
             </div>
+
  
-            <!-- <div class="col-md-7 mt-2">
-                <img src="https://raw.githubusercontent.com/invana/invana-studio/develop/screenshot.png"
-                    class="img-fluid border" alt="">
-            </div> -->
         </div>
         <!-- <hr> -->
         <div class="row mt-5">
-            <div class="col-md-6">
-                <div class="row">
-               
- 
-
-        </div>
-
- 
-                    <div class="col-md-12 mt-1 col-sm-6 col-6 mb-4">
-                        <h5 class="mb-2">Supported databases</h5>
-
-                    </div>
-                    {% for vendor in site.data.vendors %}
-                    <div class="col-md-3 mt-1 col-sm-6 col-6 mb-4">
-                        <a href="{{vendor.url}}" target="_blank"
-                            class="text-decoration-none text-reset text-underline-0">
-                            <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
-                            <h6 class="mt-2 small">{{vendor.title}}</h6>
-                        </a>
-                    </div>
-                    {% endfor %}
+           
+                <div class="col-md-12 mt-1 mb-3">
+                    <h5 class="mb-2">Supported databases</h5>
                 </div>
-            </div>
-
+                <div class="col-md-12">
+                    <nav class="nav">
+                        {% for vendor in site.data.vendors %}
+                            <a href="{{vendor.url}}" target="_blank" title="{{vendor.title}}"
+                            class="nav-link ps-0 text-decoration-none text-reset text-underline-0">
+                                <img src="{{vendor.logo}}" class="img-fluid" alt="{{vendor.title}}">
+                                <!-- <h6 class="mt-2 small">{{vendor.title}}</h6> -->
+                            </a>
+                        {% endfor %}
+                    </nav>
+                </div>
+        
+     
         </div>
- 
     </div>
+ 
 </section>
 
 
- 
+
 
 <!-- <section id="toolkit-overview" class=" h-100">
     <div class="container h-100">
@@ -173,7 +161,7 @@ description: Invana helps people explore, analyse and find insights from data us
     </div>
 </section> -->
 
- 
+
 <!-- <section>
     <div class="container pt-5" id="how-it-works">
         <div class="row mt-5">
@@ -254,11 +242,11 @@ description: Invana helps people explore, analyse and find insights from data us
 
         </div>
     </div>
-</section> -->
+</section>  
 
- 
 
- 
+
+
 
 <div class="clearfix mt-5 mb-5"></div>
 
